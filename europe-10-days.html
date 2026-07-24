@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>European Essence: 10 Days Itinerary - Tripodope</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css?v=1.5">
+  <link rel="shortcut icon" href="componets/favicon_io/favicon.ico">
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1E404A',
+          },
+          fontFamily: {
+            sans: ['Poppins', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+</head>
+
+<body class="bg-gray-50 overflow-x-hidden font-sans m-0">
+
+  <!-- Navigation -->
+  <nav class="bg-white sticky top-0 z-50 border-b border-gray-100 shadow-sm">
+    <div class="mx-auto px-6 py-4">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center">
+          <img src="componets/tripodope-logo.png" alt="Tripodope" class="h-10 w-auto">
+        </a>
+
+        <!-- Navigation Links -->
+        <div class="hidden lg:flex items-center space-x-8">
+          <a href="index.html" class="text-gray-700 hover:text-primary text-sm font-medium transition-colors">Home</a>
+          <a href="packages.html"
+            class="text-primary hover:text-primary/80 text-sm font-semibold transition-colors">Packages</a>
+          <a href="destinations.html"
+            class="text-gray-700 hover:text-primary text-sm font-medium transition-colors">Destinations</a>
+          <a href="about.html" class="text-gray-700 hover:text-primary text-sm font-medium transition-colors">About
+            Us</a>
+          <a href="contact.html"
+            class="bg-primary text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-primary/90 transition-all duration-300 shadow-md hover:shadow-lg">
+            Contact Us
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="lg:hidden">
+          <button id="mobile-menu-button" class="text-gray-700 hover:text-primary focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="lg:hidden hidden pt-4 pb-2">
+        <div class="flex flex-col space-y-4">
+          <a href="index.html"
+            class="mobile-menu-link text-gray-700 hover:text-primary text-base font-medium transition-colors px-2 py-2">Home</a>
+          <a href="packages.html"
+            class="mobile-menu-link text-primary hover:text-primary/85 text-base font-semibold transition-colors px-2 py-2">Packages</a>
+          <a href="destinations.html"
+            class="mobile-menu-link text-gray-700 hover:text-primary text-base font-medium transition-colors px-2 py-2">Destinations</a>
+          <a href="about.html"
+            class="mobile-menu-link text-gray-700 hover:text-primary text-base font-medium transition-colors px-2 py-2">About
+            Us</a>
+          <a href="contact.html"
+            class="bg-primary text-white px-4 py-2.5 rounded-full text-base font-medium hover:bg-primary/90 transition-all duration-300 inline-block w-fit mt-2">
+            Contact
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Header -->
+  <section class="px-4 sm:px-6 md:px-[35px] py-8 md:py-10">
+    <div
+      class="relative w-full md:max-w-l mx-auto rounded-3xl overflow-hidden h-[18rem] md:h-[24rem] bg-cover bg-center"
+      style="background-image: url('https://tripodope.com/wp-content/uploads/2023/06/bridge-and-city-skyline.jpg');">
+      <div class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30"></div>
+      <div class="relative z-10 h-full flex flex-col justify-center px-6 md:px-12 text-white">
+        <span class="text-xs uppercase tracking-wider font-semibold text-gray-300 mb-2">10 Days European Essence</span>
+        <h1 data-aos="fade-up" class="text-3xl md:text-5xl font-bold leading-tight">European Essence: From Rome to
+          Amsterdam</h1>
+        <p data-aos="fade-up" data-aos-delay="100" class="text-gray-200 text-sm md:text-base mt-2 max-w-xl italic">
+          "The Cultural Kaleidoscope: Unveiling Europe’s Rich Heritage"
+        </p>
+
+        <div class="flex gap-4 mt-6 flex-wrap" data-aos="fade-up" data-aos-delay="200">
+          <span
+            class="bg-white/20 backdrop-blur-sm border border-white/20 text-white rounded-full px-4 py-1.5 text-xs font-semibold">🗓️
+            10 Days</span>
+          <span
+            class="bg-white/20 backdrop-blur-sm border border-white/20 text-white rounded-full px-4 py-1.5 text-xs font-semibold">🗼
+            6 Countries</span>
+          <span
+            class="bg-white/20 backdrop-blur-sm border border-white/20 text-white rounded-full px-4 py-1.5 text-xs font-semibold">📍
+            10 Cities</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About this Package Overview -->
+  <section class="mx-auto px-6 md:px-[35px] pt-8 pb-4 max-w-[900px]" data-aos="fade-up">
+    <div class="mb-6 flex">
+      <a href="packages.html"
+        class="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-primary/80 transition-colors">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+        </svg>
+        Back to Packages
+      </a>
+    </div>
+    <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm">
+      <h2 class="text-xl font-bold text-gray-900 mb-4 text-center">About this Itinerary</h2>
+      <p class="text-gray-600 text-sm leading-relaxed font-light text-justify">
+        Embark on a remarkable journey through Europe with our “European Essence: From Rome to Amsterdam” package.
+        Immerse yourself in the rich heritage and cultural kaleidoscope of these captivating destinations. From the
+        ancient wonders of Rome and Florence in Italy to the romantic canals of Venice, travel through Switzerland’s
+        breathtaking landscapes, delve into the imperial history of Austria, and discover the vibrant cities of Germany
+        and the Netherlands. This 10-day adventure offers a perfect blend of iconic landmarks, artistic treasures,
+        gastronomic delights, and unforgettable experiences. Unveil the essence of Europe as you create lifelong
+        memories on this immersive and culturally enriching expedition.
+      </p>
+    </div>
+  </section>
+
+  <!-- Vertical Timeline section -->
+  <section class="mx-auto px-6 md:px-[35px] py-8 max-w-[900px]">
+    <div class="relative timeline-line pl-8 md:pl-12 space-y-12">
+
+      <!-- Day 1 -->
+      <div class="relative" data-aos="fade-up">
+        <!-- Bullet -->
+        <div
+          class="absolute -left-[37px] md:-left-[43px] w-10 h-10 rounded-full border-4 border-gray-50 bg-primary text-white font-bold text-xs flex items-center justify-center shadow-md">
+          1
+        </div>
+        <!-- Card -->
+        <div class="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm space-y-4">
+          <h3 class="text-lg font-bold text-gray-900">Day 1: Arrival in Rome, Italy</h3>
+          <p class="text-sm text-gray-600 font-light leading-relaxed">Welcome to Rome, the captivating capital of Italy!
+            Upon arrival, we will dive straight into the historic center of the city, immersing ourselves in its ancient
+            wonders. Highlights of the day include:</p>
+          <ul class="list-disc pl-5 text-xs text-gray-500 space-y-2 font-light">
+            <li>Explore the awe-inspiring Colosseum, an iconic symbol of ancient Roman grandeur. Step back in time as
+              you imagine the gladiatorial battles that once took place within its walls.</li>
+            <li>Wander through the Roman Forum, the bustling heart of ancient Rome, where you can admire the ruins of
+              temples, basilicas, and other important structures.</li>
+            <li>Ascend Palatine Hill, one of Rome’s legendary seven hills, and marvel at the panoramic vistas of the
+              city below.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Day 2 -->
+      <div class="relative" data-aos="fade-up">
+        <div
+          class="absolute -left-[37px] md:-left-[43px] w-10 h-10 rounded-full border-4 border-gray-50 bg-primary text-white font-bold text-xs flex items-center justify-center shadow-md">
+          2
+        </div>
+        <div class="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm space-y-4">
+          <h3 class="text-lg font-bold text-gray-900">Day 2: Florence, Italy</h3>
+          <p class="text-sm text-gray-600 font-light leading-relaxed">Today, we embark on a journey to Florence, a city
+            renowned for its artistic treasures and Renaissance splendor. Prepare to be enchanted by Florence’s cultural
+            richness. Highlights of the day include:</p>
+          <ul class="list-disc pl-5 text-xs text-gray-500 space-y-2 font-light">
+            <li>Visit the world-famous Uffizi Gallery, home to an extraordinary collection of masterpieces by celebrated
+              artists such as Michelangelo, Botticelli, and Raphael.</li>
+            <li>Discover the architectural marvel that is the Florence Cathedral (Duomo) and challenge yourself to climb
+              to the top of the dome for breathtaking panoramic views of the city.</li>
+            <li>Take a leisurely stroll across the iconic Ponte Vecchio, a historic bridge lined with jewelry shops, and
+              explore the bohemian Oltrarno district known for its artisan workshops and charming atmosphere.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Day 3 -->
+      <div class="relative" data-aos="fade-up">
+        <div
+          class="absolute -left-[37px] md:-left-[43px] w-10 h-10 rounded-full border-4 border-gray-50 bg-primary text-white font-bold text-xs flex items-center justify-center shadow-md">
+          3
+        </div>
+        <div class="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm space-y-4">
+          <h3 class="text-lg font-bold text-gray-900">Day 3: Venice, Italy</h3>
+          <p class="text-sm text-gray-600 font-light leading-relaxed">Prepare to be captivated by the enchanting city of
+            Venice, a place of romantic canals, artistic treasures, and timeless allure. Highlights of the day include:
+          </p>
+          <ul class="list-disc pl-5 text-xs text-gray-500 space-y-2 font-light">
+            <li>Experience the magic of Venice with a charming gondola ride through its picturesque canals, passing
+              under arched bridges and soaking in the atmosphere of this unique city.</li>
+            <li>Visit the magnificent St. Mark’s Square, a vibrant hub where you can admire the architectural splendor
+              of St. Mark’s Basilica and its intricate mosaics.</li>
+            <li>Explore the historic Doge’s Palace, a magnificent example of Venetian Gothic architecture, and delve
+              into the intriguing history of the Venetian Republic.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Day 4 -->
+      <div class="relative" data-aos="fade-up">
+        <div
+          class="absolute -left-[37px] md:-left-[43px] w-10 h-10 rounded-full border-4 border-gray-50 bg-primary text-white font-bold text-xs flex items-center justify-center shadow-md">
+          4
+        </div>
+        <div class="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm space-y-4">
+          <h3 class="text-lg font-bold text-gray-900">Day 4: Zurich, Switzerland</h3>
+          <p class="text-sm text-gray-600 font-light leading-relaxed">Today, we venture into Switzerland and arrive in
+            Zurich, a city that seamlessly blends modernity with a rich historical heritage. Highlights of the day
+            include:</p>
+          <ul class="list-disc pl-5 text-xs text-gray-500 space-y-2 font-light">
+            <li>Immerse yourself in the vibrant atmosphere of Zurich’s Old Town (Altstadt), where charming cobblestone
+              streets are lined with historical buildings, boutique shops, and cozy cafés.</li>
+            <li>Explore the breathtaking Zurich Lake, known for its crystal-clear waters and surrounded by stunning
+              natural scenery. Take a leisurely stroll along its shores or simply enjoy the tranquility of the
+              surroundings.</li>
+            <li>Indulge in a scenic boat ride on Lake Zurich, marveling at the picturesque landscapes and perhaps
+              catching a glimpse of the majestic Swiss Alps. Alternatively, ascend Uetliberg, Zurich’s local mountain,
+              via a cable car.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Day 5 -->
+      <div class="relative" data-aos="fade-up">
+        <div
+          class="absolute -left-[37px] md:-left-[43px] w-10 h-10 rounded-full border-4 border-gray-50 bg-primary text-white font-bold text-xs flex items-center justify-center shadow-md">
+          5
+        </div>
+        <div class="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm space-y-4">
+          <h3 class="text-lg font-bold text-gray-900">Day 5: Lucerne, Switzerland</h3>
+          <p class="text-sm text-gray-600 font-light leading-relaxed">Prepare to be enchanted by the picturesque beauty
+            of Lucerne, a city nestled among snow-capped mountains and surrounded by pristine lakes. Highlights of the
+            day include:</p>
+          <ul class="list-disc pl-5 text-xs text-gray-500 space-y-2 font-light">
+            <li>Explore Lucerne’s charming Old Town, characterized by its well-preserved medieval architecture, colorful
+              buildings, and narrow cobblestone streets. Don’t miss the iconic Chapel Bridge (Kapellbrücke), one of
+              Switzerland’s most recognizable landmarks.</li>
+            <li>Embark on a memorable cogwheel train journey to the summit of Mount Pilatus, where you’ll be treated to
+              breathtaking panoramic views of the surrounding alpine landscapes.</li>
+            <li>Indulge your senses with a Swiss chocolate tasting experience, savoring the exquisite flavors of
+              Switzerland’s world-renowned chocolates. Take the opportunity to shop for delicious souvenirs to bring
+              home.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Day 6 -->
+      <div class="relative" data-aos="fade-up">
+        <div
+          class="absolute -left-[37px] md:-left-[43px] w-10 h-10 rounded-full border-4 border-gray-50 bg-primary text-white font-bold text-xs flex items-center justify-center shadow-md">
+          6
+        </div>
+        <div class="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm space-y-4">
+          <h3 class="text-lg font-bold text-gray-900">Day 6: Interlaken, Switzerland</h3>
+          <p class="text-sm text-gray-600 font-light leading-relaxed">Today, we head to Interlaken, a paradise for
+            adventure seekers nestled in the heart of the Swiss Alps. Prepare for exhilarating experiences amidst
+            stunning natural beauty. Highlights of the day include:</p>
+          <ul class="list-disc pl-5 text-xs text-gray-500 space-y-2 font-light">
+            <li>Engage in thrilling activities such as skydiving, paragliding, or bungee jumping, taking advantage of
+              Interlaken’s reputation as the adventure capital of Switzerland.</li>
+            <li>Explore the mesmerizing Jungfrau region, known for its snow-capped peaks, crystal-clear lakes, and
+              charming alpine villages. Enjoy a scenic train ride to Jungfraujoch, the “Top of Europe.”</li>
+            <li>Immerse yourself in the idyllic atmosphere of Interlaken, strolling through its vibrant streets,
+              browsing for Swiss souvenirs, and savoring delicious Swiss cuisine.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Day 7 -->
+      <div class="relative" data-aos="fade-up">
+        <div
+          class="absolute -left-[37px] md:-left-[43px] w-10 h-10 rounded-full border-4 border-gray-50 bg-primary text-white font-bold text-xs flex items-center justify-center shadow-md">
+          7
+        </div>
+        <div class="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm space-y-4">
+          <h3 class="text-lg font-bold text-gray-900">Day 7: Salzburg, Austria</h3>
+          <p class="text-sm text-gray-600 font-light leading-relaxed">We bid farewell to Switzerland and travel to
+            Salzburg, a city steeped in history and music. Explore the birthplace of Mozart and immerse yourself in its
+            cultural heritage. Highlights of the day include:</p>
+          <ul class="list-disc pl-5 text-xs text-gray-500 space-y-2 font-light">
+            <li>Discover the charm of Salzburg’s Altstadt (Old Town), a UNESCO World Heritage site, with its narrow
+              streets, baroque architecture, and impressive churches. Explore the beautifully manicured Mirabell Palace
+              and Gardens, a setting made famous by “The Sound of Music.”</li>
+            <li>Visit the majestic Hohensalzburg Fortress, perched on a hilltop, and enjoy panoramic views of the city
+              and surrounding landscapes.</li>
+            <li>Immerse yourself in the rich musical legacy of Salzburg by attending a classical music concert or opera
+              performance in the evening, allowing the city’s enchanting melodies to transport you.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Day 8 -->
+      <div class="relative" data-aos="fade-up">
+        <div
+          class="absolute -left-[37px] md:-left-[43px] w-10 h-10 rounded-full border-4 border-gray-50 bg-primary text-white font-bold text-xs flex items-center justify-center shadow-md">
+          8
+        </div>
+        <div class="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm space-y-4">
+          <h3 class="text-lg font-bold text-gray-900">Day 8: Vienna, Austria</h3>
+          <p class="text-sm text-gray-600 font-light leading-relaxed">Journey to Vienna, the elegant capital of Austria,
+            where imperial splendor meets modern vibrancy. Explore Vienna’s grandeur and immerse yourself in its
+            cultural treasures. Highlights of the day include:</p>
+          <ul class="list-disc pl-5 text-xs text-gray-500 space-y-2 font-light">
+            <li>Explore the opulent Schönbrunn Palace, the former summer residence of the Habsburg monarchy, and wander
+              through its stunning gardens.</li>
+            <li>Visit St. Stephen’s Cathedral, an architectural masterpiece that dominates Vienna’s skyline, and admire
+              its intricate details both inside and out.</li>
+            <li>Discover the magnificent Belvedere Palace, home to an extensive art collection, and learn about
+              Austria’s imperial history at the Hofburg Palace.</li>
+            <li>In the evening, indulge in the melodic strains of classical music as you attend a concert or opera
+              performance, immersing yourself in Vienna’s rich musical heritage.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Day 9 -->
+      <div class="relative" data-aos="fade-up">
+        <div
+          class="absolute -left-[37px] md:-left-[43px] w-10 h-10 rounded-full border-4 border-gray-50 bg-primary text-white font-bold text-xs flex items-center justify-center shadow-md">
+          9
+        </div>
+        <div class="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm space-y-4">
+          <h3 class="text-lg font-bold text-gray-900">Day 9: Munich, Germany</h3>
+          <p class="text-sm text-gray-600 font-light leading-relaxed">Today, we travel to Munich, a vibrant city known
+            for its blend of tradition and modernity, lively beer gardens, and rich cultural heritage. Highlights of the
+            day include:</p>
+          <ul class="list-disc pl-5 text-xs text-gray-500 space-y-2 font-light">
+            <li>Visit the iconic Marienplatz, Munich’s central square, and witness the famous Glockenspiel performance
+              on the towering New Town Hall.</li>
+            <li>Explore the majestic Nymphenburg Palace, a baroque masterpiece surrounded by sprawling gardens and
+              picturesque landscapes.</li>
+            <li>Experience the lively atmosphere of the Viktualienmarkt, a bustling food market where you can sample
+              traditional Bavarian delicacies and browse through a wide variety of local produce.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Day 10 -->
+      <div class="relative" data-aos="fade-up">
+        <div
+          class="absolute -left-[37px] md:-left-[43px] w-10 h-10 rounded-full border-4 border-gray-50 bg-primary text-white font-bold text-xs flex items-center justify-center shadow-md">
+          10
+        </div>
+        <div class="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm space-y-4">
+          <h3 class="text-lg font-bold text-gray-900">Day 10: Amsterdam, Netherlands</h3>
+          <p class="text-sm text-gray-600 font-light leading-relaxed">Our journey concludes in Amsterdam, a city
+            renowned for its picturesque canals, artistic heritage, and vibrant atmosphere. Explore the highlights of
+            this charming city. Highlights of the day include:</p>
+          <ul class="list-disc pl-5 text-xs text-gray-500 space-y-2 font-light">
+            <li>Explore the historic canals and charming streets of Amsterdam, immersing yourself in its unique ambiance
+              and iconic architecture.</li>
+            <li>Visit renowned attractions such as the Anne Frank House, where you can gain insight into the life and
+              legacy of Anne Frank, and the Van Gogh Museum, housing an extensive collection of the famous artist’s
+              works.</li>
+            <li>Immerse yourself in Dutch art and history at the Rijksmuseum, home to masterpieces by Dutch masters such
+              as Rembrandt and Vermeer.</li>
+            <li>Take a relaxing canal cruise, meandering through Amsterdam’s waterways, and soak in the beauty and charm
+              of the city from a different perspective.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Custom Planning Banner Section -->
+  <section class="relative bg-white py-16 border-t border-gray-100">
+    <div class="max-w-[1300px] mx-auto px-6">
+      <div
+        class="bg-primary rounded-3xl p-8 md:p-12 text-white flex flex-col md:flex-row justify-between items-center gap-8 shadow-xl">
+        <div class="max-w-xl">
+          <span class="text-xs uppercase tracking-wider font-semibold text-gray-300">Book This Itinerary</span>
+          <h2 class="text-2xl sm:text-3xl font-bold mt-2 mb-4">Inquire About This 10-Day Europe Tour</h2>
+          <p class="text-sm text-gray-200 leading-relaxed">
+            Submit your contact details to lock in this package or request customization (change dates, hotels, add
+            countries) with our travel specialists.
+          </p>
+        </div>
+        <a href="contact.html?package=europe-10-days"
+          class="bg-white text-primary px-8 py-3.5 rounded-full font-bold hover:bg-gray-100 transition shadow-lg shrink-0">
+          Inquire Now
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white pt-16 pb-8 px-6">
+    <div class="max-w-[1300px] mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+        <div class="space-y-4">
+          <h3 class="text-xl font-bold text-white">Tripodope</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">Your trusted partner for Europe tours, International & Indian packages, Domestic & International ticketing (flight, train, bus, ferry, cruise), and expert visa services.</p>
+        </div>
+        <div>
+          <h4 class="text-primary font-bold text-sm uppercase tracking-wider mb-4">Quick Links</h4>
+          <ul class="space-y-2.5 text-sm text-gray-400">
+            <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+            <li><a href="packages.html" class="hover:text-white transition">Packages</a></li>
+            <li><a href="destinations.html" class="hover:text-white transition">Destinations</a></li>
+            <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+            <li><a href="contact.html" class="hover:text-white transition">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-primary font-bold text-sm uppercase tracking-wider mb-4">Contact Info</h4>
+          <ul class="space-y-2.5 text-sm text-gray-400">
+            <li>WhatsApp: +91 94475 70780</li>
+            <li>Email: info@tripodope.com</li>
+            <li>Indian Office: Needoor, Kottayam, Kerala</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-primary font-bold text-sm uppercase tracking-wider mb-4">Follow Us</h4>
+          <div class="flex gap-3 mt-2">
+            <a href="https://www.facebook.com/share/1ByA4eSvHh/" target="_blank"
+              class="w-10 h-10 rounded-full border border-gray-700 hover:border-white transition flex items-center justify-center text-sm text-gray-400 hover:text-white">FB</a>
+            <a href="https://www.instagram.com/tripodope?igsh=Ymp0MDJjd2FxZ2ly" target="_blank"
+              class="w-10 h-10 rounded-full border border-gray-700 hover:border-white transition flex items-center justify-center text-sm text-gray-400 hover:text-white">IG</a>
+            <a href="https://wa.me/919447570780" target="_blank"
+              class="w-10 h-10 rounded-full border border-gray-700 hover:border-white transition flex items-center justify-center text-sm text-gray-400 hover:text-white">WA</a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+        <p>&copy; 2026 Tripodope. All rights reserved. Powered by Mexopi Digital.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AOS Animation & Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Initialize Animations
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+
+    // Mobile Hamburger Menu Trigger
+    const menuBtn = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+
+</html>

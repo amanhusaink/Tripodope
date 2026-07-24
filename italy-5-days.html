@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Italy Trip - La Dolce Vita: 5 Days Itinerary - Tripodope</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css?v=1.5">
+  <link rel="shortcut icon" href="componets/favicon_io/favicon.ico">
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1E404A',
+          },
+          fontFamily: {
+            sans: ['Poppins', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-gray-50 overflow-x-hidden font-sans m-0">
+
+  <!-- Navigation -->
+  <nav class="bg-white sticky top-0 z-50 border-b border-gray-100 shadow-sm">
+    <div class="mx-auto px-6 py-4">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center">
+          <img src="componets/tripodope-logo.png" alt="Tripodope" class="h-10 w-auto">
+        </a>
+
+        <!-- Navigation Links -->
+        <div class="hidden lg:flex items-center space-x-8">
+          <a href="index.html" class="text-gray-700 hover:text-primary text-sm font-medium transition-colors">Home</a>
+          <a href="packages.html" class="text-primary hover:text-primary/80 text-sm font-semibold transition-colors">Packages</a>
+          <a href="destinations.html" class="text-gray-700 hover:text-primary text-sm font-medium transition-colors">Destinations</a>
+          <a href="about.html" class="text-gray-700 hover:text-primary text-sm font-medium transition-colors">About Us</a>
+          <a href="contact.html" class="bg-primary text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-primary/90 transition-all duration-300 shadow-md hover:shadow-lg">
+            Contact Us
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="lg:hidden">
+          <button id="mobile-menu-button" class="text-gray-700 hover:text-primary focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="lg:hidden hidden pt-4 pb-2">
+        <div class="flex flex-col space-y-4">
+          <a href="index.html" class="mobile-menu-link text-gray-700 hover:text-primary text-base font-medium transition-colors px-2 py-2">Home</a>
+          <a href="packages.html" class="mobile-menu-link text-primary hover:text-primary/85 text-base font-semibold transition-colors px-2 py-2">Packages</a>
+          <a href="destinations.html" class="mobile-menu-link text-gray-700 hover:text-primary text-base font-medium transition-colors px-2 py-2">Destinations</a>
+          <a href="about.html" class="mobile-menu-link text-gray-700 hover:text-primary text-base font-medium transition-colors px-2 py-2">About Us</a>
+          <a href="contact.html" class="bg-primary text-white px-4 py-2.5 rounded-full text-base font-medium hover:bg-primary/90 transition-all duration-300 inline-block w-fit mt-2">
+            Contact
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Header -->
+  <section class="px-4 sm:px-6 md:px-[35px] py-8 md:py-10">
+    <div class="relative w-full md:max-w-l mx-auto rounded-3xl overflow-hidden h-[18rem] md:h-[24rem] bg-cover bg-center" style="background-image: url('https://tripodope.com/wp-content/uploads/2023/06/afmqgg5h0jl9wnr1dfmf-scaled.jpg');">
+      <div class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30"></div>
+      <div class="relative z-10 h-full flex flex-col justify-center px-6 md:px-12 text-white">
+        <span class="text-xs uppercase tracking-wider font-semibold text-gray-300 mb-2">5 Days Italy Escape</span>
+        <h1 data-aos="fade-up" class="text-3xl md:text-5xl font-bold leading-tight">Italy Trip – La Dolce Vita</h1>
+        <p data-aos="fade-up" data-aos-delay="100" class="text-gray-200 text-sm md:text-base mt-2 max-w-xl italic">
+          "La Dolce Vita – Embrace the Sweet Life of Italy"
+        </p>
+        
+        <div class="flex gap-4 mt-6 flex-wrap" data-aos="fade-up" data-aos-delay="200">
+          <span class="bg-white/20 backdrop-blur-sm border border-white/20 text-white rounded-full px-4 py-1.5 text-xs font-semibold">🗓️ 5 Days</span>
+          <span class="bg-white/20 backdrop-blur-sm border border-white/20 text-white rounded-full px-4 py-1.5 text-xs font-semibold">🗼 Explore Italy</span>
+          <span class="bg-white/20 backdrop-blur-sm border border-white/20 text-white rounded-full px-4 py-1.5 text-xs font-semibold">📍 4 Cities</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About this Package Overview -->
+  <section class="mx-auto px-6 md:px-[35px] pt-8 pb-4 max-w-[900px]" data-aos="fade-up">
+    <div class="mb-6 flex">
+      <a href="packages.html" class="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-primary/80 transition-colors">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
+        Back to Packages
+      </a>
+    </div>
+    <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm">
+      <h2 class="text-xl font-bold text-gray-900 mb-4 text-center">About this Itinerary</h2>
+      <p class="text-gray-600 text-sm leading-relaxed font-light text-justify">
+        Indulge in the sweet life of Italy with our “La Dolce Vita” theme. Experience the art, culture, history, and culinary delights that define the essence of Italian living. Immerse yourself in the vibrant cities of Rome, Florence, and Venice, where ancient wonders, Renaissance masterpieces, and romantic canals await. Journey along the breathtaking Amalfi Coast, where stunning landscapes and charming towns beckon. This 5-day itinerary is carefully crafted to capture the essence of “La Dolce Vita” and leave you with unforgettable memories of your Italian adventure.
+      </p>
+    </div>
+  </section>
+
+  <!-- Vertical Timeline section -->
+  <section class="mx-auto px-6 md:px-[35px] py-8 max-w-[900px]">
+    <div class="relative timeline-line pl-8 md:pl-12 space-y-12">
+      
+      <!-- Day 1 -->
+      <div class="relative" data-aos="fade-up">
+        <!-- Bullet -->
+        <div class="absolute -left-[37px] md:-left-[43px] w-10 h-10 rounded-full border-4 border-gray-50 bg-primary text-white font-bold text-xs flex items-center justify-center shadow-md">
+          1
+        </div>
+        <!-- Card -->
+        <div class="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm space-y-4">
+          <h3 class="text-lg font-bold text-gray-900">Day 1: Arrival in Rome, Italy</h3>
+          <p class="text-sm text-gray-600 font-light leading-relaxed">Welcome to Rome, the eternal city that embodies the essence of “La Dolce Vita.” Immerse yourself in the captivating history and vibrant atmosphere. Highlights of the day include:</p>
+          <ul class="list-disc pl-5 text-xs text-gray-500 space-y-2 font-light">
+            <li>Explore the historic center of Rome, where ancient ruins intertwine with modern life. Visit iconic landmarks such as the Colosseum, Roman Forum, and Palatine Hill, and uncover the fascinating stories behind these ancient wonders.</li>
+            <li>Marvel at the grandeur of St. Peter’s Basilica and the Vatican Museums in Vatican City. Admire the breathtaking artistry of the Sistine Chapel and immerse yourself in the spiritual ambiance.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Day 2 -->
+      <div class="relative" data-aos="fade-up">
+        <div class="absolute -left-[37px] md:-left-[43px] w-10 h-10 rounded-full border-4 border-gray-50 bg-primary text-white font-bold text-xs flex items-center justify-center shadow-md">
+          2
+        </div>
+        <div class="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm space-y-4">
+          <h3 class="text-lg font-bold text-gray-900">Day 2: Florence, Italy</h3>
+          <p class="text-sm text-gray-600 font-light leading-relaxed">Today, we travel to Florence, the birthplace of the Renaissance, where art, history, and culture merge in perfect harmony. Highlights of the day include:</p>
+          <ul class="list-disc pl-5 text-xs text-gray-500 space-y-2 font-light">
+            <li>Visit the renowned Uffizi Gallery, home to masterpieces by artists like Michelangelo, Botticelli, and Leonardo da Vinci. Immerse yourself in the beauty of these timeless artworks.</li>
+            <li>Explore the magnificent Florence Cathedral, also known as the Duomo, and climb to the top of the dome for panoramic views of the city.</li>
+            <li>Take a leisurely stroll across the picturesque Ponte Vecchio, lined with charming shops, and explore the vibrant Oltrarno district, known for its artisan workshops and lively atmosphere.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Day 3 -->
+      <div class="relative" data-aos="fade-up">
+        <div class="absolute -left-[37px] md:-left-[43px] w-10 h-10 rounded-full border-4 border-gray-50 bg-primary text-white font-bold text-xs flex items-center justify-center shadow-md">
+          3
+        </div>
+        <div class="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm space-y-4">
+          <h3 class="text-lg font-bold text-gray-900">Day 3: Venice, Italy</h3>
+          <p class="text-sm text-gray-600 font-light leading-relaxed">Prepare to be enchanted as we venture to the magical city of Venice, renowned for its romantic canals and unique charm. Highlights of the day include:</p>
+          <ul class="list-disc pl-5 text-xs text-gray-500 space-y-2 font-light">
+            <li>Experience the iconic gondola ride, gliding through the picturesque canals and taking in the breathtaking views of the city.</li>
+            <li>Visit St. Mark’s Square, the heart of Venice, and marvel at the stunning St. Mark’s Basilica, a masterpiece of Byzantine architecture. Explore the opulent Doge’s Palace, once the seat of Venetian power.</li>
+            <li>Discover the hidden corners of Venice by exploring charming neighborhoods such as Cannaregio and Dorsoduro, where you can immerse yourself in the local atmosphere and vibrant culture.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Day 4 -->
+      <div class="relative" data-aos="fade-up">
+        <div class="absolute -left-[37px] md:-left-[43px] w-10 h-10 rounded-full border-4 border-gray-50 bg-primary text-white font-bold text-xs flex items-center justify-center shadow-md">
+          4
+        </div>
+        <div class="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm space-y-4">
+          <h3 class="text-lg font-bold text-gray-900">Day 4: Amalfi Coast, Italy</h3>
+          <p class="text-sm text-gray-600 font-light leading-relaxed">Today, we embark on a journey to the breathtaking Amalfi Coast, a coastal paradise known for its picturesque landscapes and charming towns. Highlights of the day include:</p>
+          <ul class="list-disc pl-5 text-xs text-gray-500 space-y-2 font-light">
+            <li>Explore the enchanting town of Positano, famous for its pastel-colored buildings cascading down the cliffs to meet the sparkling blue sea. Enjoy leisurely walks along its narrow streets and relax on the beautiful beaches.</li>
+            <li>Visit the town of Amalfi, with its stunning cathedral and vibrant piazza. Immerse yourself in the history and beauty of this coastal gem.</li>
+            <li>Enjoy the scenic views as we drive along the winding coastal roads, with picturesque vistas of the azure sea and rugged cliffs.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Day 5 -->
+      <div class="relative" data-aos="fade-up">
+        <div class="absolute -left-[37px] md:-left-[43px] w-10 h-10 rounded-full border-4 border-gray-50 bg-primary text-white font-bold text-xs flex items-center justify-center shadow-md">
+          5
+        </div>
+        <div class="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm space-y-4">
+          <h3 class="text-lg font-bold text-gray-900">Day 5: Departure</h3>
+          <p class="text-sm text-gray-600 font-light leading-relaxed">As our journey comes to an end, take some time to savor the memories of the past days. Reflect on the beauty, culture, and unforgettable experiences that made this trip a true embodiment of “La Dolce Vita.” Depart from Italy with a heart full of joy and a newfound appreciation for the art of living.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Custom Planning Banner Section -->
+  <section class="relative bg-white py-16 border-t border-gray-100">
+    <div class="max-w-[1300px] mx-auto px-6">
+      <div class="bg-primary rounded-3xl p-8 md:p-12 text-white flex flex-col md:flex-row justify-between items-center gap-8 shadow-xl">
+        <div class="max-w-xl">
+          <span class="text-xs uppercase tracking-wider font-semibold text-gray-300">Book This Itinerary</span>
+          <h2 class="text-2xl sm:text-3xl font-bold mt-2 mb-4">Inquire About This 5-Day Italy Tour</h2>
+          <p class="text-sm text-gray-200 leading-relaxed">
+            Submit your contact details to lock in this package or request customization (change dates, hotels, add cities) with our travel specialists.
+          </p>
+        </div>
+        <a href="contact.html?package=italy-5-days" class="bg-white text-primary px-8 py-3.5 rounded-full font-bold hover:bg-gray-100 transition shadow-lg shrink-0">
+          Inquire Now
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white pt-16 pb-8 px-6">
+    <div class="max-w-[1300px] mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+        <div class="space-y-4">
+          <h3 class="text-xl font-bold text-white">Tripodope</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">Your trusted partner for Europe tours, International & Indian packages, Domestic & International ticketing (flight, train, bus, ferry, cruise), and expert visa services.</p>
+        </div>
+        <div>
+          <h4 class="text-primary font-bold text-sm uppercase tracking-wider mb-4">Quick Links</h4>
+          <ul class="space-y-2.5 text-sm text-gray-400">
+            <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+            <li><a href="packages.html" class="hover:text-white transition">Packages</a></li>
+            <li><a href="destinations.html" class="hover:text-white transition">Destinations</a></li>
+            <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+            <li><a href="contact.html" class="hover:text-white transition">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-primary font-bold text-sm uppercase tracking-wider mb-4">Contact Info</h4>
+          <ul class="space-y-2.5 text-sm text-gray-400">
+            <li>WhatsApp: +91 94475 70780</li>
+            <li>Email: info@tripodope.com</li>
+            <li>Indian Office: Needoor, Kottayam, Kerala</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-primary font-bold text-sm uppercase tracking-wider mb-4">Follow Us</h4>
+          <div class="flex gap-3 mt-2">
+            <a href="https://www.facebook.com/share/1ByA4eSvHh/" target="_blank" class="w-10 h-10 rounded-full border border-gray-700 hover:border-white transition flex items-center justify-center text-sm text-gray-400 hover:text-white">FB</a>
+            <a href="https://www.instagram.com/tripodope?igsh=Ymp0MDJjd2FxZ2ly" target="_blank" class="w-10 h-10 rounded-full border border-gray-700 hover:border-white transition flex items-center justify-center text-sm text-gray-400 hover:text-white">IG</a>
+            <a href="https://wa.me/919447570780" target="_blank" class="w-10 h-10 rounded-full border border-gray-700 hover:border-white transition flex items-center justify-center text-sm text-gray-400 hover:text-white">WA</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+        <p>&copy; 2026 Tripodope. All rights reserved. Powered by Mexopi Digital.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AOS Animation & Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Initialize Animations
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+
+    // Mobile Hamburger Menu Trigger
+    const menuBtn = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
