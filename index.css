@@ -2,8 +2,8 @@
 
 /* Global variables and styles matching timbalatourism.com */
 :root {
-  --primary: #1E404A;
-  --primary-hover: #153038;
+  --primary: #0B1A30;
+  --primary-hover: #081324;
 }
 
 html {
@@ -12,7 +12,7 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f9fafb; /* bg-gray-50 */
+  background-color: #FAF9F6; /* bg-gray-50 */
 }
 
 /* Custom animations */

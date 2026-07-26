@@ -18,7 +18,9 @@
       theme: {
         extend: {
           colors: {
-            primary: '#1E404A',
+                        primary: '#0B1A30',
+            gold: '#C59B27',
+            'gray-50': '#FAF9F6',
           },
           fontFamily: {
             sans: ['Poppins', 'ui-sans-serif', 'system-ui', 'sans-serif'],
@@ -37,7 +39,7 @@
       <div class="flex items-center justify-between">
         <!-- Logo -->
         <a href="index.html" class="flex items-center">
-          <img src="componets/tripodope-logo.png" alt="Tripodope" class="h-10 w-auto">
+          <img src="componets/tripodope-logo.png" alt="Tripodope" class="h-14 w-auto">
         </a>
 
         <!-- Navigation Links -->
@@ -90,7 +92,7 @@
   <!-- Hero Carousel Section -->
   <section class="px-4 sm:px-6 md:px-[35px] py-8 md:py-10">
     <div
-      class="relative w-full md:max-w-l mx-auto rounded-3xl overflow-hidden h-[26rem] md:h-[36rem] lg:h-[44rem] bg-cover bg-center">
+      class="relative w-full md:max-w-l mx-auto rounded-3xl overflow-hidden h-[26rem] md:h-[36rem] lg:h-[calc(100vh-120px)] bg-cover bg-center">
 
       <!-- Carousel Images -->
       <div id="hero-carousel" class="absolute inset-0">
@@ -103,8 +105,8 @@
           alt="Colosseum Rome"
           class="w-full h-full object-cover object-center absolute inset-0 transition-opacity duration-700 opacity-0" />
         <img loading="lazy"
-          src="https://images.unsplash.com/photo-1486848538183-510c5981137c?auto=format&fit=crop&w=1920&q=80"
-          alt="Amalfi Coast Italy"
+          src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1920&q=80"
+          alt="Swiss Alps Switzerland"
           class="w-full h-full object-cover object-center absolute inset-0 transition-opacity duration-700 opacity-0" />
       </div>
 
@@ -148,24 +150,8 @@
           </a>
         </div>
 
-        <!-- Stats and Navigation -->
-        <div class="flex items-end justify-between" data-aos="fade-in" data-aos-delay="300">
-          <!-- Stats -->
-          <div class="flex gap-8 md:gap-16">
-            <div>
-              <div class="text-white text-2xl sm:text-3xl md:text-4xl font-bold mb-0.5">1k+</div>
-              <div class="text-gray-300 text-xs">Holiday Trips Planned</div>
-            </div>
-            <div>
-              <div class="text-white text-2xl sm:text-3xl md:text-4xl font-bold mb-0.5">360+</div>
-              <div class="text-gray-300 text-xs">Custom Itineraries Handled</div>
-            </div>
-            <div>
-              <div class="text-white text-2xl sm:text-3xl md:text-4xl font-bold mb-0.5">20+</div>
-              <div class="text-gray-300 text-xs">Countries Covered</div>
-            </div>
-          </div>
-
+        <!-- Navigation -->
+        <div class="flex items-end justify-end" data-aos="fade-in" data-aos-delay="300">
           <!-- Bottom Right Arrows -->
           <div class="hidden lg:flex gap-2">
             <button id="hero-prev-alt" aria-label="Previous slide"
@@ -187,8 +173,8 @@
   </section>
 
   <!-- About Section (Personalised Service) -->
-  <section id="about" class="mx-auto px-6 md:px-12 lg:px-14 py-16">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+  <section id="about" class="w-full mx-auto px-4 sm:px-6 md:px-[35px] py-16">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
       <!-- Left Content -->
       <div data-aos="fade-right">
@@ -238,15 +224,15 @@
         <a href="https://wa.me/919447570780?text=Hi%20Tripodope%2C%20I%20would%2520like%2520to%2520plan%2520a%2520personalized%2520Europe%2520travel%2520package."
           target="_blank"
           class="inline-flex items-center gap-2 px-8 py-3 border border-gray-300 rounded-full font-medium hover:bg-gray-100 transition shadow-sm">
-          <img src="componets/logos_whatsapp-icon.png" alt="WhatsApp" class="w-5 h-5">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.625 1.451 5.403.002 9.803-4.394 9.806-9.799.002-2.592-1.01-5.029-2.85-6.87-1.84-1.84-4.278-2.85-6.873-2.851-5.41 0-9.813 4.398-9.817 9.801-.002 1.702.447 3.366 1.301 4.821L1.874 22l4.773-1.252zm12.383-7.228c-.33-.165-1.951-.963-2.251-1.072-.3-.11-.518-.165-.738.165-.219.33-.848 1.072-1.038 1.293-.19.22-.38.247-.71.082-1.28-.64-2.247-1.12-3.136-2.65-.22-.38.22-.352.63-1.17.06-.115.03-.219-.015-.302-.045-.082-.379-.915-.52-1.252-.137-.33-.277-.285-.38-.29-.1-.005-.214-.006-.328-.006-.114 0-.3.042-.457.214-.157.172-.6.586-.6 1.429 0 .843.614 1.657.7 1.771.086.115 1.21 1.848 2.93 2.587.41.18 1.012.38 1.41.463.507.1.97.082 1.336.027.408-.06 1.951-.797 2.225-1.564.273-.768.273-1.429.19-1.564-.083-.136-.3-.219-.63-.383z"/></svg>
           Plan on WhatsApp
         </a>
       </div>
 
       <!-- Right Image -->
-      <div class="flex justify-center lg:justify-end" data-aos="fade-left">
-        <img src="https://tripodope.com/wp-content/uploads/2023/06/960x0.webp" alt="Europe Travel Scenic View"
-          class="rounded-3xl w-full max-w-lg object-cover shadow-xl" />
+      <div class="flex justify-center lg:justify-end w-full" data-aos="fade-left">
+        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80" alt="Venice Canal Travel Scenic View"
+          class="rounded-3xl w-full h-[350px] sm:h-[450px] lg:h-[500px] object-cover shadow-xl" />
       </div>
 
     </div>
@@ -266,7 +252,7 @@
         <a href="https://wa.me/919447570780?text=Hi%20Tripodope%2C%20I%20am%20interested%20in%20your%20travel%20services." 
            target="_blank" 
            class="bg-primary text-white px-6 py-2.5 rounded-full text-xs font-bold hover:bg-primary/90 transition shadow-md flex items-center gap-1.5">
-          <img src="componets/logos_whatsapp-icon.png" alt="WhatsApp" class="w-3.5 h-3.5">
+          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.625 1.451 5.403.002 9.803-4.394 9.806-9.799.002-2.592-1.01-5.029-2.85-6.87-1.84-1.84-4.278-2.85-6.873-2.851-5.41 0-9.813 4.398-9.817 9.801-.002 1.702.447 3.366 1.301 4.821L1.874 22l4.773-1.252zm12.383-7.228c-.33-.165-1.951-.963-2.251-1.072-.3-.11-.518-.165-.738.165-.219.33-.848 1.072-1.038 1.293-.19.22-.38.247-.71.082-1.28-.64-2.247-1.12-3.136-2.65-.22-.38.22-.352.63-1.17.06-.115.03-.219-.015-.302-.045-.082-.379-.915-.52-1.252-.137-.33-.277-.285-.38-.29-.1-.005-.214-.006-.328-.006-.114 0-.3.042-.457.214-.157.172-.6.586-.6 1.429 0 .843.614 1.657.7 1.771.086.115 1.21 1.848 2.93 2.587.41.18 1.012.38 1.41.463.507.1.97.082 1.336.027.408-.06 1.951-.797 2.225-1.564.273-.768.273-1.429.19-1.564-.083-.136-.3-.219-.63-.383z"/></svg>
           Get Custom Quote
         </a>
       </div>
@@ -528,7 +514,7 @@
             <a href="https://wa.me/919447570780?text=Hi%20Tripodope%2C%20I%20am%20interested%20in%20planning%20a%20trip%20to%20Europe"
               target="_blank" onclick="event.stopPropagation();"
               class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-primary hover:bg-primary/90 text-white px-3 py-1.5 rounded-full text-[10px] font-semibold flex items-center gap-1 shadow-md">
-              <img src="componets/logos_whatsapp-icon.png" alt="WhatsApp" class="w-3.5 h-3.5">
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.625 1.451 5.403.002 9.803-4.394 9.806-9.799.002-2.592-1.01-5.029-2.85-6.87-1.84-1.84-4.278-2.85-6.873-2.851-5.41 0-9.813 4.398-9.817 9.801-.002 1.702.447 3.366 1.301 4.821L1.874 22l4.773-1.252zm12.383-7.228c-.33-.165-1.951-.963-2.251-1.072-.3-.11-.518-.165-.738.165-.219.33-.848 1.072-1.038 1.293-.19.22-.38.247-.71.082-1.28-.64-2.247-1.12-3.136-2.65-.22-.38.22-.352.63-1.17.06-.115.03-.219-.015-.302-.045-.082-.379-.915-.52-1.252-.137-.33-.277-.285-.38-.29-.1-.005-.214-.006-.328-.006-.114 0-.3.042-.457.214-.157.172-.6.586-.6 1.429 0 .843.614 1.657.7 1.771.086.115 1.21 1.848 2.93 2.587.41.18 1.012.38 1.41.463.507.1.97.082 1.336.027.408-.06 1.951-.797 2.225-1.564.273-.768.273-1.429.19-1.564-.083-.136-.3-.219-.63-.383z"/></svg>
               Enquire
             </a>
           </div>
@@ -548,7 +534,7 @@
             <a href="https://wa.me/919447570780?text=Hi%20Tripodope%2C%20I%20am%20interested%20in%20planning%20a%20trip%20to%20India"
               target="_blank" onclick="event.stopPropagation();"
               class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-primary hover:bg-primary/90 text-white px-3 py-1.5 rounded-full text-[10px] font-semibold flex items-center gap-1 shadow-md">
-              <img src="componets/logos_whatsapp-icon.png" alt="WhatsApp" class="w-3.5 h-3.5">
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.625 1.451 5.403.002 9.803-4.394 9.806-9.799.002-2.592-1.01-5.029-2.85-6.87-1.84-1.84-4.278-2.85-6.873-2.851-5.41 0-9.813 4.398-9.817 9.801-.002 1.702.447 3.366 1.301 4.821L1.874 22l4.773-1.252zm12.383-7.228c-.33-.165-1.951-.963-2.251-1.072-.3-.11-.518-.165-.738.165-.219.33-.848 1.072-1.038 1.293-.19.22-.38.247-.71.082-1.28-.64-2.247-1.12-3.136-2.65-.22-.38.22-.352.63-1.17.06-.115.03-.219-.015-.302-.045-.082-.379-.915-.52-1.252-.137-.33-.277-.285-.38-.29-.1-.005-.214-.006-.328-.006-.114 0-.3.042-.457.214-.157.172-.6.586-.6 1.429 0 .843.614 1.657.7 1.771.086.115 1.21 1.848 2.93 2.587.41.18 1.012.38 1.41.463.507.1.97.082 1.336.027.408-.06 1.951-.797 2.225-1.564.273-.768.273-1.429.19-1.564-.083-.136-.3-.219-.63-.383z"/></svg>
               Enquire
             </a>
           </div>
@@ -568,28 +554,28 @@
             <a href="https://wa.me/919447570780?text=Hi%20Tripodope%2C%20I%20am%20interested%20in%20planning%20a%20trip%20to%20Dubai"
               target="_blank" onclick="event.stopPropagation();"
               class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-primary hover:bg-primary/90 text-white px-3 py-1.5 rounded-full text-[10px] font-semibold flex items-center gap-1 shadow-md">
-              <img src="componets/logos_whatsapp-icon.png" alt="WhatsApp" class="w-3.5 h-3.5">
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.625 1.451 5.403.002 9.803-4.394 9.806-9.799.002-2.592-1.01-5.029-2.85-6.87-1.84-1.84-4.278-2.85-6.873-2.851-5.41 0-9.813 4.398-9.817 9.801-.002 1.702.447 3.366 1.301 4.821L1.874 22l4.773-1.252zm12.383-7.228c-.33-.165-1.951-.963-2.251-1.072-.3-.11-.518-.165-.738.165-.219.33-.848 1.072-1.038 1.293-.19.22-.38.247-.71.082-1.28-.64-2.247-1.12-3.136-2.65-.22-.38.22-.352.63-1.17.06-.115.03-.219-.015-.302-.045-.082-.379-.915-.52-1.252-.137-.33-.277-.285-.38-.29-.1-.005-.214-.006-.328-.006-.114 0-.3.042-.457.214-.157.172-.6.586-.6 1.429 0 .843.614 1.657.7 1.771.086.115 1.21 1.848 2.93 2.587.41.18 1.012.38 1.41.463.507.1.97.082 1.336.027.408-.06 1.951-.797 2.225-1.564.273-.768.273-1.429.19-1.564-.083-.136-.3-.219-.63-.383z"/></svg>
               Enquire
             </a>
           </div>
         </div>
       </div>
 
-      <!-- Card 4: Maldives -->
+      <!-- Card 4: Indonesia -->
       <div data-aos="fade-up" data-aos-delay="400"
         class="relative rounded-3xl overflow-hidden shadow-lg group hover-lift cursor-pointer"
-        onclick="location.href='destinations.html?filter=maldives'">
+        onclick="location.href='destinations.html?filter=indonesia'">
         <div class="relative h-auto">
-          <img src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&fit=crop&w=800&q=80"
-            alt="Maldives"
+          <img src="https://images.unsplash.com/photo-1537953773315-2213cd460990?auto=format&fit=crop&w=800&q=80"
+            alt="Indonesia"
             class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img">
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
           <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between z-10">
-            <span class="text-white font-semibold text-sm">Maldives</span>
-            <a href="https://wa.me/919447570780?text=Hi%20Tripodope%2C%20I%20am%20interested%20in%20planning%20a%20trip%20to%20the%20Maldives"
+            <span class="text-white font-semibold text-sm">Indonesia</span>
+            <a href="https://wa.me/919447570780?text=Hi%20Tripodope%2C%20I%20am%20interested%20in%20planning%20a%20trip%20to%20Indonesia"
               target="_blank" onclick="event.stopPropagation();"
               class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-primary hover:bg-primary/90 text-white px-3 py-1.5 rounded-full text-[10px] font-semibold flex items-center gap-1 shadow-md">
-              <img src="componets/logos_whatsapp-icon.png" alt="WhatsApp" class="w-3.5 h-3.5">
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.625 1.451 5.403.002 9.803-4.394 9.806-9.799.002-2.592-1.01-5.029-2.85-6.87-1.84-1.84-4.278-2.85-6.873-2.851-5.41 0-9.813 4.398-9.817 9.801-.002 1.702.447 3.366 1.301 4.821L1.874 22l4.773-1.252zm12.383-7.228c-.33-.165-1.951-.963-2.251-1.072-.3-.11-.518-.165-.738.165-.219.33-.848 1.072-1.038 1.293-.19.22-.38.247-.71.082-1.28-.64-2.247-1.12-3.136-2.65-.22-.38.22-.352.63-1.17.06-.115.03-.219-.015-.302-.045-.082-.379-.915-.52-1.252-.137-.33-.277-.285-.38-.29-.1-.005-.214-.006-.328-.006-.114 0-.3.042-.457.214-.157.172-.6.586-.6 1.429 0 .843.614 1.657.7 1.771.086.115 1.21 1.848 2.93 2.587.41.18 1.012.38 1.41.463.507.1.97.082 1.336.027.408-.06 1.951-.797 2.225-1.564.273-.768.273-1.429.19-1.564-.083-.136-.3-.219-.63-.383z"/></svg>
               Enquire
             </a>
           </div>
@@ -837,9 +823,8 @@
     });
   </script>
 
-  <!-- Custom Planning Banner Section -->
   <section class="relative bg-white py-16 border-t border-gray-100">
-    <div class="max-w-[1300px] mx-auto px-6">
+    <div class="w-full mx-auto px-4 sm:px-6 md:px-[35px]">
       <div
         class="bg-primary rounded-3xl p-8 md:p-12 text-white flex flex-col md:flex-row justify-between items-center gap-8 shadow-xl">
         <div class="max-w-xl">
@@ -864,7 +849,7 @@
     <div class="max-w-[1300px] mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
         <div class="space-y-4">
-          <h3 class="text-xl font-bold text-white">Tripodope</h3>
+          <img src="componets/tripodope-footer-logo.png" alt="Tripodope Logo" class="h-28 w-auto mb-4 brightness-0 invert">
           <p class="text-gray-400 text-sm leading-relaxed">Your trusted partner for Europe tours, International & Indian
             packages, Domestic & International ticketing (flight, train, bus, ferry, cruise), and expert visa services.
           </p>
@@ -881,10 +866,19 @@
         </div>
         <div>
           <h4 class="text-primary font-bold text-sm uppercase tracking-wider mb-4">Contact Info</h4>
-          <ul class="space-y-2.5 text-sm text-gray-400">
-            <li>WhatsApp: +91 94475 70780</li>
-            <li>Email: info@tripodope.com</li>
-            <li>Indian Office: Needoor, Kottayam, Kerala</li>
+                    <ul class="space-y-2.5 text-sm text-gray-400">
+            <li class="flex items-center">
+              <svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#25D366" d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.625 1.451 5.403.002 9.803-4.394 9.806-9.799.002-2.592-1.01-5.029-2.85-6.87-1.84-1.84-4.278-2.85-6.873-2.851-5.41 0-9.813 4.398-9.817 9.801-.002 1.702.447 3.366 1.301 4.821L1.874 22l4.773-1.252zm12.383-7.228c-.33-.165-1.951-.963-2.251-1.072-.3-.11-.518-.165-.738.165-.219.33-.848 1.072-1.038 1.293-.19.22-.38.247-.71.082-1.28-.64-2.247-1.12-3.136-2.65-.22-.38.22-.352.63-1.17.06-.115.03-.219-.015-.302-.045-.082-.379-.915-.52-1.252-.137-.33-.277-.285-.38-.29-.1-.005-.214-.006-.328-.006-.114 0-.3.042-.457.214-.157.172-.6.586-.6 1.429 0 .843.614 1.657.7 1.771.086.115 1.21 1.848 2.93 2.587.41.18 1.012.38 1.41.463.507.1.97.082 1.336.027.408-.06 1.951-.797 2.225-1.564.273-.768.273-1.429.19-1.564-.083-.136-.3-.219-.63-.383z"/></svg>
+              <span>+91 94475 70780</span>
+            </li>
+            <li class="flex items-center">
+              <svg class="w-4 h-4 mr-2 stroke-current fill-none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="M22 6l-10 7L2 6"></path></svg>
+              <span>info@tripodope.com</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-4 h-4 mr-2 mt-0.5 stroke-current fill-none flex-shrink-0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Needoor, Kottayam, Kerala</span>
+            </li>
           </ul>
         </div>
         <div>
