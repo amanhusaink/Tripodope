@@ -18,7 +18,7 @@
       theme: {
         extend: {
           colors: {
-                        primary: '#0B1A30',
+            primary: '#0B1A30',
             gold: '#C59B27',
             'gray-50': '#FAF9F6',
           },
@@ -29,13 +29,18 @@
       },
     }
   </script>
+  <style>
+    #services-scroll-container::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
 </head>
 
 <body class="bg-gray-50 overflow-x-hidden font-sans m-0">
 
   <!-- Navigation -->
   <nav class="bg-white sticky top-0 z-50 border-b border-gray-100 shadow-sm">
-    <div class="mx-auto px-6 py-4">
+    <div class="w-full px-8 md:px-16 lg:px-24 xl:px-36 py-4">
       <div class="flex items-center justify-between">
         <!-- Logo -->
         <a href="index.html" class="flex items-center">
@@ -128,9 +133,9 @@
       </button>
 
       <!-- Content Overlays -->
-      <div class="relative z-10 h-full flex flex-col justify-between px-5 py-6 md:p-10">
+      <div class="relative z-10 h-full flex flex-col justify-end items-start px-5 py-6 md:p-10 gap-6">
         <!-- Main Heading -->
-        <div class="max-w-full sm:max-w-xl mt-4 md:mt-10">
+        <div class="max-w-full sm:max-w-xl">
           <h2 data-aos="fade-up"
             class="text-white text-2xl sm:text-3xl md:text-[38px] font-bold leading-tight mb-3 w-full md:w-[820px]">
             YOUR PARTNER FOR PERFECTLY Planned EUROPE TRIPS.
@@ -151,7 +156,7 @@
         </div>
 
         <!-- Navigation -->
-        <div class="flex items-end justify-end" data-aos="fade-in" data-aos-delay="300">
+        <div class="w-full flex items-end justify-end" data-aos="fade-in" data-aos-delay="300">
           <!-- Bottom Right Arrows -->
           <div class="hidden lg:flex gap-2">
             <button id="hero-prev-alt" aria-label="Previous slide"
@@ -224,14 +229,15 @@
         <a href="https://wa.me/919447570780?text=Hi%20Tripodope%2C%20I%20would%2520like%2520to%2520plan%2520a%2520personalized%2520Europe%2520travel%2520package."
           target="_blank"
           class="inline-flex items-center gap-2 px-8 py-3 border border-gray-300 rounded-full font-medium hover:bg-gray-100 transition shadow-sm">
-          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.625 1.451 5.403.002 9.803-4.394 9.806-9.799.002-2.592-1.01-5.029-2.85-6.87-1.84-1.84-4.278-2.85-6.873-2.851-5.41 0-9.813 4.398-9.817 9.801-.002 1.702.447 3.366 1.301 4.821L1.874 22l4.773-1.252zm12.383-7.228c-.33-.165-1.951-.963-2.251-1.072-.3-.11-.518-.165-.738.165-.219.33-.848 1.072-1.038 1.293-.19.22-.38.247-.71.082-1.28-.64-2.247-1.12-3.136-2.65-.22-.38.22-.352.63-1.17.06-.115.03-.219-.015-.302-.045-.082-.379-.915-.52-1.252-.137-.33-.277-.285-.38-.29-.1-.005-.214-.006-.328-.006-.114 0-.3.042-.457.214-.157.172-.6.586-.6 1.429 0 .843.614 1.657.7 1.771.086.115 1.21 1.848 2.93 2.587.41.18 1.012.38 1.41.463.507.1.97.082 1.336.027.408-.06 1.951-.797 2.225-1.564.273-.768.273-1.429.19-1.564-.083-.136-.3-.219-.63-.383z"/></svg>
+          <svg class="w-4 h-4 mr-2 fill-current inline-block align-middle" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.004 0C5.372 0 0 5.372 0 12.004c0 2.112.553 4.167 1.603 5.986L.057 24l6.196-1.625c1.764.962 3.75 1.629 5.751 1.629 6.632 0 12.004-5.372 12.004-12.004C24.008 5.372 18.636 0 12.004 0zm0 22.008c-1.84 0-3.64-.492-5.22-1.425l-.375-.221-3.876.992.993-3.771-.242-.387a9.99 9.99 0 0 1-1.528-5.2c0-5.508 4.492-10 10-10s10 4.492 10 10-4.492 10-10 10zm4.567-6.273c-.25-.125-1.479-.73-1.708-.813-.23-.083-.396-.125-.562.125-.167.25-.646.813-.792.979-.146.167-.292.188-.542.062a7.307 7.307 0 0 1-2.01-1.242 8.04 8.04 0 0 1-1.39-1.729c-.146-.25-.016-.386.11-.51.113-.112.25-.292.375-.438.125-.146.167-.25.25-.417.083-.167.042-.313-.021-.438-.063-.125-.562-1.355-.771-1.854-.203-.491-.41-.424-.562-.432-.146-.008-.313-.008-.479-.008-.167 0-.438.062-.667.312-.23.25-.875.854-.875 2.083s.896 2.417.996 2.552c.1.135 1.765 2.698 4.276 3.784.6.259 1.067.414 1.431.53.603.192 1.152.165 1.587.1.484-.072 1.479-.604 1.687-1.187.208-.583.208-1.083.146-1.187-.062-.104-.229-.167-.479-.292z"/></svg>
           Plan on WhatsApp
         </a>
       </div>
 
       <!-- Right Image -->
       <div class="flex justify-center lg:justify-end w-full" data-aos="fade-left">
-        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80" alt="Venice Canal Travel Scenic View"
+        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80"
+          alt="Venice Canal Travel Scenic View"
           class="rounded-3xl w-full h-[350px] sm:h-[450px] lg:h-[500px] object-cover shadow-xl" />
       </div>
 
@@ -239,90 +245,117 @@
   </section>
 
   <!-- Our Services Section -->
+  <!-- Our Services Section -->
   <section class="px-4 sm:px-6 md:px-[35px] py-16 bg-gray-50 border-b border-gray-100">
     <!-- Top row -->
-    <div class="flex items-center justify-between mb-6">
-      <span class="inline-block px-5 py-2 border border-gray-300 rounded-full text-xs font-semibold text-gray-800 bg-white shadow-sm">
-        Our Offerings
-      </span>
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-6 mb-6">
+      <div>
+        <span
+          class="inline-block px-5 py-2 border border-gray-300 rounded-full text-xs font-semibold text-gray-800 bg-white shadow-sm mb-4">
+          Our Offerings
+        </span>
+        <h2 data-aos="fade-up" class="text-2xl sm:text-3xl md:text-4xl font-bold text-black m-0">
+          Travel Services We Provide
+        </h2>
+      </div>
       <div class="flex items-center gap-3">
-        <button id="btn-view-all-services" class="border border-gray-300 text-gray-800 px-5 py-2 rounded-full text-xs font-bold hover:bg-gray-100 transition shadow-sm">
-          View All Services
+        <!-- Carousel Nav Buttons -->
+        <button id="services-prev" aria-label="Previous service"
+          class="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-gray-800 hover:bg-gray-100 transition shadow-sm bg-white shrink-0">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+          </svg>
         </button>
-        <a href="https://wa.me/919447570780?text=Hi%20Tripodope%2C%20I%20am%20interested%20in%20your%20travel%20services." 
-           target="_blank" 
-           class="bg-primary text-white px-6 py-2.5 rounded-full text-xs font-bold hover:bg-primary/90 transition shadow-md flex items-center gap-1.5">
-          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.625 1.451 5.403.002 9.803-4.394 9.806-9.799.002-2.592-1.01-5.029-2.85-6.87-1.84-1.84-4.278-2.85-6.873-2.851-5.41 0-9.813 4.398-9.817 9.801-.002 1.702.447 3.366 1.301 4.821L1.874 22l4.773-1.252zm12.383-7.228c-.33-.165-1.951-.963-2.251-1.072-.3-.11-.518-.165-.738.165-.219.33-.848 1.072-1.038 1.293-.19.22-.38.247-.71.082-1.28-.64-2.247-1.12-3.136-2.65-.22-.38.22-.352.63-1.17.06-.115.03-.219-.015-.302-.045-.082-.379-.915-.52-1.252-.137-.33-.277-.285-.38-.29-.1-.005-.214-.006-.328-.006-.114 0-.3.042-.457.214-.157.172-.6.586-.6 1.429 0 .843.614 1.657.7 1.771.086.115 1.21 1.848 2.93 2.587.41.18 1.012.38 1.41.463.507.1.97.082 1.336.027.408-.06 1.951-.797 2.225-1.564.273-.768.273-1.429.19-1.564-.083-.136-.3-.219-.63-.383z"/></svg>
+        <button id="services-next" aria-label="Next service"
+          class="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-gray-800 hover:bg-gray-100 transition shadow-sm bg-white shrink-0">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+        <a href="https://wa.me/919447570780?text=Hi%20Tripodope%2C%20I%20am%20interested%20in%20your%20travel%20services."
+          target="_blank"
+          class="bg-primary text-white px-6 py-2.5 rounded-full text-xs font-bold hover:bg-primary/90 transition shadow-md flex items-center gap-1.5 shrink-0">
+          <svg class="w-4 h-4 mr-2 fill-current inline-block align-middle" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.004 0C5.372 0 0 5.372 0 12.004c0 2.112.553 4.167 1.603 5.986L.057 24l6.196-1.625c1.764.962 3.75 1.629 5.751 1.629 6.632 0 12.004-5.372 12.004-12.004C24.008 5.372 18.636 0 12.004 0zm0 22.008c-1.84 0-3.64-.492-5.22-1.425l-.375-.221-3.876.992.993-3.771-.242-.387a9.99 9.99 0 0 1-1.528-5.2c0-5.508 4.492-10 10-10s10 4.492 10 10-4.492 10-10 10zm4.567-6.273c-.25-.125-1.479-.73-1.708-.813-.23-.083-.396-.125-.562.125-.167.25-.646.813-.792.979-.146.167-.292.188-.542.062a7.307 7.307 0 0 1-2.01-1.242 8.04 8.04 0 0 1-1.39-1.729c-.146-.25-.016-.386.11-.51.113-.112.25-.292.375-.438.125-.146.167-.25.25-.417.083-.167.042-.313-.021-.438-.063-.125-.562-1.355-.771-1.854-.203-.491-.41-.424-.562-.432-.146-.008-.313-.008-.479-.008-.167 0-.438.062-.667.312-.23.25-.875.854-.875 2.083s.896 2.417.996 2.552c.1.135 1.765 2.698 4.276 3.784.6.259 1.067.414 1.431.53.603.192 1.152.165 1.587.1.484-.072 1.479-.604 1.687-1.187.208-.583.208-1.083.146-1.187-.062-.104-.229-.167-.479-.292z"/></svg>
           Get Custom Quote
         </a>
       </div>
     </div>
 
-    <!-- Heading -->
-    <h2 data-aos="fade-up" class="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-10">
-      Travel Services We Provide
-    </h2>
+    <!-- Carousel Container -->
+    <div class="relative w-full overflow-hidden">
+      <!-- Carousel Track -->
+      <div id="services-scroll-container" class="flex overflow-x-auto scroll-smooth snap-x snap-mandatory gap-6 pb-6 scrollbar-hide" style="scrollbar-width: none; -ms-overflow-style: none;">
 
-    <!-- Services Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-
-      <!-- Card 1: Flight tickets -->
-      <div data-aos="fade-up" data-aos-delay="100" class="bg-white rounded-[2rem] p-10 shadow-[0_15px_40px_rgba(0,0,0,0.04)] border border-gray-100/50 transition-all duration-300 hover-lift group">
-        <div class="w-14 h-14 rounded-2xl bg-[#E8ECEF] flex items-center justify-center mb-10">
-          <svg class="w-5 h-5 text-[#1E404A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l18-9-9 18-3-9L3 12z" />
-          </svg>
+        <!-- Card 1: Flight tickets -->
+        <div data-aos="fade-up" data-aos-delay="100"
+          class="snap-start shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] bg-white rounded-[2rem] p-10 shadow-[0_15px_40px_rgba(0,0,0,0.04)] border border-gray-100/50 transition-all duration-300 hover-lift group">
+          <div class="w-14 h-14 rounded-2xl bg-[#E8ECEF] flex items-center justify-center mb-10">
+            <svg class="w-5 h-5 text-[#1E404A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l18-9-9 18-3-9L3 12z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Flight Ticketing</h3>
+          <p class="text-[13px] text-gray-500 leading-relaxed">Domestic and international flight ticket bookings at the
+            most competitive airfares with flexible cancellation support.</p>
         </div>
-        <h3 class="text-xl font-bold text-gray-900 mb-3">Flight Ticketing</h3>
-        <p class="text-[13px] text-gray-500 leading-relaxed">Domestic and international flight ticket bookings at the most competitive airfares with flexible cancellation support.</p>
-      </div>
 
-      <!-- Card 2: Holiday packages -->
-      <div data-aos="fade-up" data-aos-delay="150" class="bg-white rounded-[2rem] p-10 shadow-[0_15px_40px_rgba(0,0,0,0.04)] border border-gray-100/50 transition-all duration-300 hover-lift group">
-        <div class="w-14 h-14 rounded-2xl bg-[#E8ECEF] flex items-center justify-center mb-10">
-          <svg class="w-5 h-5 text-[#1E404A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
-            <circle cx="12" cy="12" r="10" />
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10m0-20a15.3 15.3 0 00-4 10 15.3 15.3 0 004 10M2 12h20" />
-          </svg>
+        <!-- Card 2: Holiday packages -->
+        <div data-aos="fade-up" data-aos-delay="150"
+          class="snap-start shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] bg-white rounded-[2rem] p-10 shadow-[0_15px_40px_rgba(0,0,0,0.04)] border border-gray-100/50 transition-all duration-300 hover-lift group">
+          <div class="w-14 h-14 rounded-2xl bg-[#E8ECEF] flex items-center justify-center mb-10">
+            <svg class="w-5 h-5 text-[#1E404A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+              <circle cx="12" cy="12" r="10" />
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10m0-20a15.3 15.3 0 00-4 10 15.3 15.3 0 004 10M2 12h20" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Holiday Packages</h3>
+          <p class="text-[13px] text-gray-500 leading-relaxed">Fully customized domestic and international holiday
+            itineraries, leisure stays, and guided sightseeing.</p>
         </div>
-        <h3 class="text-xl font-bold text-gray-900 mb-3">Holiday Packages</h3>
-        <p class="text-[13px] text-gray-500 leading-relaxed">Fully customized domestic and international holiday itineraries, leisure stays, and guided sightseeing.</p>
-      </div>
 
-      <!-- Card 3: Train tickets -->
-      <div data-aos="fade-up" data-aos-delay="200" class="bg-white rounded-[2rem] p-10 shadow-[0_15px_40px_rgba(0,0,0,0.04)] border border-gray-100/50 transition-all duration-300 hover-lift group">
-        <div class="w-14 h-14 rounded-2xl bg-[#E8ECEF] flex items-center justify-center mb-10">
-          <svg class="w-5 h-5 text-[#1E404A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
-          </svg>
+        <!-- Card 3: Train tickets -->
+        <div data-aos="fade-up" data-aos-delay="200"
+          class="snap-start shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] bg-white rounded-[2rem] p-10 shadow-[0_15px_40px_rgba(0,0,0,0.04)] border border-gray-100/50 transition-all duration-300 hover-lift group">
+          <div class="w-14 h-14 rounded-2xl bg-[#E8ECEF] flex items-center justify-center mb-10">
+            <svg class="w-5 h-5 text-[#1E404A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Train Booking</h3>
+          <p class="text-[13px] text-gray-500 leading-relaxed">Convenient reservations for domestic rail systems,
+            high-speed bullet trains, and international travel rail passes.</p>
         </div>
-        <h3 class="text-xl font-bold text-gray-900 mb-3">Train Booking</h3>
-        <p class="text-[13px] text-gray-500 leading-relaxed">Convenient reservations for domestic rail systems, high-speed bullet trains, and international travel rail passes.</p>
-      </div>
 
-      <!-- Card 4: Bus tickets -->
-      <div data-aos="fade-up" data-aos-delay="250" class="bg-white rounded-[2rem] p-10 shadow-[0_15px_40px_rgba(0,0,0,0.04)] border border-gray-100/50 transition-all duration-300 hover-lift group">
-        <div class="w-14 h-14 rounded-2xl bg-[#E8ECEF] flex items-center justify-center mb-10">
-          <svg class="w-5 h-5 text-[#1E404A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
-          </svg>
+        <!-- Card 4: Bus tickets -->
+        <div data-aos="fade-up" data-aos-delay="250"
+          class="snap-start shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] bg-white rounded-[2rem] p-10 shadow-[0_15px_40px_rgba(0,0,0,0.04)] border border-gray-100/50 transition-all duration-300 hover-lift group">
+          <div class="w-14 h-14 rounded-2xl bg-[#E8ECEF] flex items-center justify-center mb-10">
+            <svg class="w-5 h-5 text-[#1E404A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Bus Tickets</h3>
+          <p class="text-[13px] text-gray-500 leading-relaxed">Fast bookings for interstate routes, long-distance sleeper
+            coaches, and tour buses.</p>
         </div>
-        <h3 class="text-xl font-bold text-gray-900 mb-3">Bus Tickets</h3>
-        <p class="text-[13px] text-gray-500 leading-relaxed">Fast bookings for interstate routes, long-distance sleeper coaches, and tour buses.</p>
-      </div>
 
-      <!-- Card 5: Visa Services (Hidden by default, shown via View All Services) -->
-      <div id="extra-service-visa" data-aos="fade-up" data-aos-delay="300" class="hidden bg-white rounded-[2rem] p-10 shadow-[0_15px_40px_rgba(0,0,0,0.04)] border border-gray-100/50 transition-all duration-300 hover-lift group">
-        <div class="w-14 h-14 rounded-2xl bg-[#E8ECEF] flex items-center justify-center mb-10">
-          <svg class="w-5 h-5 text-[#1E404A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-          </svg>
+        <!-- Card 5: Visa Services -->
+        <div data-aos="fade-up" data-aos-delay="300"
+          class="snap-start shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] bg-white rounded-[2rem] p-10 shadow-[0_15px_40px_rgba(0,0,0,0.04)] border border-gray-100/50 transition-all duration-300 hover-lift group">
+          <div class="w-14 h-14 rounded-2xl bg-[#E8ECEF] flex items-center justify-center mb-10">
+            <svg class="w-5 h-5 text-[#1E404A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Visa Services</h3>
+          <p class="text-[13px] text-gray-500 leading-relaxed">Expert documentation support, application vetting, and
+            quick-track visa filing services.</p>
         </div>
-        <h3 class="text-xl font-bold text-gray-900 mb-3">Visa Services</h3>
-        <p class="text-[13px] text-gray-500 leading-relaxed">Expert documentation support, application vetting, and quick-track visa filing services.</p>
-      </div>
 
       </div>
+    </div>
   </section>
 
   <!-- Featured Travel Packages Section -->
@@ -431,7 +464,7 @@
               European Delights: Switzerland to Netherlands
             </h3>
             <div class="flex gap-2">
-              <a href="contact.html?package=european-delights"
+              <a href="european-delights-10-days.html"
                 class="rounded-full border border-white px-4 py-2 text-[11px] font-semibold text-white bg-transparent hover:bg-white/20 transition tracking-wider">
                 VIEW DETAILS
               </a>
@@ -463,7 +496,7 @@
               Fatima Feast and European Pilgrimage
             </h3>
             <div class="flex gap-2">
-              <a href="contact.html?package=fatima-feast"
+              <a href="fatima-pilgrimage-14-days.html"
                 class="rounded-full border border-white px-4 py-2 text-[11px] font-semibold text-white bg-transparent hover:bg-white/20 transition tracking-wider">
                 VIEW DETAILS
               </a>
@@ -514,7 +547,10 @@
             <a href="https://wa.me/919447570780?text=Hi%20Tripodope%2C%20I%20am%20interested%20in%20planning%20a%20trip%20to%20Europe"
               target="_blank" onclick="event.stopPropagation();"
               class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-primary hover:bg-primary/90 text-white px-3 py-1.5 rounded-full text-[10px] font-semibold flex items-center gap-1 shadow-md">
-              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.625 1.451 5.403.002 9.803-4.394 9.806-9.799.002-2.592-1.01-5.029-2.85-6.87-1.84-1.84-4.278-2.85-6.873-2.851-5.41 0-9.813 4.398-9.817 9.801-.002 1.702.447 3.366 1.301 4.821L1.874 22l4.773-1.252zm12.383-7.228c-.33-.165-1.951-.963-2.251-1.072-.3-.11-.518-.165-.738.165-.219.33-.848 1.072-1.038 1.293-.19.22-.38.247-.71.082-1.28-.64-2.247-1.12-3.136-2.65-.22-.38.22-.352.63-1.17.06-.115.03-.219-.015-.302-.045-.082-.379-.915-.52-1.252-.137-.33-.277-.285-.38-.29-.1-.005-.214-.006-.328-.006-.114 0-.3.042-.457.214-.157.172-.6.586-.6 1.429 0 .843.614 1.657.7 1.771.086.115 1.21 1.848 2.93 2.587.41.18 1.012.38 1.41.463.507.1.97.082 1.336.027.408-.06 1.951-.797 2.225-1.564.273-.768.273-1.429.19-1.564-.083-.136-.3-.219-.63-.383z"/></svg>
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.625 1.451 5.403.002 9.803-4.394 9.806-9.799.002-2.592-1.01-5.029-2.85-6.87-1.84-1.84-4.278-2.85-6.873-2.851-5.41 0-9.813 4.398-9.817 9.801-.002 1.702.447 3.366 1.301 4.821L1.874 22l4.773-1.252zm12.383-7.228c-.33-.165-1.951-.963-2.251-1.072-.3-.11-.518-.165-.738.165-.219.33-.848 1.072-1.038 1.293-.19.22-.38.247-.71.082-1.28-.64-2.247-1.12-3.136-2.65-.22-.38.22-.352.63-1.17.06-.115.03-.219-.015-.302-.045-.082-.379-.915-.52-1.252-.137-.33-.277-.285-.38-.29-.1-.005-.214-.006-.328-.006-.114 0-.3.042-.457.214-.157.172-.6.586-.6 1.429 0 .843.614 1.657.7 1.771.086.115 1.21 1.848 2.93 2.587.41.18 1.012.38 1.41.463.507.1.97.082 1.336.027.408-.06 1.951-.797 2.225-1.564.273-.768.273-1.429.19-1.564-.083-.136-.3-.219-.63-.383z" />
+              </svg>
               Enquire
             </a>
           </div>
@@ -534,7 +570,10 @@
             <a href="https://wa.me/919447570780?text=Hi%20Tripodope%2C%20I%20am%20interested%20in%20planning%20a%20trip%20to%20India"
               target="_blank" onclick="event.stopPropagation();"
               class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-primary hover:bg-primary/90 text-white px-3 py-1.5 rounded-full text-[10px] font-semibold flex items-center gap-1 shadow-md">
-              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.625 1.451 5.403.002 9.803-4.394 9.806-9.799.002-2.592-1.01-5.029-2.85-6.87-1.84-1.84-4.278-2.85-6.873-2.851-5.41 0-9.813 4.398-9.817 9.801-.002 1.702.447 3.366 1.301 4.821L1.874 22l4.773-1.252zm12.383-7.228c-.33-.165-1.951-.963-2.251-1.072-.3-.11-.518-.165-.738.165-.219.33-.848 1.072-1.038 1.293-.19.22-.38.247-.71.082-1.28-.64-2.247-1.12-3.136-2.65-.22-.38.22-.352.63-1.17.06-.115.03-.219-.015-.302-.045-.082-.379-.915-.52-1.252-.137-.33-.277-.285-.38-.29-.1-.005-.214-.006-.328-.006-.114 0-.3.042-.457.214-.157.172-.6.586-.6 1.429 0 .843.614 1.657.7 1.771.086.115 1.21 1.848 2.93 2.587.41.18 1.012.38 1.41.463.507.1.97.082 1.336.027.408-.06 1.951-.797 2.225-1.564.273-.768.273-1.429.19-1.564-.083-.136-.3-.219-.63-.383z"/></svg>
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.625 1.451 5.403.002 9.803-4.394 9.806-9.799.002-2.592-1.01-5.029-2.85-6.87-1.84-1.84-4.278-2.85-6.873-2.851-5.41 0-9.813 4.398-9.817 9.801-.002 1.702.447 3.366 1.301 4.821L1.874 22l4.773-1.252zm12.383-7.228c-.33-.165-1.951-.963-2.251-1.072-.3-.11-.518-.165-.738.165-.219.33-.848 1.072-1.038 1.293-.19.22-.38.247-.71.082-1.28-.64-2.247-1.12-3.136-2.65-.22-.38.22-.352.63-1.17.06-.115.03-.219-.015-.302-.045-.082-.379-.915-.52-1.252-.137-.33-.277-.285-.38-.29-.1-.005-.214-.006-.328-.006-.114 0-.3.042-.457.214-.157.172-.6.586-.6 1.429 0 .843.614 1.657.7 1.771.086.115 1.21 1.848 2.93 2.587.41.18 1.012.38 1.41.463.507.1.97.082 1.336.027.408-.06 1.951-.797 2.225-1.564.273-.768.273-1.429.19-1.564-.083-.136-.3-.219-.63-.383z" />
+              </svg>
               Enquire
             </a>
           </div>
@@ -554,7 +593,10 @@
             <a href="https://wa.me/919447570780?text=Hi%20Tripodope%2C%20I%20am%20interested%20in%20planning%20a%20trip%20to%20Dubai"
               target="_blank" onclick="event.stopPropagation();"
               class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-primary hover:bg-primary/90 text-white px-3 py-1.5 rounded-full text-[10px] font-semibold flex items-center gap-1 shadow-md">
-              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.625 1.451 5.403.002 9.803-4.394 9.806-9.799.002-2.592-1.01-5.029-2.85-6.87-1.84-1.84-4.278-2.85-6.873-2.851-5.41 0-9.813 4.398-9.817 9.801-.002 1.702.447 3.366 1.301 4.821L1.874 22l4.773-1.252zm12.383-7.228c-.33-.165-1.951-.963-2.251-1.072-.3-.11-.518-.165-.738.165-.219.33-.848 1.072-1.038 1.293-.19.22-.38.247-.71.082-1.28-.64-2.247-1.12-3.136-2.65-.22-.38.22-.352.63-1.17.06-.115.03-.219-.015-.302-.045-.082-.379-.915-.52-1.252-.137-.33-.277-.285-.38-.29-.1-.005-.214-.006-.328-.006-.114 0-.3.042-.457.214-.157.172-.6.586-.6 1.429 0 .843.614 1.657.7 1.771.086.115 1.21 1.848 2.93 2.587.41.18 1.012.38 1.41.463.507.1.97.082 1.336.027.408-.06 1.951-.797 2.225-1.564.273-.768.273-1.429.19-1.564-.083-.136-.3-.219-.63-.383z"/></svg>
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.625 1.451 5.403.002 9.803-4.394 9.806-9.799.002-2.592-1.01-5.029-2.85-6.87-1.84-1.84-4.278-2.85-6.873-2.851-5.41 0-9.813 4.398-9.817 9.801-.002 1.702.447 3.366 1.301 4.821L1.874 22l4.773-1.252zm12.383-7.228c-.33-.165-1.951-.963-2.251-1.072-.3-.11-.518-.165-.738.165-.219.33-.848 1.072-1.038 1.293-.19.22-.38.247-.71.082-1.28-.64-2.247-1.12-3.136-2.65-.22-.38.22-.352.63-1.17.06-.115.03-.219-.015-.302-.045-.082-.379-.915-.52-1.252-.137-.33-.277-.285-.38-.29-.1-.005-.214-.006-.328-.006-.114 0-.3.042-.457.214-.157.172-.6.586-.6 1.429 0 .843.614 1.657.7 1.771.086.115 1.21 1.848 2.93 2.587.41.18 1.012.38 1.41.463.507.1.97.082 1.336.027.408-.06 1.951-.797 2.225-1.564.273-.768.273-1.429.19-1.564-.083-.136-.3-.219-.63-.383z" />
+              </svg>
               Enquire
             </a>
           </div>
@@ -575,7 +617,10 @@
             <a href="https://wa.me/919447570780?text=Hi%20Tripodope%2C%20I%20am%20interested%20in%20planning%20a%20trip%20to%20Indonesia"
               target="_blank" onclick="event.stopPropagation();"
               class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-primary hover:bg-primary/90 text-white px-3 py-1.5 rounded-full text-[10px] font-semibold flex items-center gap-1 shadow-md">
-              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.625 1.451 5.403.002 9.803-4.394 9.806-9.799.002-2.592-1.01-5.029-2.85-6.87-1.84-1.84-4.278-2.85-6.873-2.851-5.41 0-9.813 4.398-9.817 9.801-.002 1.702.447 3.366 1.301 4.821L1.874 22l4.773-1.252zm12.383-7.228c-.33-.165-1.951-.963-2.251-1.072-.3-.11-.518-.165-.738.165-.219.33-.848 1.072-1.038 1.293-.19.22-.38.247-.71.082-1.28-.64-2.247-1.12-3.136-2.65-.22-.38.22-.352.63-1.17.06-.115.03-.219-.015-.302-.045-.082-.379-.915-.52-1.252-.137-.33-.277-.285-.38-.29-.1-.005-.214-.006-.328-.006-.114 0-.3.042-.457.214-.157.172-.6.586-.6 1.429 0 .843.614 1.657.7 1.771.086.115 1.21 1.848 2.93 2.587.41.18 1.012.38 1.41.463.507.1.97.082 1.336.027.408-.06 1.951-.797 2.225-1.564.273-.768.273-1.429.19-1.564-.083-.136-.3-.219-.63-.383z"/></svg>
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.625 1.451 5.403.002 9.803-4.394 9.806-9.799.002-2.592-1.01-5.029-2.85-6.87-1.84-1.84-4.278-2.85-6.873-2.851-5.41 0-9.813 4.398-9.817 9.801-.002 1.702.447 3.366 1.301 4.821L1.874 22l4.773-1.252zm12.383-7.228c-.33-.165-1.951-.963-2.251-1.072-.3-.11-.518-.165-.738.165-.219.33-.848 1.072-1.038 1.293-.19.22-.38.247-.71.082-1.28-.64-2.247-1.12-3.136-2.65-.22-.38.22-.352.63-1.17.06-.115.03-.219-.015-.302-.045-.082-.379-.915-.52-1.252-.137-.33-.277-.285-.38-.29-.1-.005-.214-.006-.328-.006-.114 0-.3.042-.457.214-.157.172-.6.586-.6 1.429 0 .843.614 1.657.7 1.771.086.115 1.21 1.848 2.93 2.587.41.18 1.012.38 1.41.463.507.1.97.082 1.336.027.408-.06 1.951-.797 2.225-1.564.273-.768.273-1.429.19-1.564-.083-.136-.3-.219-.63-.383z" />
+              </svg>
               Enquire
             </a>
           </div>
@@ -844,31 +889,31 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-white pt-16 pb-8 px-6">
-    <div class="max-w-[1300px] mx-auto">
+    <!-- Footer -->
+  <footer class="bg-[#C8A25E] text-[#0B1A30] pt-16 pb-8 px-8 md:px-16 lg:px-24 xl:px-36">
+    <div class="w-full">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
         <div class="space-y-4">
-          <img src="componets/tripodope-footer-logo.png" alt="Tripodope Logo" class="h-28 w-auto mb-4 brightness-0 invert">
-          <p class="text-gray-400 text-sm leading-relaxed">Your trusted partner for Europe tours, International & Indian
+          <img src="componets/tripodope-footer-logo.png" alt="Tripodope Logo" class="h-28 w-auto mb-4 brightness-[0.1] contrast-125">
+          <p class="text-[#0B1A30]/80 text-sm leading-relaxed">Your trusted partner for Europe tours, International & Indian
             packages, Domestic & International ticketing (flight, train, bus, ferry, cruise), and expert visa services.
           </p>
         </div>
         <div>
-          <h4 class="text-primary font-bold text-sm uppercase tracking-wider mb-4">Quick Links</h4>
-          <ul class="space-y-2.5 text-sm text-gray-400">
-            <li><a href="index.html" class="hover:text-white transition">Home</a></li>
-            <li><a href="packages.html" class="hover:text-white transition">Packages</a></li>
-            <li><a href="destinations.html" class="hover:text-white transition">Destinations</a></li>
-            <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
-            <li><a href="contact.html" class="hover:text-white transition">Contact Us</a></li>
+          <h4 class="text-[#0B1A30] font-bold text-sm uppercase tracking-wider mb-4">Quick Links</h4>
+          <ul class="space-y-2.5 text-sm text-[#0B1A30]/80">
+            <li><a href="index.html" class="hover:text-[#0B1A30] hover:underline transition">Home</a></li>
+            <li><a href="packages.html" class="hover:text-[#0B1A30] hover:underline transition">Packages</a></li>
+            <li><a href="destinations.html" class="hover:text-[#0B1A30] hover:underline transition">Destinations</a></li>
+            <li><a href="about.html" class="hover:text-[#0B1A30] hover:underline transition">About Us</a></li>
+            <li><a href="contact.html" class="hover:text-[#0B1A30] hover:underline transition">Contact Us</a></li>
           </ul>
         </div>
         <div>
-          <h4 class="text-primary font-bold text-sm uppercase tracking-wider mb-4">Contact Info</h4>
-                    <ul class="space-y-2.5 text-sm text-gray-400">
+          <h4 class="text-[#0B1A30] font-bold text-sm uppercase tracking-wider mb-4">Contact Info</h4>
+          <ul class="space-y-2.5 text-sm text-[#0B1A30]/80">
             <li class="flex items-center">
-              <svg class="w-4 h-4 mr-2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#25D366" d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.625 1.451 5.403.002 9.803-4.394 9.806-9.799.002-2.592-1.01-5.029-2.85-6.87-1.84-1.84-4.278-2.85-6.873-2.851-5.41 0-9.813 4.398-9.817 9.801-.002 1.702.447 3.366 1.301 4.821L1.874 22l4.773-1.252zm12.383-7.228c-.33-.165-1.951-.963-2.251-1.072-.3-.11-.518-.165-.738.165-.219.33-.848 1.072-1.038 1.293-.19.22-.38.247-.71.082-1.28-.64-2.247-1.12-3.136-2.65-.22-.38.22-.352.63-1.17.06-.115.03-.219-.015-.302-.045-.082-.379-.915-.52-1.252-.137-.33-.277-.285-.38-.29-.1-.005-.214-.006-.328-.006-.114 0-.3.042-.457.214-.157.172-.6.586-.6 1.429 0 .843.614 1.657.7 1.771.086.115 1.21 1.848 2.93 2.587.41.18 1.012.38 1.41.463.507.1.97.082 1.336.027.408-.06 1.951-.797 2.225-1.564.273-.768.273-1.429.19-1.564-.083-.136-.3-.219-.63-.383z"/></svg>
+              <svg class="w-4 h-4 mr-2 fill-current inline-block align-middle" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.004 0C5.372 0 0 5.372 0 12.004c0 2.112.553 4.167 1.603 5.986L.057 24l6.196-1.625c1.764.962 3.75 1.629 5.751 1.629 6.632 0 12.004-5.372 12.004-12.004C24.008 5.372 18.636 0 12.004 0zm0 22.008c-1.84 0-3.64-.492-5.22-1.425l-.375-.221-3.876.992.993-3.771-.242-.387a9.99 9.99 0 0 1-1.528-5.2c0-5.508 4.492-10 10-10s10 4.492 10 10-4.492 10-10 10zm4.567-6.273c-.25-.125-1.479-.73-1.708-.813-.23-.083-.396-.125-.562.125-.167.25-.646.813-.792.979-.146.167-.292.188-.542.062a7.307 7.307 0 0 1-2.01-1.242 8.04 8.04 0 0 1-1.39-1.729c-.146-.25-.016-.386.11-.51.113-.112.25-.292.375-.438.125-.146.167-.25.25-.417.083-.167.042-.313-.021-.438-.063-.125-.562-1.355-.771-1.854-.203-.491-.41-.424-.562-.432-.146-.008-.313-.008-.479-.008-.167 0-.438.062-.667.312-.23.25-.875.854-.875 2.083s.896 2.417.996 2.552c.1.135 1.765 2.698 4.276 3.784.6.259 1.067.414 1.431.53.603.192 1.152.165 1.587.1.484-.072 1.479-.604 1.687-1.187.208-.583.208-1.083.146-1.187-.062-.104-.229-.167-.479-.292z"/></svg>
               <span>+91 94475 70780</span>
             </li>
             <li class="flex items-center">
@@ -882,21 +927,27 @@
           </ul>
         </div>
         <div>
-          <h4 class="text-primary font-bold text-sm uppercase tracking-wider mb-4">Follow Us</h4>
-          <div class="flex gap-3 mt-2">
+          <h4 class="text-[#0B1A30] font-bold text-sm uppercase tracking-wider mb-4">Follow Us</h4>
+                    <div class="flex gap-3 mt-2">
             <a href="https://www.facebook.com/share/1ByA4eSvHh/" target="_blank"
-              class="w-10 h-10 rounded-full border border-gray-700 hover:border-white transition flex items-center justify-center text-sm text-gray-400 hover:text-white">FB</a>
+              class="w-10 h-10 rounded-full border border-[#0B1A30]/30 hover:border-[#0B1A30] transition flex items-center justify-center hover:bg-[#0B1A30]/10">
+              <img src="componets/facebook.png" alt="Facebook" class="w-5 h-5 object-contain">
+            </a>
             <a href="https://www.instagram.com/tripodope?igsh=Ymp0MDJjd2FxZ2ly" target="_blank"
-              class="w-10 h-10 rounded-full border border-gray-700 hover:border-white transition flex items-center justify-center text-sm text-gray-400 hover:text-white">IG</a>
+              class="w-10 h-10 rounded-full border border-[#0B1A30]/30 hover:border-[#0B1A30] transition flex items-center justify-center hover:bg-[#0B1A30]/10">
+              <img src="componets/insta.png" alt="Instagram" class="w-5 h-5 object-contain">
+            </a>
             <a href="https://wa.me/919447570780" target="_blank"
-              class="w-10 h-10 rounded-full border border-gray-700 hover:border-white transition flex items-center justify-center text-sm text-gray-400 hover:text-white">WA</a>
+              class="w-10 h-10 rounded-full border border-[#0B1A30]/30 hover:border-[#0B1A30] transition flex items-center justify-center hover:bg-[#0B1A30]/10">
+              <img src="componets/whatsapp.png" alt="WhatsApp" class="w-5 h-5 object-contain">
+            </a>
           </div>
         </div>
       </div>
 
       <div
-        class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
-        <p>&copy; 2026 Tripodope. All rights reserved. Powered by Mexopi Digital.</p>
+        class="border-t border-[#0B1A30]/20 pt-8 flex items-center justify-center text-xs text-[#0B1A30]/60">
+        <p class="text-center">&copy; 2026 Tripodope. All rights reserved.</p>
       </div>
     </div>
   </footer>
@@ -983,24 +1034,98 @@
       start();
     })();
 
-    // Toggle Extra Services on homepage
+    // Services Carousel Script
     (function() {
-      const btnViewServices = document.getElementById('btn-view-all-services');
-      const extraServiceVisa = document.getElementById('extra-service-visa');
-      if (btnViewServices && extraServiceVisa) {
-        btnViewServices.addEventListener('click', () => {
-          if (extraServiceVisa.classList.contains('hidden')) {
-            extraServiceVisa.classList.remove('hidden');
-            extraServiceVisa.classList.add('fade-in');
-            btnViewServices.textContent = 'Show Less';
-          } else {
-            extraServiceVisa.classList.add('hidden');
-            extraServiceVisa.classList.remove('fade-in');
-            btnViewServices.textContent = 'View All Services';
-          }
-        });
+      const container = document.getElementById('services-scroll-container');
+      const prevBtn = document.getElementById('services-prev');
+      const nextBtn = document.getElementById('services-next');
+      if (!container || !prevBtn || !nextBtn) return;
+
+      const originalCards = Array.from(container.children);
+      const cardCount = originalCards.length;
+      if (cardCount === 0) return;
+
+      // Number of clone padding cards to prepend/append (4 covers max visible items on xl)
+      const clonesCount = 4;
+
+      // Append clones of first cards
+      for (let i = 0; i < clonesCount; i++) {
+        const clone = originalCards[i % cardCount].cloneNode(true);
+        clone.removeAttribute('data-aos');
+        container.appendChild(clone);
       }
+
+      // Prepend clones of last cards
+      for (let i = 0; i < clonesCount; i++) {
+        const index = ((cardCount - clonesCount + i) % cardCount + cardCount) % cardCount;
+        const clone = originalCards[index].cloneNode(true);
+        clone.removeAttribute('data-aos');
+        container.insertBefore(clone, container.firstChild);
+      }
+
+      function getCardWidth() {
+        const card = originalCards[0];
+        return card.getBoundingClientRect().width + 24; // Card width + gap-6 (24px)
+      }
+
+      // Set initial position to skip prepended clones
+      function resetScroll() {
+        const cardWidth = getCardWidth();
+        container.scrollLeft = cardWidth * clonesCount;
+      }
+
+      // Initialize
+      setTimeout(resetScroll, 100);
+      window.addEventListener('resize', resetScroll);
+
+      let isAdjusting = false;
+
+      // Listen for scroll boundaries to snap position seamlessly
+      container.addEventListener('scroll', () => {
+        if (isAdjusting) return;
+
+        const cardWidth = getCardWidth();
+        const startBoundary = cardWidth * clonesCount;
+        const endBoundary = cardWidth * (clonesCount + cardCount);
+
+        if (container.scrollLeft < startBoundary - 10) {
+          isAdjusting = true;
+          container.scrollLeft += (cardWidth * cardCount);
+          // Briefly disable scroll snap adjustments to prevent stuttering
+          setTimeout(() => { isAdjusting = false; }, 50);
+        } else if (container.scrollLeft >= endBoundary - 10) {
+          isAdjusting = true;
+          container.scrollLeft -= (cardWidth * cardCount);
+          setTimeout(() => { isAdjusting = false; }, 50);
+        }
+      });
+
+      function getScrollStep() {
+        return getCardWidth();
+      }
+
+      nextBtn.addEventListener('click', () => {
+        container.scrollBy({ left: getScrollStep(), behavior: 'smooth' });
+      });
+
+      prevBtn.addEventListener('click', () => {
+        container.scrollBy({ left: -getScrollStep(), behavior: 'smooth' });
+      });
     })();
   </script>
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/919447570780?text=Hi%20Tripodope%2C%20I%20would%20like%20to%20inquire%20about%20your%20travel%20packages."
+    target="_blank"
+    class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:bg-[#20ba5a] hover:scale-110 transition-all duration-300 group"
+    aria-label="Contact us on WhatsApp">
+    <!-- Pulse Effect -->
+    <span class="absolute inset-0 rounded-full bg-[#25D366]/40 animate-ping group-hover:animate-none opacity-75"></span>
+    <!-- SVG Icon -->
+    <svg class="relative z-10 w-7 h-7 fill-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12.004 0C5.372 0 0 5.372 0 12.004c0 2.112.553 4.167 1.603 5.986L.057 24l6.196-1.625c1.764.962 3.75 1.629 5.751 1.629 6.632 0 12.004-5.372 12.004-12.004C24.008 5.372 18.636 0 12.004 0zm0 22.008c-1.84 0-3.64-.492-5.22-1.425l-.375-.221-3.876.992.993-3.771-.242-.387a9.99 9.99 0 0 1-1.528-5.2c0-5.508 4.492-10 10-10s10 4.492 10 10-4.492 10-10 10zm4.567-6.273c-.25-.125-1.479-.73-1.708-.813-.23-.083-.396-.125-.562.125-.167.25-.646.813-.792.979-.146.167-.292.188-.542.062a7.307 7.307 0 0 1-2.01-1.242 8.04 8.04 0 0 1-1.39-1.729c-.146-.25-.016-.386.11-.51.113-.112.25-.292.375-.438.125-.146.167-.25.25-.417.083-.167.042-.313-.021-.438-.063-.125-.562-1.355-.771-1.854-.203-.491-.41-.424-.562-.432-.146-.008-.313-.008-.479-.008-.167 0-.438.062-.667.312-.23.25-.875.854-.875 2.083s.896 2.417.996 2.552c.1.135 1.765 2.698 4.276 3.784.6.259 1.067.414 1.431.53.603.192 1.152.165 1.587.1.484-.072 1.479-.604 1.687-1.187.208-.583.208-1.083.146-1.187-.062-.104-.229-.167-.479-.292z"/>
+    </svg>
+  </a>
+
 </body>
+
 </html>
