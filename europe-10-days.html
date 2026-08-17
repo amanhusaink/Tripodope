@@ -7,7 +7,7 @@
   <title>European Essence: 10 Days Itinerary - Tripodope</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css?v=1.5">
     <link rel="icon" type="image/png" href="componets/favicon_io/Trip%20o%20dope%20logo-09%201.png">
   <meta property="og:image" content="componets/favicon_io/Trip%20o%20dope%20logo-09%201.png">
@@ -20,12 +20,12 @@
       theme: {
         extend: {
           colors: {
-                        primary: '#0B1A30',
-            gold: '#C59B27',
-            'gray-50': '#FAF9F6',
+                        primary: '#11223A',
+            gold: '#C19A58',
+            'gray-50': '#11223A',
           },
           fontFamily: {
-            sans: ['Poppins', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
           },
         },
       },
@@ -33,35 +33,35 @@
   </script>
 </head>
 
-<body class="bg-gray-50 overflow-x-hidden font-sans m-0">
+<body class="bg-[#11223A] text-gray-100 overflow-x-hidden font-sans m-0">
 
   <!-- Navigation -->
-  <nav class="bg-white sticky top-0 z-50 border-b border-gray-100 shadow-sm">
+  <nav class="bg-[#FAF9F6]/95 backdrop-blur-md sticky top-0 z-50 border-b border-black/5 shadow-sm">
     <div class="w-full px-8 md:px-16 lg:px-24 xl:px-36 py-4">
       <div class="flex items-center justify-between">
         <!-- Logo -->
         <a href="index.html" class="flex items-center">
-          <img src="componets/tripodope-logo.png" alt="Tripodope" class="h-14 w-auto">
+          <img src="componets/tripodope-logo.png" alt="Tripodope" class="h-20 w-auto">
         </a>
 
         <!-- Navigation Links -->
         <div class="hidden lg:flex items-center space-x-8">
-          <a href="index.html" class="text-gray-700 hover:text-primary text-sm font-medium transition-colors">Home</a>
+          <a href="index.html" class="text-gray-700 hover:text-[#C19A58] text-sm font-medium transition-colors">Home</a>
           <a href="packages.html"
-            class="text-primary hover:text-primary/80 text-sm font-semibold transition-colors">Packages</a>
+            class="text-[#C19A58] hover:text-[#C19A58]/80 text-sm font-semibold transition-colors">Packages</a>
           <a href="destinations.html"
-            class="text-gray-700 hover:text-primary text-sm font-medium transition-colors">Destinations</a>
-          <a href="about.html" class="text-gray-700 hover:text-primary text-sm font-medium transition-colors">About
+            class="text-gray-700 hover:text-[#C19A58] text-sm font-medium transition-colors">Destinations</a>
+          <a href="about.html" class="text-gray-700 hover:text-[#C19A58] text-sm font-medium transition-colors">About
             Us</a>
           <a href="contact.html"
-            class="bg-primary text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-primary/90 transition-all duration-300 shadow-md hover:shadow-lg">
+            class="bg-[#11223A] text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-[#C19A58] transition-all duration-300 shadow-md hover:shadow-lg">
             Contact Us
           </a>
         </div>
 
         <!-- Mobile Menu Button -->
         <div class="lg:hidden">
-          <button id="mobile-menu-button" class="text-gray-700 hover:text-primary focus:outline-none">
+          <button id="mobile-menu-button" class="text-gray-700 hover:text-[#C19A58] focus:outline-none">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
@@ -73,16 +73,16 @@
       <div id="mobile-menu" class="lg:hidden hidden pt-4 pb-2">
         <div class="flex flex-col space-y-4">
           <a href="index.html"
-            class="mobile-menu-link text-gray-700 hover:text-primary text-base font-medium transition-colors px-2 py-2">Home</a>
+            class="mobile-menu-link text-gray-700 hover:text-[#C19A58] text-base font-medium transition-colors px-2 py-2">Home</a>
           <a href="packages.html"
-            class="mobile-menu-link text-primary hover:text-primary/85 text-base font-semibold transition-colors px-2 py-2">Packages</a>
+            class="mobile-menu-link text-[#C19A58] hover:text-[#C19A58]/85 text-base font-semibold transition-colors px-2 py-2">Packages</a>
           <a href="destinations.html"
-            class="mobile-menu-link text-gray-700 hover:text-primary text-base font-medium transition-colors px-2 py-2">Destinations</a>
+            class="mobile-menu-link text-gray-700 hover:text-[#C19A58] text-base font-medium transition-colors px-2 py-2">Destinations</a>
           <a href="about.html"
-            class="mobile-menu-link text-gray-700 hover:text-primary text-base font-medium transition-colors px-2 py-2">About
+            class="mobile-menu-link text-gray-700 hover:text-[#C19A58] text-base font-medium transition-colors px-2 py-2">About
             Us</a>
           <a href="contact.html"
-            class="bg-primary text-white px-4 py-2.5 rounded-full text-base font-medium hover:bg-primary/90 transition-all duration-300 inline-block w-fit mt-2">
+            class="bg-[#11223A] text-white px-4 py-2.5 rounded-full text-base font-semibold hover:bg-[#C19A58] transition-all duration-300 inline-block w-fit mt-2">
             Contact
           </a>
         </div>
@@ -123,16 +123,16 @@
   <section class="mx-auto px-6 md:px-[35px] pt-8 pb-4 max-w-[900px]" data-aos="fade-up">
     <div class="mb-6 flex">
       <a href="packages.html"
-        class="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-primary/80 transition-colors">
+        class="inline-flex items-center gap-2 text-sm font-semibold text-[#C19A58] hover:text-[#C19A58]/80 transition-colors">
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
         </svg>
         Back to Packages
       </a>
     </div>
-    <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm">
-      <h2 class="text-xl font-bold text-gray-900 mb-4 text-center">About this Itinerary</h2>
-      <p class="text-gray-600 text-sm leading-relaxed font-light text-justify">
+    <div class="bg-[#162a45] rounded-3xl p-8 border border-white/10 shadow-sm">
+      <h2 class="text-xl font-bold text-white mb-4 text-center">About this Itinerary</h2>
+      <p class="text-gray-300 text-sm leading-relaxed font-light text-justify">
         Embark on a remarkable journey through Europe with our “European Essence: From Rome to Amsterdam” package.
         Immerse yourself in the rich heritage and cultural kaleidoscope of these captivating destinations. From the
         ancient wonders of Rome and Florence in Italy to the romantic canals of Venice, travel through Switzerland’s
@@ -156,12 +156,12 @@
           1
         </div>
         <!-- Card -->
-        <div class="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm space-y-4">
-          <h3 class="text-lg font-bold text-gray-900">Day 1: Arrival in Rome, Italy</h3>
-          <p class="text-sm text-gray-600 font-light leading-relaxed">Welcome to Rome, the captivating capital of Italy!
+        <div class="bg-[#162a45] rounded-3xl p-6 border border-white/10 shadow-sm space-y-4">
+          <h3 class="text-lg font-bold text-white">Day 1: Arrival in Rome, Italy</h3>
+          <p class="text-sm text-gray-300 font-light leading-relaxed">Welcome to Rome, the captivating capital of Italy!
             Upon arrival, we will dive straight into the historic center of the city, immersing ourselves in its ancient
             wonders. Highlights of the day include:</p>
-          <ul class="list-disc pl-5 text-xs text-gray-500 space-y-2 font-light">
+          <ul class="list-disc pl-5 text-xs text-gray-400 space-y-2 font-light">
             <li>Explore the awe-inspiring Colosseum, an iconic symbol of ancient Roman grandeur. Step back in time as
               you imagine the gladiatorial battles that once took place within its walls.</li>
             <li>Wander through the Roman Forum, the bustling heart of ancient Rome, where you can admire the ruins of
@@ -178,12 +178,12 @@
           class="absolute -left-[37px] md:-left-[43px] w-10 h-10 rounded-full border-4 border-gray-50 bg-primary text-white font-bold text-xs flex items-center justify-center shadow-md">
           2
         </div>
-        <div class="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm space-y-4">
-          <h3 class="text-lg font-bold text-gray-900">Day 2: Florence, Italy</h3>
-          <p class="text-sm text-gray-600 font-light leading-relaxed">Today, we embark on a journey to Florence, a city
+        <div class="bg-[#162a45] rounded-3xl p-6 border border-white/10 shadow-sm space-y-4">
+          <h3 class="text-lg font-bold text-white">Day 2: Florence, Italy</h3>
+          <p class="text-sm text-gray-300 font-light leading-relaxed">Today, we embark on a journey to Florence, a city
             renowned for its artistic treasures and Renaissance splendor. Prepare to be enchanted by Florence’s cultural
             richness. Highlights of the day include:</p>
-          <ul class="list-disc pl-5 text-xs text-gray-500 space-y-2 font-light">
+          <ul class="list-disc pl-5 text-xs text-gray-400 space-y-2 font-light">
             <li>Visit the world-famous Uffizi Gallery, home to an extraordinary collection of masterpieces by celebrated
               artists such as Michelangelo, Botticelli, and Raphael.</li>
             <li>Discover the architectural marvel that is the Florence Cathedral (Duomo) and challenge yourself to climb
@@ -200,12 +200,12 @@
           class="absolute -left-[37px] md:-left-[43px] w-10 h-10 rounded-full border-4 border-gray-50 bg-primary text-white font-bold text-xs flex items-center justify-center shadow-md">
           3
         </div>
-        <div class="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm space-y-4">
-          <h3 class="text-lg font-bold text-gray-900">Day 3: Venice, Italy</h3>
-          <p class="text-sm text-gray-600 font-light leading-relaxed">Prepare to be captivated by the enchanting city of
+        <div class="bg-[#162a45] rounded-3xl p-6 border border-white/10 shadow-sm space-y-4">
+          <h3 class="text-lg font-bold text-white">Day 3: Venice, Italy</h3>
+          <p class="text-sm text-gray-300 font-light leading-relaxed">Prepare to be captivated by the enchanting city of
             Venice, a place of romantic canals, artistic treasures, and timeless allure. Highlights of the day include:
           </p>
-          <ul class="list-disc pl-5 text-xs text-gray-500 space-y-2 font-light">
+          <ul class="list-disc pl-5 text-xs text-gray-400 space-y-2 font-light">
             <li>Experience the magic of Venice with a charming gondola ride through its picturesque canals, passing
               under arched bridges and soaking in the atmosphere of this unique city.</li>
             <li>Visit the magnificent St. Mark’s Square, a vibrant hub where you can admire the architectural splendor
@@ -222,12 +222,12 @@
           class="absolute -left-[37px] md:-left-[43px] w-10 h-10 rounded-full border-4 border-gray-50 bg-primary text-white font-bold text-xs flex items-center justify-center shadow-md">
           4
         </div>
-        <div class="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm space-y-4">
-          <h3 class="text-lg font-bold text-gray-900">Day 4: Zurich, Switzerland</h3>
-          <p class="text-sm text-gray-600 font-light leading-relaxed">Today, we venture into Switzerland and arrive in
+        <div class="bg-[#162a45] rounded-3xl p-6 border border-white/10 shadow-sm space-y-4">
+          <h3 class="text-lg font-bold text-white">Day 4: Zurich, Switzerland</h3>
+          <p class="text-sm text-gray-300 font-light leading-relaxed">Today, we venture into Switzerland and arrive in
             Zurich, a city that seamlessly blends modernity with a rich historical heritage. Highlights of the day
             include:</p>
-          <ul class="list-disc pl-5 text-xs text-gray-500 space-y-2 font-light">
+          <ul class="list-disc pl-5 text-xs text-gray-400 space-y-2 font-light">
             <li>Immerse yourself in the vibrant atmosphere of Zurich’s Old Town (Altstadt), where charming cobblestone
               streets are lined with historical buildings, boutique shops, and cozy cafés.</li>
             <li>Explore the breathtaking Zurich Lake, known for its crystal-clear waters and surrounded by stunning
@@ -246,12 +246,12 @@
           class="absolute -left-[37px] md:-left-[43px] w-10 h-10 rounded-full border-4 border-gray-50 bg-primary text-white font-bold text-xs flex items-center justify-center shadow-md">
           5
         </div>
-        <div class="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm space-y-4">
-          <h3 class="text-lg font-bold text-gray-900">Day 5: Lucerne, Switzerland</h3>
-          <p class="text-sm text-gray-600 font-light leading-relaxed">Prepare to be enchanted by the picturesque beauty
+        <div class="bg-[#162a45] rounded-3xl p-6 border border-white/10 shadow-sm space-y-4">
+          <h3 class="text-lg font-bold text-white">Day 5: Lucerne, Switzerland</h3>
+          <p class="text-sm text-gray-300 font-light leading-relaxed">Prepare to be enchanted by the picturesque beauty
             of Lucerne, a city nestled among snow-capped mountains and surrounded by pristine lakes. Highlights of the
             day include:</p>
-          <ul class="list-disc pl-5 text-xs text-gray-500 space-y-2 font-light">
+          <ul class="list-disc pl-5 text-xs text-gray-400 space-y-2 font-light">
             <li>Explore Lucerne’s charming Old Town, characterized by its well-preserved medieval architecture, colorful
               buildings, and narrow cobblestone streets. Don’t miss the iconic Chapel Bridge (Kapellbrücke), one of
               Switzerland’s most recognizable landmarks.</li>
@@ -270,12 +270,12 @@
           class="absolute -left-[37px] md:-left-[43px] w-10 h-10 rounded-full border-4 border-gray-50 bg-primary text-white font-bold text-xs flex items-center justify-center shadow-md">
           6
         </div>
-        <div class="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm space-y-4">
-          <h3 class="text-lg font-bold text-gray-900">Day 6: Interlaken, Switzerland</h3>
-          <p class="text-sm text-gray-600 font-light leading-relaxed">Today, we head to Interlaken, a paradise for
+        <div class="bg-[#162a45] rounded-3xl p-6 border border-white/10 shadow-sm space-y-4">
+          <h3 class="text-lg font-bold text-white">Day 6: Interlaken, Switzerland</h3>
+          <p class="text-sm text-gray-300 font-light leading-relaxed">Today, we head to Interlaken, a paradise for
             adventure seekers nestled in the heart of the Swiss Alps. Prepare for exhilarating experiences amidst
             stunning natural beauty. Highlights of the day include:</p>
-          <ul class="list-disc pl-5 text-xs text-gray-500 space-y-2 font-light">
+          <ul class="list-disc pl-5 text-xs text-gray-400 space-y-2 font-light">
             <li>Engage in thrilling activities such as skydiving, paragliding, or bungee jumping, taking advantage of
               Interlaken’s reputation as the adventure capital of Switzerland.</li>
             <li>Explore the mesmerizing Jungfrau region, known for its snow-capped peaks, crystal-clear lakes, and
@@ -292,12 +292,12 @@
           class="absolute -left-[37px] md:-left-[43px] w-10 h-10 rounded-full border-4 border-gray-50 bg-primary text-white font-bold text-xs flex items-center justify-center shadow-md">
           7
         </div>
-        <div class="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm space-y-4">
-          <h3 class="text-lg font-bold text-gray-900">Day 7: Salzburg, Austria</h3>
-          <p class="text-sm text-gray-600 font-light leading-relaxed">We bid farewell to Switzerland and travel to
+        <div class="bg-[#162a45] rounded-3xl p-6 border border-white/10 shadow-sm space-y-4">
+          <h3 class="text-lg font-bold text-white">Day 7: Salzburg, Austria</h3>
+          <p class="text-sm text-gray-300 font-light leading-relaxed">We bid farewell to Switzerland and travel to
             Salzburg, a city steeped in history and music. Explore the birthplace of Mozart and immerse yourself in its
             cultural heritage. Highlights of the day include:</p>
-          <ul class="list-disc pl-5 text-xs text-gray-500 space-y-2 font-light">
+          <ul class="list-disc pl-5 text-xs text-gray-400 space-y-2 font-light">
             <li>Discover the charm of Salzburg’s Altstadt (Old Town), a UNESCO World Heritage site, with its narrow
               streets, baroque architecture, and impressive churches. Explore the beautifully manicured Mirabell Palace
               and Gardens, a setting made famous by “The Sound of Music.”</li>
@@ -315,12 +315,12 @@
           class="absolute -left-[37px] md:-left-[43px] w-10 h-10 rounded-full border-4 border-gray-50 bg-primary text-white font-bold text-xs flex items-center justify-center shadow-md">
           8
         </div>
-        <div class="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm space-y-4">
-          <h3 class="text-lg font-bold text-gray-900">Day 8: Vienna, Austria</h3>
-          <p class="text-sm text-gray-600 font-light leading-relaxed">Journey to Vienna, the elegant capital of Austria,
+        <div class="bg-[#162a45] rounded-3xl p-6 border border-white/10 shadow-sm space-y-4">
+          <h3 class="text-lg font-bold text-white">Day 8: Vienna, Austria</h3>
+          <p class="text-sm text-gray-300 font-light leading-relaxed">Journey to Vienna, the elegant capital of Austria,
             where imperial splendor meets modern vibrancy. Explore Vienna’s grandeur and immerse yourself in its
             cultural treasures. Highlights of the day include:</p>
-          <ul class="list-disc pl-5 text-xs text-gray-500 space-y-2 font-light">
+          <ul class="list-disc pl-5 text-xs text-gray-400 space-y-2 font-light">
             <li>Explore the opulent Schönbrunn Palace, the former summer residence of the Habsburg monarchy, and wander
               through its stunning gardens.</li>
             <li>Visit St. Stephen’s Cathedral, an architectural masterpiece that dominates Vienna’s skyline, and admire
@@ -339,12 +339,12 @@
           class="absolute -left-[37px] md:-left-[43px] w-10 h-10 rounded-full border-4 border-gray-50 bg-primary text-white font-bold text-xs flex items-center justify-center shadow-md">
           9
         </div>
-        <div class="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm space-y-4">
-          <h3 class="text-lg font-bold text-gray-900">Day 9: Munich, Germany</h3>
-          <p class="text-sm text-gray-600 font-light leading-relaxed">Today, we travel to Munich, a vibrant city known
+        <div class="bg-[#162a45] rounded-3xl p-6 border border-white/10 shadow-sm space-y-4">
+          <h3 class="text-lg font-bold text-white">Day 9: Munich, Germany</h3>
+          <p class="text-sm text-gray-300 font-light leading-relaxed">Today, we travel to Munich, a vibrant city known
             for its blend of tradition and modernity, lively beer gardens, and rich cultural heritage. Highlights of the
             day include:</p>
-          <ul class="list-disc pl-5 text-xs text-gray-500 space-y-2 font-light">
+          <ul class="list-disc pl-5 text-xs text-gray-400 space-y-2 font-light">
             <li>Visit the iconic Marienplatz, Munich’s central square, and witness the famous Glockenspiel performance
               on the towering New Town Hall.</li>
             <li>Explore the majestic Nymphenburg Palace, a baroque masterpiece surrounded by sprawling gardens and
@@ -361,12 +361,12 @@
           class="absolute -left-[37px] md:-left-[43px] w-10 h-10 rounded-full border-4 border-gray-50 bg-primary text-white font-bold text-xs flex items-center justify-center shadow-md">
           10
         </div>
-        <div class="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm space-y-4">
-          <h3 class="text-lg font-bold text-gray-900">Day 10: Amsterdam, Netherlands</h3>
-          <p class="text-sm text-gray-600 font-light leading-relaxed">Our journey concludes in Amsterdam, a city
+        <div class="bg-[#162a45] rounded-3xl p-6 border border-white/10 shadow-sm space-y-4">
+          <h3 class="text-lg font-bold text-white">Day 10: Amsterdam, Netherlands</h3>
+          <p class="text-sm text-gray-300 font-light leading-relaxed">Our journey concludes in Amsterdam, a city
             renowned for its picturesque canals, artistic heritage, and vibrant atmosphere. Explore the highlights of
             this charming city. Highlights of the day include:</p>
-          <ul class="list-disc pl-5 text-xs text-gray-500 space-y-2 font-light">
+          <ul class="list-disc pl-5 text-xs text-gray-400 space-y-2 font-light">
             <li>Explore the historic canals and charming streets of Amsterdam, immersing yourself in its unique ambiance
               and iconic architecture.</li>
             <li>Visit renowned attractions such as the Anne Frank House, where you can gain insight into the life and
@@ -384,7 +384,7 @@
   </section>
 
   <!-- Custom Planning Banner Section -->
-  <section class="relative bg-white py-16 border-t border-gray-100">
+  <section class="relative bg-[#11223A] py-16 border-t border-white/10">
     <div class="max-w-[1300px] mx-auto px-6">
       <div
         class="bg-primary rounded-3xl p-8 md:p-12 text-white flex flex-col md:flex-row justify-between items-center gap-8 shadow-xl">
@@ -397,7 +397,7 @@
           </p>
         </div>
         <a href="contact.html?package=europe-10-days"
-          class="bg-white text-primary px-8 py-3.5 rounded-full font-bold hover:bg-gray-100 transition shadow-lg shrink-0">
+          class="bg-[#C19A58] text-white px-8 py-3.5 rounded-full font-bold hover:bg-gray-100 transition shadow-lg shrink-0">
           Inquire Now
         </a>
       </div>
@@ -405,28 +405,28 @@
   </section>
 
     <!-- Footer -->
-  <footer class="bg-[#C8A25E] text-[#0B1A30] pt-16 pb-8 px-8 md:px-16 lg:px-24 xl:px-36">
+  <footer class="bg-[#C19A58] text-[#11223A] pt-16 pb-8 px-8 md:px-16 lg:px-24 xl:px-36">
     <div class="w-full">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
         <div class="space-y-4">
           <img src="componets/tripodope-footer-logo.png" alt="Tripodope Logo" class="h-28 w-auto mb-4 brightness-[0.1] contrast-125">
-          <p class="text-[#0B1A30]/80 text-sm leading-relaxed">Your trusted partner for Europe tours, International & Indian
+          <p class="text-[#11223A]/80 text-sm leading-relaxed">Your trusted partner for Europe tours, International & Indian
             packages, Domestic & International ticketing (flight, train, bus, ferry, cruise), and expert visa services.
           </p>
         </div>
         <div>
-          <h4 class="text-[#0B1A30] font-bold text-sm uppercase tracking-wider mb-4">Quick Links</h4>
-          <ul class="space-y-2.5 text-sm text-[#0B1A30]/80">
-            <li><a href="index.html" class="hover:text-[#0B1A30] hover:underline transition">Home</a></li>
-            <li><a href="packages.html" class="hover:text-[#0B1A30] hover:underline transition">Packages</a></li>
-            <li><a href="destinations.html" class="hover:text-[#0B1A30] hover:underline transition">Destinations</a></li>
-            <li><a href="about.html" class="hover:text-[#0B1A30] hover:underline transition">About Us</a></li>
-            <li><a href="contact.html" class="hover:text-[#0B1A30] hover:underline transition">Contact Us</a></li>
+          <h4 class="text-[#11223A] font-bold text-sm uppercase tracking-wider mb-4">Quick Links</h4>
+          <ul class="space-y-2.5 text-sm text-[#11223A]/80">
+            <li><a href="index.html" class="hover:text-[#11223A] hover:underline transition">Home</a></li>
+            <li><a href="packages.html" class="hover:text-[#11223A] hover:underline transition">Packages</a></li>
+            <li><a href="destinations.html" class="hover:text-[#11223A] hover:underline transition">Destinations</a></li>
+            <li><a href="about.html" class="hover:text-[#11223A] hover:underline transition">About Us</a></li>
+            <li><a href="contact.html" class="hover:text-[#11223A] hover:underline transition">Contact Us</a></li>
           </ul>
         </div>
         <div>
-          <h4 class="text-[#0B1A30] font-bold text-sm uppercase tracking-wider mb-4">Contact Info</h4>
-          <ul class="space-y-2.5 text-sm text-[#0B1A30]/80">
+          <h4 class="text-[#11223A] font-bold text-sm uppercase tracking-wider mb-4">Contact Info</h4>
+          <ul class="space-y-2.5 text-sm text-[#11223A]/80">
             <li class="flex items-center">
               <svg class="w-4 h-4 mr-2 fill-current inline-block align-middle" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.004 0C5.372 0 0 5.372 0 12.004c0 2.112.553 4.167 1.603 5.986L.057 24l6.196-1.625c1.764.962 3.75 1.629 5.751 1.629 6.632 0 12.004-5.372 12.004-12.004C24.008 5.372 18.636 0 12.004 0zm0 22.008c-1.84 0-3.64-.492-5.22-1.425l-.375-.221-3.876.992.993-3.771-.242-.387a9.99 9.99 0 0 1-1.528-5.2c0-5.508 4.492-10 10-10s10 4.492 10 10-4.492 10-10 10zm4.567-6.273c-.25-.125-1.479-.73-1.708-.813-.23-.083-.396-.125-.562.125-.167.25-.646.813-.792.979-.146.167-.292.188-.542.062a7.307 7.307 0 0 1-2.01-1.242 8.04 8.04 0 0 1-1.39-1.729c-.146-.25-.016-.386.11-.51.113-.112.25-.292.375-.438.125-.146.167-.25.25-.417.083-.167.042-.313-.021-.438-.063-.125-.562-1.355-.771-1.854-.203-.491-.41-.424-.562-.432-.146-.008-.313-.008-.479-.008-.167 0-.438.062-.667.312-.23.25-.875.854-.875 2.083s.896 2.417.996 2.552c.1.135 1.765 2.698 4.276 3.784.6.259 1.067.414 1.431.53.603.192 1.152.165 1.587.1.484-.072 1.479-.604 1.687-1.187.208-.583.208-1.083.146-1.187-.062-.104-.229-.167-.479-.292z"/></svg>
               <span>+91 94475 70780</span>
@@ -442,18 +442,18 @@
           </ul>
         </div>
         <div>
-          <h4 class="text-[#0B1A30] font-bold text-sm uppercase tracking-wider mb-4">Follow Us</h4>
+          <h4 class="text-[#11223A] font-bold text-sm uppercase tracking-wider mb-4">Follow Us</h4>
                     <div class="flex gap-3 mt-2">
             <a href="https://www.facebook.com/share/1ByA4eSvHh/" target="_blank"
-              class="w-10 h-10 rounded-full border border-[#0B1A30]/30 hover:border-[#0B1A30] transition flex items-center justify-center hover:bg-[#0B1A30]/10">
+              class="w-10 h-10 rounded-full border border-[#11223A]/30 hover:border-[#11223A] transition flex items-center justify-center hover:bg-[#11223A]/10">
               <img src="componets/facebook.png" alt="Facebook" class="w-5 h-5 object-contain">
             </a>
             <a href="https://www.instagram.com/tripodope?igsh=Ymp0MDJjd2FxZ2ly" target="_blank"
-              class="w-10 h-10 rounded-full border border-[#0B1A30]/30 hover:border-[#0B1A30] transition flex items-center justify-center hover:bg-[#0B1A30]/10">
+              class="w-10 h-10 rounded-full border border-[#11223A]/30 hover:border-[#11223A] transition flex items-center justify-center hover:bg-[#11223A]/10">
               <img src="componets/insta.png" alt="Instagram" class="w-5 h-5 object-contain">
             </a>
             <a href="https://wa.me/919447570780" target="_blank"
-              class="w-10 h-10 rounded-full border border-[#0B1A30]/30 hover:border-[#0B1A30] transition flex items-center justify-center hover:bg-[#0B1A30]/10">
+              class="w-10 h-10 rounded-full border border-[#11223A]/30 hover:border-[#11223A] transition flex items-center justify-center hover:bg-[#11223A]/10">
               <img src="componets/whatsapp.png" alt="WhatsApp" class="w-5 h-5 object-contain">
             </a>
           </div>
@@ -461,7 +461,7 @@
       </div>
 
       <div
-        class="border-t border-[#0B1A30]/20 pt-8 flex items-center justify-center text-xs text-[#0B1A30]/60">
+        class="border-t border-[#11223A]/20 pt-8 flex items-center justify-center text-xs text-[#11223A]/60">
         <p class="text-center">&copy; 2026 Tripodope. All rights reserved.</p>
       </div>
     </div>

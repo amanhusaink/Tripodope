@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 /* Global variables and styles matching timbalatourism.com */
 :root {
-  --primary: #0B1A30;
-  --primary-hover: #081324;
+  --primary: #11223A;
+  --primary-hover: #0d1a2c;
 }
 
 html {
@@ -11,8 +11,9 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #FAF9F6; /* bg-gray-50 */
+  font-family: 'Inter', sans-serif;
+  background-color: #11223A;
+  color: #f3f4f6;
 }
 
 /* Custom animations */
@@ -85,4 +86,9 @@ body {
   .responsive-card-img {
     aspect-ratio: 3 / 5 !important; /* Taller on desktop and laptop screens */
   }
+}
+
+/* CSS Filter to turn black/dark PNG icons into gold (#C19A58) */
+.gold-icon {
+  filter: brightness(0) saturate(100%) invert(67%) sepia(35%) saturate(836%) hue-rotate(4deg) brightness(92%) contrast(85%);
 }
