@@ -22,7 +22,7 @@
           colors: {
             primary: '#11223A',
             gold: '#C19A58',
-            'gray-50': '#11223A',
+            
           },
           fontFamily: {
             sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
@@ -113,61 +113,118 @@
   <main class="bg-[#F4F5F7] text-gray-800 py-8 px-4 sm:px-6 md:px-12 lg:px-20 min-h-screen">
     <div class="max-w-7xl mx-auto space-y-8">
 
-      <!-- Back to packages button -->
-      <div class="flex">
+      <!-- Top Action Bar -->
+      <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
         <a href="worldwide-packages.html" class="inline-flex items-center gap-2 text-xs md:text-sm font-semibold text-[#C19A58] hover:text-[#11223A] transition-colors">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
           Back to WorldWide Packages
         </a>
+        <div class="flex items-center gap-3">
+          <button onclick="openEnquireModal('A Glimpse of Andamans (AN2604)')" class="inline-flex items-center justify-center gap-2 bg-[#C19A58] hover:bg-[#a88243] text-white px-5 py-2.5 rounded-full text-xs font-bold tracking-wider transition-all shadow-md">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+            ENQUIRE
+          </button>
+          <a href="customize-package.html?package=A%20Glimpse%20of%20Andamans" class="inline-flex items-center justify-center gap-2 border-2 border-[#11223A] hover:bg-[#11223A] text-[#11223A] hover:text-white px-5 py-2.5 rounded-full text-xs font-bold tracking-wider transition-all">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
+            CUSTOMIZE
+          </a>
+        </div>
       </div>
 
-      <!-- HEADER CONTAINER -->
-      <div class="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-gray-200/80 flex flex-col md:flex-row md:items-center justify-between gap-6" data-aos="fade-up">
-        <div>
+      <!-- 1. TOP TITLE & QUICK CONTACT HEADER CARD -->
+      <div class="relative bg-[#0a1526] rounded-2xl p-6 md:p-8 shadow-lg overflow-hidden" data-aos="fade-up">
+        <!-- Abstract Travel Background with Fade -->
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1600&q=80')] bg-cover bg-center opacity-60 pointer-events-none"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-[#0a1526] via-[#0a1526]/80 to-transparent pointer-events-none"></div>
+        
+        <div class="relative z-10 w-full lg:w-3/4">
+          <!-- Title & Badges -->
           <div class="flex flex-wrap items-center gap-3 mb-2">
-            <h1 class="text-2xl md:text-3xl font-extrabold text-[#11223A]">
+            <h1 class="text-2xl md:text-3xl font-extrabold text-white drop-shadow-md">
               A Glimpse of Andamans – Sun, Sea & Serenity
             </h1>
-            <span class="inline-flex items-center gap-1 bg-[#FDF8EE] text-[#C19A58] border border-[#C19A58]/30 px-3 py-1 rounded-full text-xs font-bold">
-              3 Nights / 4 Days • Code: AN2604
-            </span>
+            <div class="flex items-center gap-2">
+              <span class="inline-flex items-center gap-1 bg-[#11223A]/80 text-[#C19A58] border border-[#C19A58]/50 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold shadow-xs">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                4 Days / 3 Nights
+              </span>
+              <span class="inline-flex items-center gap-1 bg-[#11223A]/80 text-[#C19A58] border border-[#C19A58]/50 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold shadow-xs">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/></svg>
+                Trip Code: AN2604
+              </span>
+            </div>
           </div>
-          <p class="text-xs md:text-sm font-medium text-gray-600">
-            📍 Port Blair, Corbyn's Cove Beach, Historic Cellular Jail (Kalapani) Sound & Light Show, Havelock Island (Swaraj Dweep), Radhanagar Beach (Asia's #1 Beach), Beachside Café
-          </p>
-        </div>
-        <a href="https://wa.me/393444440325?text=Hi%20Tripodope%2C%20I%20want%20to%20book%20the%204%20Days%20A%20Glimpse%20of%20Andamans%20package"
-          target="_blank" class="px-5 py-2.5 bg-[#C19A58] hover:bg-[#a88243] text-white rounded-full text-xs font-bold transition shadow-md shrink-0 text-center">
-          Book Package Now
-        </a>
-      </div>
-
-      <!-- OVERVIEW BADGES & SUMMARY -->
-      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="bg-white p-4 rounded-xl border border-gray-200/80 shadow-2xs text-center">
-          <p class="text-[10px] uppercase font-bold text-gray-400">Duration</p>
-          <p class="text-sm font-extrabold text-[#11223A] mt-0.5">3 Nights / 4 Days</p>
-        </div>
-        <div class="bg-white p-4 rounded-xl border border-gray-200/80 shadow-2xs text-center">
-          <p class="text-[10px] uppercase font-bold text-gray-400">Key Island</p>
-          <p class="text-sm font-extrabold text-[#C19A58] mt-0.5">Havelock (Swaraj Dweep)</p>
-        </div>
-        <div class="bg-white p-4 rounded-xl border border-gray-200/80 shadow-2xs text-center">
-          <p class="text-[10px] uppercase font-bold text-gray-400">Top Beach</p>
-          <p class="text-sm font-extrabold text-[#11223A] mt-0.5">Radhanagar Beach #7</p>
-        </div>
-        <div class="bg-white p-4 rounded-xl border border-gray-200/80 shadow-2xs text-center">
-          <p class="text-[10px] uppercase font-bold text-gray-400">Heritage</p>
-          <p class="text-sm font-extrabold text-[#C19A58] mt-0.5">Cellular Jail Light Show</p>
+          <!-- Route / Destinations line -->
+          <p class="text-xs md:text-sm font-medium text-gray-200 flex items-center gap-1.5 flex-wrap"><span class="text-[#C19A58] font-bold">📍</span> Port Blair, Corbyn's Cove Beach, Historic Cellular Jail (Kalapani) Sound & Light Show, Havelock Island (Swaraj Dweep), Radhanagar Beach (Asia's #1 Beach), Beachside Café</p>
+          <p class="text-xs md:text-sm text-gray-200 mt-3 leading-relaxed">Experience this amazing itinerary.</p>
+          
+          <div class="mt-3">
+            <!-- Countries Covered Row -->
+            <div class="flex items-center gap-2.5 pt-2 pb-1 border-t border-white/10 flex-wrap">
+              <span class="text-xs font-bold text-white flex items-center gap-1 shrink-0">
+                <span class="text-sm">🌍</span> Countries Covered:
+              </span>
+              <div class="flex items-center gap-2 flex-wrap">
+                <span class="inline-flex items-center gap-1.5 bg-[#11223A]/80 border border-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-white shadow-2xs">
+                  <img src="https://flagcdn.com/w40/in.png" alt="India" class="w-4 h-3 object-cover rounded-[2px] shadow-2xs">
+                  India
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- DETAILS GRID -->
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8" data-aos="fade-up" data-aos-delay="150">
-        
-        <!-- ITINERARY ACCORDIONS -->
-        <div class="lg:col-span-2 space-y-4">
-          <h2 class="text-lg md:text-xl font-bold text-[#11223A]">Detailed Day-by-Day Itinerary</h2>
+      <!-- 3. TABBED CONTAINER -->
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-200/80 overflow-hidden" data-aos="fade-up">
+        <div class="flex p-2 bg-slate-100 border-b border-gray-200 gap-1.5 sm:gap-2">
+          <button id="tab-btn-about" onclick="switchTab('about')" class="tab-btn flex-1 py-3 px-2 sm:px-4 rounded-xl text-center text-xs md:text-sm font-extrabold transition-all duration-300 bg-[#11223A] text-white shadow-md">
+            About Itinerary
+          </button>
+          <button id="tab-btn-itinerary" onclick="switchTab('itinerary')" class="tab-btn flex-1 py-3 px-2 sm:px-4 rounded-xl text-center text-xs md:text-sm font-bold transition-all duration-300 text-[#11223A] hover:bg-white/70 bg-white/40 border border-gray-200/50">
+            Itinerary
+          </button>
+          <button id="tab-btn-includes" onclick="switchTab('includes')" class="tab-btn flex-1 py-3 px-2 sm:px-4 rounded-xl text-center text-xs md:text-sm font-bold transition-all duration-300 text-[#11223A] hover:bg-white/70 bg-white/40 border border-gray-200/50">
+            Tour Includes
+          </button>
+        </div>
+
+        <div class="p-6 md:p-8">
+          
+          <!-- Tab 1: About Itinerary -->
+          <div id="tab-content-about" class="tab-content space-y-6">
+            <div class="space-y-4">
+              <h3 class="text-base md:text-lg font-bold text-[#11223A]">Tour Overview & Experience</h3>
+              <p class="text-xs md:text-sm text-gray-700 leading-relaxed">Experience the beauty and culture of this amazing destination. This carefully curated itinerary ensures you get the best of relaxation, sightseeing, and unforgettable memories. From pristine landscapes to rich heritage, this package is designed for the perfect getaway.</p>
+              
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+                <div class="p-4 bg-gray-50 rounded-xl border border-gray-100">
+                  <h4 class="font-bold text-xs md:text-sm text-[#11223A] mb-2 flex items-center gap-1.5">
+                    <span class="text-[#C19A58]">✨</span> Key Highlights
+                  </h4>
+                  <ul class="text-xs text-gray-600 space-y-1.5 list-disc pl-4">
+                    <li>Handpicked experiences and sightseeing</li><li>Comfortable and premium accommodation</li><li>Expert guidance and 24/7 support</li>
+                  </ul>
+                </div>
+                <div class="p-4 bg-gray-50 rounded-xl border border-gray-100">
+                  <h4 class="font-bold text-xs md:text-sm text-[#11223A] mb-2 flex items-center gap-1.5">
+                    <span class="text-[#C19A58]">📋</span> Essential Summary
+                  </h4>
+                  <ul class="text-xs text-gray-600 space-y-1.5">
+                    <li><strong>Trip Code:</strong> AN2604</li>
+                    <li><strong>Duration:</strong> 4 Days / 3 Nights</li>
+                    <li><strong>Accommodation:</strong> 3/4 Star Hotel or Resort</li>
+                    <li><strong>Transfers:</strong> Private Car Transfers</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Tab 2: Itinerary Accordion -->
+          <div id="tab-content-itinerary" class="tab-content hidden space-y-3.5">
+            <div class="lg:col-span-3 space-y-4">
+
 
           <!-- Day 1 -->
           <div class="accordion-item border border-gray-200 rounded-xl overflow-hidden bg-white shadow-2xs">
@@ -180,7 +237,7 @@
                 <svg class="w-4 h-4 transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
               </div>
             </button>
-            <div class="accordion-body p-5 border-t border-gray-100 flex flex-col md:flex-row gap-6 items-start">
+            <div class="accordion-body p-5 border-t border-white/10 flex flex-col md:flex-row gap-6 items-start">
               <div class="flex-1 space-y-2 text-xs text-gray-600 leading-relaxed">
                 <p class="font-semibold text-gray-800">🛬 Arrival & Hotel Check-in: Arrive at Port Blair Airport in the morning or afternoon. Meet our representative and transfer to your hotel for check-in and relaxation.</p>
                 <p class="font-semibold text-gray-800">🏖️ Corbyn's Cove Beach: Head to Corbyn’s Cove Beach, the only beach within city limits. Swim, relax, or enjoy optional water sports (Jet Ski, Parasailing, Sea-Kart, Speedboat).</p>
@@ -202,7 +259,7 @@
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
               </div>
             </button>
-            <div class="accordion-body p-5 border-t border-gray-100 flex flex-col md:flex-row gap-6 items-start hidden">
+            <div class="accordion-body p-5 border-t border-white/10 flex flex-col md:flex-row gap-6 items-start hidden">
               <div class="flex-1 space-y-2 text-xs text-gray-600 leading-relaxed">
                 <p class="font-semibold text-gray-800">🚢 Private Ferry Cruise: After breakfast, check out and board private ferry to Havelock Island (Swaraj Dweep) (approx. 1.5 to 2.5 hrs). Meet our team at Havelock jetty and check into resort.</p>
                 <p class="font-semibold text-gray-800">🌊 Radhanagar Beach (Beach No. 7): In the afternoon (14:30 - 15:30 hrs), visit world-renowned Radhanagar Beach — rated the Best Beach in Asia by Time Magazine. Unwind in turquoise waters, walk powdery white sands & witness a breathtaking sunset.</p>
@@ -223,7 +280,7 @@
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
               </div>
             </button>
-            <div class="accordion-body p-5 border-t border-gray-100 flex flex-col md:flex-row gap-6 items-start hidden">
+            <div class="accordion-body p-5 border-t border-white/10 flex flex-col md:flex-row gap-6 items-start hidden">
               <div class="flex-1 space-y-2 text-xs text-gray-600 leading-relaxed">
                 <p class="font-semibold text-gray-800">☕ Beachside Café Visit: Visit "Something Different - A Beachside Café" offering ocean views, kids play zone, and book corner to relax before your return trip.</p>
                 <p class="font-semibold text-gray-800">🚢 Return Ferry & Port Blair Leisure: Board private ferry back to Port Blair. Check into hotel. Rest of day free for local markets or optional excursions (Chidiyatapu, Wandoor Beach & Ross Island).</p>
@@ -244,7 +301,7 @@
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
               </div>
             </button>
-            <div class="accordion-body p-5 border-t border-gray-100 flex flex-col md:flex-row gap-6 items-start hidden">
+            <div class="accordion-body p-5 border-t border-white/10 flex flex-col md:flex-row gap-6 items-start hidden">
               <div class="flex-1 space-y-2 text-xs text-gray-600 leading-relaxed">
                 <p class="font-semibold text-gray-800">🛫 Airport Departure: Breakfast at hotel, checkout, and transfer to Port Blair Airport for your onward flight, carrying serene island memories.</p>
                 <p class="font-medium text-[#C19A58]">✨ Safe Travels!</p>
@@ -253,25 +310,102 @@
             </div>
           </div>
 
-        </div>
-
-        <!-- CONTACT FORM SIDEBAR -->
-        <div class="lg:col-span-1">
-          <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-200/80 sticky top-24">
-            <h3 class="text-base font-bold text-[#11223A] text-center mb-4">Book Andaman Islands Package</h3>
-            <form action="contact.html" method="GET" class="space-y-3">
-              <input type="text" placeholder="Name" required class="w-full bg-gray-50 border border-gray-200 rounded-lg px-3 py-2 text-xs text-gray-800 focus:outline-none" />
-              <input type="email" placeholder="Email" required class="w-full bg-gray-50 border border-gray-200 rounded-lg px-3 py-2 text-xs text-gray-800 focus:outline-none" />
-              <input type="tel" placeholder="Phone" required class="w-full bg-gray-50 border border-gray-200 rounded-lg px-3 py-2 text-xs text-gray-800 focus:outline-none" />
-              <input type="text" value="A Glimpse of Andamans (AN2604 - 4 Days)" readonly class="w-full bg-gray-100 border border-gray-200 rounded-lg px-3 py-2 text-xs text-gray-600 font-medium" />
-              <textarea placeholder="Your message..." rows="3" class="w-full bg-gray-50 border border-gray-200 rounded-lg px-3 py-2 text-xs text-gray-800 focus:outline-none resize-none"></textarea>
-              <button type="submit" class="w-full bg-[#C19A58] hover:bg-[#a88243] text-white font-bold py-2.5 rounded-full text-xs shadow-md transition">Submit Inquiry</button>
-            </form>
+            </div>
           </div>
+          
+          <!-- Tab 3: Tour Includes -->
+          <div id="tab-content-includes" class="tab-content hidden">
+            <!-- Header -->
+            <div class="flex items-center gap-3 border-b border-gray-200 pb-4 mb-6">
+              <span class="text-xl md:text-2xl drop-shadow-sm">🟩</span>
+              <h3 class="text-lg md:text-xl font-extrabold text-[#11223A] tracking-tight">
+                Common Inclusions <span class="text-gray-500 font-semibold text-sm md:text-base tracking-normal ml-1">(What is Included)</span>
+              </h3>
+            </div>
+            <!-- Inclusions Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
+              <!-- Card 1: Accommodation -->
+              <div class="bg-white border border-gray-100 rounded-2xl p-5 md:p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                <div class="w-12 h-12 rounded-full bg-gradient-to-br from-[#FDF8EE] to-[#f4e8d3] flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300 shadow-inner">
+                  <svg class="w-6 h-6 text-[#C19A58]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                </div>
+                <h4 class="text-base font-extrabold text-[#11223A] mb-3">Accommodation</h4>
+                <ul class="text-sm text-gray-600 space-y-2.5 list-none pl-1">
+                  <li class="flex items-start gap-2">
+                    <span class="text-[#C19A58] mt-1 shrink-0">✦</span>
+                    <span>Overnight stays in handpicked 3-star, 4-star, or luxury hotels/resorts (based on your selected package tier).</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-[#C19A58] mt-1 shrink-0">✦</span>
+                    <span>Daily complimentary breakfast at all hotel stays.</span>
+                  </li>
+                </ul>
+              </div>
+              <!-- Card 2: Ground Transportation -->
+              <div class="bg-white border border-gray-100 rounded-2xl p-5 md:p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                <div class="w-12 h-12 rounded-full bg-gradient-to-br from-[#FDF8EE] to-[#f4e8d3] flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300 shadow-inner">
+                  <svg class="w-6 h-6 text-[#C19A58]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+                </div>
+                <h4 class="text-base font-extrabold text-[#11223A] mb-3">Ground Transportation & Transfers</h4>
+                <ul class="text-sm text-gray-600 space-y-2.5 list-none pl-1">
+                  <li class="flex items-start gap-2">
+                    <span class="text-[#C19A58] mt-1 shrink-0">✦</span>
+                    <span>Air-conditioned vehicle for airport transfers, city-to-city travel, and scheduled sightseeing as outlined in your itinerary.</span>
+                  </li>
+                </ul>
+              </div>
+              <!-- Card 3: Sightseeing & Excursions -->
+              <div class="bg-white border border-gray-100 rounded-2xl p-5 md:p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                <div class="w-12 h-12 rounded-full bg-gradient-to-br from-[#FDF8EE] to-[#f4e8d3] flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300 shadow-inner">
+                  <svg class="w-6 h-6 text-[#C19A58]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"/></svg>
+                </div>
+                <h4 class="text-base font-extrabold text-[#11223A] mb-3">Sightseeing & Excursions</h4>
+                <ul class="text-sm text-gray-600 space-y-2.5 list-none pl-1">
+                  <li class="flex items-start gap-2">
+                    <span class="text-[#C19A58] mt-1 shrink-0">✦</span>
+                    <span>Entry tickets and access to key attractions and landmarks explicitly specified in your confirmed itinerary.</span>
+                  </li>
+                </ul>
+              </div>
+              <!-- Card 4: Support & Assistance -->
+              <div class="bg-white border border-gray-100 rounded-2xl p-5 md:p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                <div class="w-12 h-12 rounded-full bg-gradient-to-br from-[#FDF8EE] to-[#f4e8d3] flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300 shadow-inner">
+                  <svg class="w-6 h-6 text-[#C19A58]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"/></svg>
+                </div>
+                <h4 class="text-base font-extrabold text-[#11223A] mb-3">On-Ground Support & Assistance</h4>
+                <ul class="text-sm text-gray-600 space-y-2.5 list-none pl-1">
+                  <li class="flex items-start gap-2">
+                    <span class="text-[#C19A58] mt-1 shrink-0">✦</span>
+                    <span>24/7 dedicated customer support via WhatsApp and phone throughout your trip.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-[#C19A58] mt-1 shrink-0">✦</span>
+                    <span>Personalized travel vouchers and detailed daily route plans.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Note Alert Box -->
+            <div class="mt-8 bg-[#11223A] rounded-xl p-5 md:p-6 flex flex-col md:flex-row gap-4 items-center shadow-md border border-[#11223A]/80 text-white group hover:shadow-lg transition-shadow duration-300 relative overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-r from-[#C19A58]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div class="w-10 h-10 rounded-full bg-[#C19A58]/20 flex items-center justify-center shrink-0 border border-[#C19A58]/30">
+                <svg class="w-5 h-5 text-[#C19A58]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <div class="relative z-10 text-center md:text-left">
+                <p class="text-sm md:text-base font-bold text-white mb-1 tracking-wide uppercase text-[#C19A58]">Note</p>
+                <p class="text-xs md:text-sm text-gray-300 leading-relaxed font-medium">
+                  All final inclusions are tailored specifically to your customized itinerary and agreed package tier.
+                </p>
+              </div>
+            </div>
+          </div>
+          
         </div>
+      </div>
 
-      <!-- CTA SECTION (Enquire About Tour & Customize Package) -->
-      <div class="bg-gradient-to-r from-[#162a45] to-[#1C2D45] rounded-2xl p-6 md:p-8 text-white shadow-lg border border-[#C19A58]/30 flex flex-col md:flex-row items-center justify-between gap-6 mt-8" data-aos="fade-up">
+      <!-- CTA SECTION
+  <!-- CTA SECTION (Enquire About Tour & Customize Package) -->
+      <div class="bg-gradient-to-r from-[#162a45] to-[#1C2D45] rounded-2xl p-6 md:p-8 text-white shadow-lg border border-[#C19A58]/30 flex flex-col md:flex-row flex-wrap items-center justify-between gap-6 mt-8" data-aos="fade-up">
         <div class="space-y-1.5 text-center md:text-left">
           <h3 class="text-lg md:text-xl font-extrabold text-white flex items-center justify-center md:justify-start gap-2">
             <span>✨</span> Ready to Experience This Tour?
@@ -280,7 +414,7 @@
             Enquire now for direct availability or customize this itinerary to match your personal travel preferences.
           </p>
         </div>
-        <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto shrink-0">
+        <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto flex-wrap justify-center shrink-0">
           <!-- Button 1: Enquire About Tour -->
           <button onclick="openEnquireModal('A Glimpse of Andamans (AN2604)')" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#C19A58] hover:bg-[#b08b49] text-white px-5 py-3 rounded-full text-xs font-bold tracking-wider transition-all shadow-md transform hover:-translate-y-0.5">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
@@ -311,19 +445,19 @@
         <input type="hidden" id="enquire-pkg-input" name="package" value="A Glimpse of Andamans (AN2604)" />
         <div>
           <label class="block text-xs font-semibold text-gray-700 mb-1">Your Full Name *</label>
-          <input type="text" name="name" required placeholder="John Doe" class="w-full px-4 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-xs text-gray-800 focus:outline-none focus:border-[#C19A58]" />
+          <input type="text" name="name" required placeholder="John Doe" class="w-full px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-xs text-gray-800 focus:outline-none focus:border-[#C19A58]" />
         </div>
         <div>
           <label class="block text-xs font-semibold text-gray-700 mb-1">Email Address *</label>
-          <input type="email" name="email" required placeholder="john@example.com" class="w-full px-4 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-xs text-gray-800 focus:outline-none focus:border-[#C19A58]" />
+          <input type="email" name="email" required placeholder="john@example.com" class="w-full px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-xs text-gray-800 focus:outline-none focus:border-[#C19A58]" />
         </div>
         <div>
           <label class="block text-xs font-semibold text-gray-700 mb-1">Phone Number (with WhatsApp) *</label>
-          <input type="tel" name="phone" required placeholder="+1 234 567 8900" class="w-full px-4 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-xs text-gray-800 focus:outline-none focus:border-[#C19A58]" />
+          <input type="tel" name="phone" required placeholder="+1 234 567 8900" class="w-full px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-xs text-gray-800 focus:outline-none focus:border-[#C19A58]" />
         </div>
         <div>
           <label class="block text-xs font-semibold text-gray-700 mb-1">Traveler Count & Preferences</label>
-          <textarea name="notes" rows="3" placeholder="Number of travelers, preferred travel dates, hotel category..." class="w-full px-4 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-xs text-gray-800 focus:outline-none focus:border-[#C19A58] resize-none"></textarea>
+          <textarea name="notes" rows="3" placeholder="Number of travelers, preferred travel dates, hotel category..." class="w-full px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-xs text-gray-800 focus:outline-none focus:border-[#C19A58] resize-none"></textarea>
         </div>
         <button type="submit" class="w-full py-3 bg-[#C19A58] hover:bg-[#b08b49] text-white font-bold rounded-xl text-xs tracking-wider transition-all shadow-md">
           SUBMIT ENQUIRY
@@ -422,29 +556,59 @@
       });
     }
 
+    
+    // Tab Switcher
+    function switchTab(tabName) {
+      const tabs = ['about', 'itinerary', 'includes'];
+      tabs.forEach(t => {
+        const btn = document.getElementById(`tab-btn-${t}`);
+        const content = document.getElementById(`tab-content-${t}`);
+        if (t === tabName) {
+          btn.className = "tab-btn flex-1 py-3 px-2 sm:px-4 rounded-xl text-center text-xs md:text-sm font-extrabold transition-all duration-300 bg-[#11223A] text-white shadow-md";
+          content.classList.remove('hidden');
+        } else {
+          btn.className = "tab-btn flex-1 py-3 px-2 sm:px-4 rounded-xl text-center text-xs md:text-sm font-bold transition-all duration-300 text-[#11223A] hover:bg-white/70 bg-white/40 border border-gray-200/50";
+          content.classList.add('hidden');
+        }
+      });
+    }
+
     // Accordion Toggle
     function toggleAccordion(button) {
-      const item = button.closest('.accordion-item');
-      const body = item.querySelector('.accordion-body');
-      const icon = item.querySelector('.accordion-icon svg');
-      const title = item.querySelector('.accordion-title');
+      const currentBody = button.nextElementSibling || button.parentElement.querySelector('.accordion-body');
+      const currentIcon = button.querySelector('.accordion-icon svg');
+      const isCurrentlyClosed = currentBody.classList.contains('hidden');
 
-      const isHidden = body.classList.contains('hidden');
+      // Close all accordion items in itinerary tab
+      document.querySelectorAll('#tab-content-itinerary .accordion-item').forEach(item => {
+        const btn = item.querySelector('button');
+        const body = item.querySelector('.accordion-body');
+        const icon = item.querySelector('.accordion-icon svg');
+        const titleSpan = item.querySelector('.accordion-title');
+        
+        if (body) body.classList.add('hidden');
+        if (icon) icon.classList.remove('rotate-180');
+        if (btn) {
+          btn.classList.remove('bg-[#1C2D45]', 'text-white');
+          btn.classList.add('bg-gray-50/70', 'hover:bg-gray-100/80');
+        }
+        if (titleSpan) {
+          titleSpan.classList.remove('text-white');
+          titleSpan.classList.add('text-[#11223A]');
+        }
+      });
 
-      if (isHidden) {
-        body.classList.remove('hidden');
-        button.classList.remove('bg-gray-50/70');
-        button.classList.add('bg-[#1C2D45]');
-        title.classList.remove('text-[#11223A]');
-        title.classList.add('text-white');
-        icon.classList.add('rotate-180');
-      } else {
-        body.classList.add('hidden');
-        button.classList.add('bg-gray-50/70');
-        button.classList.remove('bg-[#1C2D45]');
-        title.classList.add('text-[#11223A]');
-        title.classList.remove('text-white');
-        icon.classList.remove('rotate-180');
+      // If clicked item was closed, open it & apply active dark background
+      if (isCurrentlyClosed) {
+        currentBody.classList.remove('hidden');
+        if (currentIcon) currentIcon.classList.add('rotate-180');
+        button.classList.remove('bg-gray-50/70', 'hover:bg-gray-100/80');
+        button.classList.add('bg-[#1C2D45]', 'text-white');
+        const titleSpan = button.querySelector('.accordion-title');
+        if (titleSpan) {
+          titleSpan.classList.remove('text-[#11223A]');
+          titleSpan.classList.add('text-white');
+        }
       }
     }
   </script>
