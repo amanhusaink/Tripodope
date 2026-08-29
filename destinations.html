@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
 
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Explore Destinations - Tripodope</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="index.css?v=1.5">
-  <link rel="icon" type="image/png" href="componets/favicon_io/Trip%20o%20dope%20logo-09%201.png">
-  <meta property="og:image" content="componets/favicon_io/Trip%20o%20dope%20logo-09%201.png">
-  <meta name="twitter:image" content="componets/favicon_io/Trip%20o%20dope%20logo-09%201.png">
-  <!-- AOS Animation Library -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Explore Destinations - Tripodope</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="index.css?v=1.5" rel="stylesheet"/>
+<link href="componets/favicon_io/Trip%20o%20dope%20logo-09%201.png" rel="icon" type="image/png"/>
+<meta content="componets/favicon_io/Trip%20o%20dope%20logo-09%201.png" property="og:image"/>
+<meta content="componets/favicon_io/Trip%20o%20dope%20logo-09%201.png" name="twitter:image"/>
+<!-- AOS Animation Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
     tailwind.config = {
       theme: {
         extend: {
@@ -32,1593 +32,1206 @@
     }
   </script>
 </head>
-
 <body class="bg-[#11223A] text-gray-100 overflow-x-hidden font-sans m-0">
-
-  <!-- Quick Contact & Social CTA Bar (Top Bar above Navbar) -->
-  <div class="bg-[#0b1728] border-b border-[#C19A58]/20 shadow-sm py-2.5 px-4 sm:px-8 md:px-12">
-    <div class="w-full flex items-center justify-end gap-2 sm:gap-3 text-xs sm:text-sm font-medium">
-      <!-- Call CTA -->
-      <a href="tel:+393347553788" aria-label="Call Us" class="flex items-center space-x-1.5 bg-[#11223A] hover:bg-[#C19A58] text-white px-3.5 py-1.5 rounded-full border border-[#C19A58]/30 hover:border-[#C19A58] transition-all duration-300 shadow-sm hover:scale-105 group">
-        <svg class="w-3.5 h-3.5 text-[#C19A58] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-        </svg>
-        <span class="font-semibold text-xs">+39 334 755 3788</span>
-      </a>
-
-      <!-- WhatsApp CTA -->
-      <a href="https://wa.me/393444440325" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp" class="flex items-center justify-center w-7 h-7 bg-[#11223A] hover:bg-[#C19A58] text-white rounded-full border border-[#C19A58]/30 hover:border-[#C19A58] transition-all duration-300 shadow-sm hover:scale-105 group">
-        <svg class="w-3.5 h-3.5 fill-current text-[#C19A58] group-hover:text-white transition-colors" viewBox="0 0 24 24">
-          <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.105 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.157 4.228 4.227-1.157zm11.294-7.227c-.244-.122-1.444-.712-1.668-.794-.224-.081-.388-.122-.551.122-.163.244-.632.794-.775.957-.143.163-.285.183-.529.061-.244-.122-1.033-.381-1.968-1.214-.726-.648-1.216-1.448-1.359-1.693-.143-.244-.015-.376.107-.497.11-.11.244-.285.367-.428.122-.143.163-.244.244-.407.081-.163.041-.306-.02-.428-.061-.122-.551-1.344-.754-1.833-.198-.476-.399-.412-.551-.42h-.469c-.163 0-.428.061-.652.306-.224.244-.856.836-.856 2.039 0 1.203.877 2.364.999 2.527.122.163 1.727 2.637 4.183 3.698.584.252 1.04.403 1.396.516.588.187 1.123.16 1.545.097.471-.07 1.444-.591 1.648-1.161.204-.57.204-1.059.143-1.161-.061-.102-.224-.163-.469-.285z"/>
-        </svg>
-      </a>
-
-      <!-- Email CTA -->
-      <a href="mailto:info@tripodope.com" aria-label="Email Us" title="Email Us" class="flex items-center justify-center w-7 h-7 bg-[#11223A] hover:bg-[#C19A58] text-white rounded-full border border-[#C19A58]/30 hover:border-[#C19A58] transition-all duration-300 shadow-sm hover:scale-105 group">
-        <svg class="w-3.5 h-3.5 text-[#C19A58] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-        </svg>
-      </a>
-
-      <!-- Instagram CTA -->
-      <a href="https://www.instagram.com/tripodope?igsh=Ymp0MDJjd2FxZ2ly" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram" class="flex items-center justify-center w-7 h-7 bg-[#11223A] hover:bg-[#C19A58] text-white rounded-full border border-[#C19A58]/30 hover:border-[#C19A58] transition-all duration-300 shadow-sm hover:scale-105 group">
-        <svg class="w-3.5 h-3.5 fill-current text-[#C19A58] group-hover:text-white transition-colors" viewBox="0 0 24 24">
-          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-        </svg>
-      </a>
-
-      <!-- Facebook CTA -->
-      <a href="https://www.facebook.com/share/1ByA4eSvHh/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook" class="flex items-center justify-center w-7 h-7 bg-[#11223A] hover:bg-[#C19A58] text-white rounded-full border border-[#C19A58]/30 hover:border-[#C19A58] transition-all duration-300 shadow-sm hover:scale-105 group">
-        <svg class="w-3.5 h-3.5 fill-current text-[#C19A58] group-hover:text-white transition-colors" viewBox="0 0 24 24">
-          <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-        </svg>
-      </a>
+<!-- Quick Contact & Social CTA Bar (Top Bar above Navbar) -->
+<div class="bg-[#0b1728] border-b border-[#C19A58]/20 shadow-sm py-2.5 px-4 sm:px-8 md:px-12">
+<div class="w-full flex items-center justify-end gap-2 sm:gap-3 text-xs sm:text-sm font-medium">
+<!-- Call CTA -->
+<a aria-label="Call Us" class="flex items-center space-x-1.5 bg-[#11223A] hover:bg-[#C19A58] text-white px-3.5 py-1.5 rounded-full border border-[#C19A58]/30 hover:border-[#C19A58] transition-all duration-300 shadow-sm hover:scale-105 group" href="tel:+393347553788">
+<svg class="w-3.5 h-3.5 text-[#C19A58] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span class="font-semibold text-xs">+39 334 755 3788</span>
+</a>
+<!-- WhatsApp CTA -->
+<a aria-label="WhatsApp" class="flex items-center justify-center w-7 h-7 bg-[#11223A] hover:bg-[#C19A58] text-white rounded-full border border-[#C19A58]/30 hover:border-[#C19A58] transition-all duration-300 shadow-sm hover:scale-105 group" href="https://wa.me/393444440325" rel="noopener noreferrer" target="_blank" title="WhatsApp">
+<svg class="w-3.5 h-3.5 fill-current text-[#C19A58] group-hover:text-white transition-colors" viewbox="0 0 24 24">
+<path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.105 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.157 4.228 4.227-1.157zm11.294-7.227c-.244-.122-1.444-.712-1.668-.794-.224-.081-.388-.122-.551.122-.163.244-.632.794-.775.957-.143.163-.285.183-.529.061-.244-.122-1.033-.381-1.968-1.214-.726-.648-1.216-1.448-1.359-1.693-.143-.244-.015-.376.107-.497.11-.11.244-.285.367-.428.122-.143.163-.244.244-.407.081-.163.041-.306-.02-.428-.061-.122-.551-1.344-.754-1.833-.198-.476-.399-.412-.551-.42h-.469c-.163 0-.428.061-.652.306-.224.244-.856.836-.856 2.039 0 1.203.877 2.364.999 2.527.122.163 1.727 2.637 4.183 3.698.584.252 1.04.403 1.396.516.588.187 1.123.16 1.545.097.471-.07 1.444-.591 1.648-1.161.204-.57.204-1.059.143-1.161-.061-.102-.224-.163-.469-.285z"></path>
+</svg>
+</a>
+<!-- Email CTA -->
+<a aria-label="Email Us" class="flex items-center justify-center w-7 h-7 bg-[#11223A] hover:bg-[#C19A58] text-white rounded-full border border-[#C19A58]/30 hover:border-[#C19A58] transition-all duration-300 shadow-sm hover:scale-105 group" href="mailto:info@tripodope.com" title="Email Us">
+<svg class="w-3.5 h-3.5 text-[#C19A58] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+<!-- Instagram CTA -->
+<a aria-label="Instagram" class="flex items-center justify-center w-7 h-7 bg-[#11223A] hover:bg-[#C19A58] text-white rounded-full border border-[#C19A58]/30 hover:border-[#C19A58] transition-all duration-300 shadow-sm hover:scale-105 group" href="https://www.instagram.com/tripodope?igsh=Ymp0MDJjd2FxZ2ly" rel="noopener noreferrer" target="_blank" title="Instagram">
+<svg class="w-3.5 h-3.5 fill-current text-[#C19A58] group-hover:text-white transition-colors" viewbox="0 0 24 24">
+<path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+</svg>
+</a>
+<!-- Facebook CTA -->
+<a aria-label="Facebook" class="flex items-center justify-center w-7 h-7 bg-[#11223A] hover:bg-[#C19A58] text-white rounded-full border border-[#C19A58]/30 hover:border-[#C19A58] transition-all duration-300 shadow-sm hover:scale-105 group" href="https://www.facebook.com/share/1ByA4eSvHh/" rel="noopener noreferrer" target="_blank" title="Facebook">
+<svg class="w-3.5 h-3.5 fill-current text-[#C19A58] group-hover:text-white transition-colors" viewbox="0 0 24 24">
+<path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path>
+</svg>
+</a>
+</div>
+</div>
+<!-- Navigation -->
+<nav class="bg-[#FAF9F6]/95 backdrop-blur-md sticky top-0 z-50 border-b border-black/5 shadow-sm">
+<div class="w-full px-4 sm:px-8 md:px-12 py-2.5">
+<div class="relative flex items-center justify-between">
+<!-- Logo -->
+<a class="flex items-center z-10" href="index.html">
+<img alt="Tripodope" class="h-10 md:h-14 w-auto" src="componets/tripodope-logo.png"/>
+</a>
+<!-- Navigation Links (Shifted Right) -->
+<div class="hidden lg:flex items-center space-x-8 whitespace-nowrap absolute left-[58%] -translate-x-1/2">
+<a class="text-gray-700 hover:text-[#C19A58] text-sm font-semibold transition-colors" href="index.html">Home</a>
+<a class="text-gray-700 hover:text-[#C19A58] text-sm font-semibold transition-colors" href="europe-packages.html">Europe Packages</a>
+<a class="text-gray-700 hover:text-[#C19A58] text-sm font-semibold transition-colors" href="worldwide-packages.html">WorldWide Packages</a>
+          <a class="text-gray-700 hover:text-[#C19A58] text-sm font-semibold transition-colors" href="services.html?service=flight-ticket">Flights</a>
+<a class="text-gray-700 hover:text-[#C19A58] text-sm font-semibold transition-colors" href="about.html">About Us</a>
+<a class="text-gray-700 hover:text-[#C19A58] text-sm font-semibold transition-colors" href="contact.html">Contact Us</a>
+  <!-- More Dropdown -->
+  <div class="relative group">
+    <button class="text-gray-700 hover:text-[#C19A58] text-sm font-semibold transition-colors inline-flex items-center">
+      More
+      <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+    </button>
+    <div class="absolute left-0 mt-2 w-48 bg-white rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 overflow-hidden border border-gray-100">
+      <a href="gallery.html" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#C19A58]">Gallery</a>
+      <a href="destinations.html" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#C19A58]">Destinations</a>
     </div>
   </div>
-
-  <!-- Navigation -->
-  <nav class="bg-[#FAF9F6]/95 backdrop-blur-md sticky top-0 z-50 border-b border-black/5 shadow-sm">
-    <div class="w-full px-4 sm:px-8 md:px-12 py-2.5">
-      <div class="relative flex items-center justify-between">
-        <!-- Logo -->
-        <a href="index.html" class="flex items-center z-10">
-          <img src="componets/tripodope-logo.png" alt="Tripodope" class="h-16 md:h-20 w-auto">
-        </a>
-
-        <!-- Navigation Links (Shifted Right) -->
-        <div class="hidden lg:flex items-center space-x-8 whitespace-nowrap absolute left-[58%] -translate-x-1/2">
-          <a href="index.html" class="text-gray-700 hover:text-[#C19A58] text-sm font-semibold transition-colors">Home</a>
-          <a href="europe-packages.html" class="text-gray-700 hover:text-[#C19A58] text-sm font-semibold transition-colors">Europe Packages</a>
-          <a href="worldwide-packages.html" class="text-gray-700 hover:text-[#C19A58] text-sm font-semibold transition-colors">WorldWide Packages</a>
-          <a href="about.html" class="text-gray-700 hover:text-[#C19A58] text-sm font-semibold transition-colors">About Us</a>
-          <a href="contact.html" class="text-gray-700 hover:text-[#C19A58] text-sm font-semibold transition-colors">Contact Us</a>
-        </div>
-
-        <!-- Mobile Controls (Hamburger Only) -->
-        <div class="flex items-center space-x-2 lg:hidden">
-          <button id="mobile-menu-button" class="text-gray-700 hover:text-[#C19A58] focus:outline-none p-1">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
-        </div>
-      </div>
-
-      <!-- Mobile Menu -->
-      <div id="mobile-menu" class="lg:hidden hidden pt-4 pb-2">
-        <div class="flex flex-col space-y-4">
-          <a href="index.html"
-            class="mobile-menu-link text-gray-700 hover:text-[#C19A58] text-base font-medium transition-colors px-2 py-2">Home</a>
-          <a href="europe-packages.html"
-            class="mobile-menu-link text-gray-700 hover:text-[#C19A58] text-base font-medium transition-colors px-2 py-2">Europe Packages</a>
-          <a href="worldwide-packages.html"
-            class="mobile-menu-link text-gray-700 hover:text-[#C19A58] text-base font-medium transition-colors px-2 py-2">WorldWide Packages</a>
-          <a href="about.html"
-            class="mobile-menu-link text-gray-700 hover:text-[#C19A58] text-base font-medium transition-colors px-2 py-2">About
+</div>
+<!-- Mobile Controls (Hamburger Only) -->
+<div class="flex items-center space-x-2 lg:hidden">
+<button class="text-gray-700 hover:text-[#C19A58] focus:outline-none p-1" id="mobile-menu-button">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</div>
+</div>
+<!-- Mobile Menu -->
+<div class="lg:hidden hidden pt-4 pb-2" id="mobile-menu">
+<div class="flex flex-col space-y-4">
+<a class="mobile-menu-link text-gray-700 hover:text-[#C19A58] text-base font-medium transition-colors px-2 py-2" href="index.html">Home</a>
+<a class="mobile-menu-link text-gray-700 hover:text-[#C19A58] text-base font-medium transition-colors px-2 py-2" href="europe-packages.html">Europe Packages</a>
+<a class="mobile-menu-link text-gray-700 hover:text-[#C19A58] text-base font-medium transition-colors px-2 py-2" href="worldwide-packages.html">WorldWide Packages</a>
+            <a class="mobile-menu-link text-gray-700 hover:text-[#C19A58] text-base font-medium transition-colors px-2 py-2" href="services.html?service=flight-ticket">Flights</a>
+<a class="mobile-menu-link text-gray-700 hover:text-[#C19A58] text-base font-medium transition-colors px-2 py-2" href="about.html">About
             Us</a>
-          <a href="contact.html"
-            class="bg-[#11223A] text-white px-4 py-2.5 rounded-full text-base font-semibold hover:bg-[#C19A58] transition-all duration-300 inline-block w-fit mt-2">
+<a class="bg-[#11223A] text-white px-4 py-2.5 rounded-full text-base font-semibold hover:bg-[#C19A58] transition-all duration-300 inline-block w-fit mt-2" href="contact.html">
             Contact
           </a>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Header -->
-  <section class="px-4 sm:px-6 md:px-[35px] py-8 md:py-10">
-    <div
-      class="relative w-full md:max-w-l mx-auto rounded-3xl overflow-hidden h-[15rem] md:h-[20rem] bg-cover bg-center"
-      style="background-image: url('componets/destination-top-banner.jpg');">
-      <div class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30"></div>
-      <div class="relative z-10 h-full flex flex-col justify-center px-6 md:px-12 text-white">
-        <span class="text-xs uppercase tracking-wider font-semibold text-gray-300 mb-2">Explore Europe</span>
-        <h1 data-aos="fade-up" class="text-3xl md:text-5xl font-bold leading-tight">Popular Destinations</h1>
-        <p data-aos="fade-up" data-aos-delay="100" class="text-gray-200 text-sm md:text-base mt-2 max-w-xl">
+</div>
+</div>
+</div>
+</nav>
+<!-- Hero Header -->
+<section class="px-4 sm:px-6 md:px-[35px] py-8 md:py-10">
+<div class="relative w-full md:max-w-l mx-auto rounded-3xl overflow-hidden h-[15rem] md:h-[20rem] bg-cover bg-center" style="background-image: url('componets/destination-top-banner.jpg');">
+<div class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30"></div>
+<div class="relative z-10 h-full flex flex-col justify-center px-6 md:px-12 text-white">
+<span class="text-xs uppercase tracking-wider font-semibold text-gray-300 mb-2">Explore Europe</span>
+<h1 class="text-3xl md:text-5xl font-bold leading-tight" data-aos="fade-up">Popular Destinations</h1>
+<p class="text-gray-200 text-sm md:text-base mt-2 max-w-xl" data-aos="fade-up" data-aos-delay="100">
           Discover details about the cities, regions, and landmarks included in our planned tours.
         </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Interactive Controls Section -->
-  <section class="mx-auto px-6 md:px-[35px] pt-8 pb-4"
-    style="background: linear-gradient(rgba(17,34,58,0.96), rgba(17,34,58,0.96)), url('componets/travel-pattern-bg.png'); background-size: 400px;">
-    <!-- Back to Home Button -->
-    <div class="mb-6 flex" data-aos="fade-up">
-      <a href="index.html"
-        class="inline-flex items-center gap-2 text-sm font-semibold text-[#C19A58] hover:text-[#C19A58]/80 transition-colors">
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-        </svg>
+</div>
+</div>
+</section>
+<!-- Interactive Controls Section -->
+<section class="mx-auto px-6 md:px-[35px] pt-8 pb-4" style="background: linear-gradient(rgba(17,34,58,0.96), rgba(17,34,58,0.96)), url('componets/travel-pattern-bg.png'); background-size: 400px;">
+<!-- Back to Home Button -->
+<div class="mb-6 flex" data-aos="fade-up">
+<a class="inline-flex items-center gap-2 text-sm font-semibold text-[#C19A58] hover:text-[#C19A58]/80 transition-colors" href="index.html">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M10 19l-7-7m0 0l7-7m-7 7h18" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
         Back to Home
       </a>
-    </div>
-    <!-- Search Bar -->
-    <div class="w-full max-w-md mx-auto mb-10" data-aos="fade-up">
-      <input type="text" id="search-box"
-        class="w-full bg-white border border-white/10 rounded-full px-6 py-3.5 text-white placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary shadow-sm text-sm"
-        placeholder="Search cities, countries, or landmarks...">
-    </div>
-
-    <!-- Country Tabs -->
-    <div class="flex flex-wrap gap-2 justify-center mb-12" data-aos="fade-up" data-aos-delay="100">
-      <button
-        class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold border border-white/10 bg-[#162a45] text-gray-300 hover:bg-[#1f3655] border-white/10 active-tab"
-        data-filter="all">All Destinations</button>
-      <button
-        class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold border border-white/10 bg-[#162a45] text-gray-300 hover:bg-[#1f3655] border-white/10"
-        data-filter="europe">Europe (All)</button>
-      <button
-        class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold border border-white/10 bg-[#162a45] text-gray-300 hover:bg-[#1f3655] border-white/10"
-        data-filter="italy">Italy</button>
-      <button
-        class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold border border-white/10 bg-[#162a45] text-gray-300 hover:bg-[#1f3655] border-white/10"
-        data-filter="switzerland">Switzerland</button>
-      <button
-        class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold border border-white/10 bg-[#162a45] text-gray-300 hover:bg-[#1f3655] border-white/10"
-        data-filter="france">France</button>
-      <button
-        class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold border border-white/10 bg-[#162a45] text-gray-300 hover:bg-[#1f3655] border-white/10"
-        data-filter="monaco">Monaco</button>
-      <button
-        class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold border border-white/10 bg-[#162a45] text-gray-300 hover:bg-[#1f3655] border-white/10"
-        data-filter="vatican">Vatican City</button>
-      <button
-        class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold border border-white/10 bg-[#162a45] text-gray-300 hover:bg-[#1f3655] border-white/10"
-        data-filter="germany">Germany</button>
-      <button
-        class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold border border-white/10 bg-[#162a45] text-gray-300 hover:bg-[#1f3655] border-white/10"
-        data-filter="austria">Austria</button>
-      <button
-        class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold border border-white/10 bg-[#162a45] text-gray-300 hover:bg-[#1f3655] border-white/10"
-        data-filter="netherlands-belgium">Benelux</button>
-      <button
-        class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold border border-white/10 bg-[#162a45] text-gray-300 hover:bg-[#1f3655] border-white/10"
-        data-filter="spain-portugal">Spain & Portugal</button>
-      <button
-        class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold border border-white/10 bg-[#162a45] text-gray-300 hover:bg-[#1f3655] border-white/10"
-        data-filter="croatia-others">Croatia & Others</button>
-      <button
-        class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold border border-white/10 bg-[#162a45] text-gray-300 hover:bg-[#1f3655] border-white/10"
-        data-filter="india">India</button>
-      <button
-        class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold border border-white/10 bg-[#162a45] text-gray-300 hover:bg-[#1f3655] border-white/10"
-        data-filter="dubai">Dubai</button>
-      <button
-        class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold border border-white/10 bg-[#162a45] text-gray-300 hover:bg-[#1f3655] border-white/10"
-        data-filter="srilanka">Sri Lanka</button>
-      <button
-        class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold border border-white/10 bg-[#162a45] text-gray-300 hover:bg-[#1f3655] border-white/10"
-        data-filter="thailand">Thailand</button>
-      <button
-        class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold border border-white/10 bg-[#162a45] text-gray-300 hover:bg-[#1f3655] border-white/10"
-        data-filter="malaysia">Malaysia</button>
-      <button
-        class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold border border-white/10 bg-[#162a45] text-gray-300 hover:bg-[#1f3655] border-white/10"
-        data-filter="singapore">Singapore</button>
-      <button
-        class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold border border-white/10 bg-[#162a45] text-gray-300 hover:bg-[#1f3655] border-white/10"
-        data-filter="indonesia">Indonesia</button>
-      <button
-        class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold border border-white/10 bg-[#162a45] text-gray-300 hover:bg-[#1f3655] border-white/10"
-        data-filter="maldives">Maldives</button>
-    </div>
-  </section>
-
-  <!-- Destinations Listings -->
-  <main class="mx-auto px-6 md:px-[35px] pb-16">
-
-    <!-- ITALY SECTION -->
-    <div class="destination-section-group mb-12" data-country="italy">
-      <div class="border-l-4 border-primary pl-4 mb-6">
-        <h2 class="text-2xl font-bold text-white uppercase tracking-wider">Italy</h2>
-        <p class="text-sm text-gray-400 mt-1"> birth place of the Roman Empire, featuring rich masterpieces of art,
+</div>
+<!-- Search Bar -->
+<div class="w-full max-w-md mx-auto mb-10" data-aos="fade-up">
+<input class="w-full bg-white border border-white/10 rounded-full px-6 py-3.5 text-white placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary shadow-sm text-sm" id="search-box" placeholder="Search cities, countries, or landmarks..." type="text"/>
+</div>
+<!-- Country Tabs -->
+<div class="flex flex-wrap gap-2 justify-center mb-12" data-aos="fade-up" data-aos-delay="100">
+<button class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold border border-white/10 bg-[#162a45] text-gray-300 hover:bg-[#1f3655] border-white/10 active-tab" data-filter="all">All Destinations</button>
+<button class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold border border-white/10 bg-[#162a45] text-gray-300 hover:bg-[#1f3655] border-white/10" data-filter="europe">Europe (All)</button>
+<button class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold border border-white/10 bg-[#162a45] text-gray-300 hover:bg-[#1f3655] border-white/10" data-filter="italy">Italy</button>
+<button class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold border border-white/10 bg-[#162a45] text-gray-300 hover:bg-[#1f3655] border-white/10" data-filter="switzerland">Switzerland</button>
+<button class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold border border-white/10 bg-[#162a45] text-gray-300 hover:bg-[#1f3655] border-white/10" data-filter="france">France</button>
+<button class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold border border-white/10 bg-[#162a45] text-gray-300 hover:bg-[#1f3655] border-white/10" data-filter="monaco">Monaco</button>
+<button class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold border border-white/10 bg-[#162a45] text-gray-300 hover:bg-[#1f3655] border-white/10" data-filter="vatican">Vatican City</button>
+<button class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold border border-white/10 bg-[#162a45] text-gray-300 hover:bg-[#1f3655] border-white/10" data-filter="germany">Germany</button>
+<button class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold border border-white/10 bg-[#162a45] text-gray-300 hover:bg-[#1f3655] border-white/10" data-filter="austria">Austria</button>
+<button class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold border border-white/10 bg-[#162a45] text-gray-300 hover:bg-[#1f3655] border-white/10" data-filter="netherlands-belgium">Benelux</button>
+<button class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold border border-white/10 bg-[#162a45] text-gray-300 hover:bg-[#1f3655] border-white/10" data-filter="spain-portugal">Spain &amp; Portugal</button>
+<button class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold border border-white/10 bg-[#162a45] text-gray-300 hover:bg-[#1f3655] border-white/10" data-filter="croatia-others">Croatia &amp; Others</button>
+<button class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold border border-white/10 bg-[#162a45] text-gray-300 hover:bg-[#1f3655] border-white/10" data-filter="india">India</button>
+<button class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold border border-white/10 bg-[#162a45] text-gray-300 hover:bg-[#1f3655] border-white/10" data-filter="dubai">Dubai</button>
+<button class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold border border-white/10 bg-[#162a45] text-gray-300 hover:bg-[#1f3655] border-white/10" data-filter="srilanka">Sri Lanka</button>
+<button class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold border border-white/10 bg-[#162a45] text-gray-300 hover:bg-[#1f3655] border-white/10" data-filter="thailand">Thailand</button>
+<button class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold border border-white/10 bg-[#162a45] text-gray-300 hover:bg-[#1f3655] border-white/10" data-filter="malaysia">Malaysia</button>
+<button class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold border border-white/10 bg-[#162a45] text-gray-300 hover:bg-[#1f3655] border-white/10" data-filter="singapore">Singapore</button>
+<button class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold border border-white/10 bg-[#162a45] text-gray-300 hover:bg-[#1f3655] border-white/10" data-filter="indonesia">Indonesia</button>
+<button class="filter-tab px-5 py-2.5 rounded-full text-xs font-semibold border border-white/10 bg-[#162a45] text-gray-300 hover:bg-[#1f3655] border-white/10" data-filter="maldives">Maldives</button>
+</div>
+</section>
+<!-- Destinations Listings -->
+<main class="mx-auto px-6 md:px-[35px] pb-16">
+<!-- ITALY SECTION -->
+<div class="destination-section-group mb-12" data-country="italy">
+<div class="border-l-4 border-primary pl-4 mb-6">
+<h2 class="text-2xl font-bold text-white uppercase tracking-wider">Italy</h2>
+<p class="text-sm text-gray-400 mt-1"> birth place of the Roman Empire, featuring rich masterpieces of art,
           architecture, lakes, mountains, and spectacular coastlines.</p>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="rome colosseum vatican st. peter's italy">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/1.png" class="h-44 w-full object-cover" alt="Rome">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Rome</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Italy's capital, a cosmopolitan city with nearly 3,000
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="rome colosseum vatican st. peter's italy">
+<img alt="Rome" class="h-44 w-full object-cover" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Rome</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Italy's capital, a cosmopolitan city with nearly 3,000
               years of globally influential history on display. Home to the Colosseum, Roman Forum, and Vatican City.
             </p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="florence duomo renaissance uffizi michelangelo italy">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/2.png" class="h-44 w-full object-cover"
-            alt="Florence">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Florence</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Tuscany's capital, home to Renaissance masterpieces by
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="florence duomo renaissance uffizi michelangelo italy">
+<img alt="Florence" class="h-44 w-full object-cover" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Florence</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Tuscany's capital, home to Renaissance masterpieces by
               Michelangelo, Botticelli, and Leonardo. Features the Duomo and Ponte Vecchio bridge.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="venice canal gondola lagoon mark's basilica italy">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/3.png" class="h-44 w-full object-cover"
-            alt="Venice">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Venice</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Built on more than 100 small islands in a lagoon. It has no
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="venice canal gondola lagoon mark's basilica italy">
+<img alt="Venice" class="h-44 w-full object-cover" src="https://images.unsplash.com/photo-1514890547357-a9ee288728e0?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Venice</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Built on more than 100 small islands in a lagoon. It has no
               roads, just waterways lined with Gothic and Renaissance palaces, and St. Mark's Square.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="amalfi coast positano towns cliffs cliffs sea italy">
-          <img src="https://tripodope.com/wp-content/uploads/2023/07/2.jpg" class="h-44 w-full object-cover"
-            alt="Amalfi Coast">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Amalfi Coast</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">A UNESCO-listed stunning stretch of coastline, featuring
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="amalfi coast positano towns cliffs cliffs sea italy">
+<img alt="Amalfi Coast" class="h-44 w-full object-cover" src="https://images.unsplash.com/photo-1499678329028-101435549a4e?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Amalfi Coast</h3>
+<p class="text-xs text-gray-300 leading-relaxed">A UNESCO-listed stunning stretch of coastline, featuring
               colorful hillside towns built precariously along vertical cliffs cascading down to the sea.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="capri island blue grotto Faraglioni island italy">
-          <img src="https://tripodope.com/wp-content/uploads/2023/07/3.jpg" class="h-44 w-full object-cover" alt="Image"
-            loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Capri Island</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">A rocky island jutting from an intensely blue sea. Famous
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="capri island blue grotto Faraglioni island italy">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Capri Island</h3>
+<p class="text-xs text-gray-300 leading-relaxed">A rocky island jutting from an intensely blue sea. Famous
               for the Blue Grotto cave and Faraglioni rocks, long attracting tourists and elites.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="pompei vesuvius volcano ruins eruption history italy">
-          <img src="https://tripodope.com/wp-content/uploads/2023/07/4.jpg" class="h-44 w-full object-cover" alt="Image"
-            loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Pompei</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">The remains of the ancient Roman city destroyed and
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="pompei vesuvius volcano ruins eruption history italy">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Pompei</h3>
+<p class="text-xs text-gray-300 leading-relaxed">The remains of the ancient Roman city destroyed and
               preserved under Mt. Vesuvius' lava and ash from AD 79. Offers a walk through old streets and homes.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="assisi francis saint church Umbria hill italy">
-          <img src="https://tripodope.com/wp-content/uploads/2023/07/6.jpg" class="h-44 w-full object-cover" alt="Image"
-            loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Assisi</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">A hill town in Umbria and birthplace of Saint Francis. The
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="assisi francis saint church Umbria hill italy">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Assisi</h3>
+<p class="text-xs text-gray-300 leading-relaxed">A hill town in Umbria and birthplace of Saint Francis. The
               Basilica of St. Francis features 13th-century frescoes by Giotto detailing the saint's life.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="san giovanni rotondo saint padre pio pio apulia foggia italy">
-          <img src="https://tripodope.com/wp-content/uploads/2023/07/7.jpg" class="h-44 w-full object-cover" alt="Image"
-            loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">San Giovanni Rotondo</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Located in Apulia, famous as the home of Saint Padre Pio of
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="san giovanni rotondo saint padre pio pio apulia foggia italy">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">San Giovanni Rotondo</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Located in Apulia, famous as the home of Saint Padre Pio of
               Pietrelcina from 1916 until his death in 1968, drawing millions of pilgrims yearly.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="frasassi caves karst cave system genga ancona marche italy">
-          <img src="https://tripodope.com/wp-content/uploads/2023/07/8.jpg" class="h-44 w-full object-cover" alt="Image"
-            loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Frasassi Caves</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">A remarkable karst cave system in Genga, Marche. Among the
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="frasassi caves karst cave system genga ancona marche italy">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1499678329028-101435549a4e?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Frasassi Caves</h3>
+<p class="text-xs text-gray-300 leading-relaxed">A remarkable karst cave system in Genga, Marche. Among the
               most famous show caves in Italy, boasting immense stalactites and caverns.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="pisa leaning tower square miracles baptistery cathedral italy">
-          <img src="https://tripodope.com/wp-content/uploads/2023/07/10.jpg" class="h-44 w-full object-cover"
-            alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Pisa</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Famed for the Leaning Tower on the Piazza dei Miracoli, a
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="pisa leaning tower square miracles baptistery cathedral italy">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Pisa</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Famed for the Leaning Tower on the Piazza dei Miracoli, a
               Romanesque cathedral, and baptistery showing detailed medieval stone carvings.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="padova padua st. anthony basilica veneto tomb italy">
-          <img src="https://tripodope.com/wp-content/uploads/2023/07/11.jpg" class="h-44 w-full object-cover"
-            alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Padova</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">A city in the Veneto region, known for Giotto's Scrovegni
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="padova padua st. anthony basilica veneto tomb italy">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Padova</h3>
+<p class="text-xs text-gray-300 leading-relaxed">A city in the Veneto region, known for Giotto's Scrovegni
               Chapel frescoes and the vast 13th-century Basilica of St. Anthony containing the saint's tomb.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="verona romeo juliet balcony arena amphitheater adige italy">
-          <img src="https://tripodope.com/wp-content/uploads/2023/07/13.jpg" class="h-44 w-full object-cover"
-            alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Verona</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Famous setting of Shakespeare's "Romeo and Juliet".
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="verona romeo juliet balcony arena amphitheater adige italy">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Verona</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Famous setting of Shakespeare's "Romeo and Juliet".
               Features Juliet's House and balcony, along with a massive 1st-century Roman Arena hosting operas.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="rosa mistica madonna apparition blessed fountain pilgrimage brescia brixia italy">
-          <img src="https://tripodope.com/wp-content/uploads/2023/07/6.jpg" class="h-44 w-full object-cover" alt="Image"
-            loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Rosa Mistica</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">A sacred pilgrimage site in Fontanelle, Italy, where the
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="rosa mistica madonna apparition blessed fountain pilgrimage brescia brixia italy">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Rosa Mistica</h3>
+<p class="text-xs text-gray-300 leading-relaxed">A sacred pilgrimage site in Fontanelle, Italy, where the
               Madonna appeared in 1947 and blessed a holy spring for spiritual healing.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="milan duomo gothic fashion design financial hub last supper da vinci italy">
-          <img src="https://tripodope.com/wp-content/uploads/2023/07/12.jpg" class="h-44 w-full object-cover"
-            alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Milan</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Italy's design capital, featuring the spectacular Gothic
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="milan duomo gothic fashion design financial hub last supper da vinci italy">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Milan</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Italy's design capital, featuring the spectacular Gothic
               Duomo di Milano, the historic Galleria, and Leonardo da Vinci's mural "The Last Supper".</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="cinque terre monterosso vernazza corniglia manarola riomaggiore hiking villages italy">
-          <img src="https://tripodope.com/wp-content/uploads/2023/07/2.jpg" class="h-44 w-full object-cover" alt="Image"
-            loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Cinque Terre</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">A beautiful coastal region with steep hills and sheer
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="cinque terre monterosso vernazza corniglia manarola riomaggiore hiking villages italy">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1499678329028-101435549a4e?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Cinque Terre</h3>
+<p class="text-xs text-gray-300 leading-relaxed">A beautiful coastal region with steep hills and sheer
               cliffs overlooking the sea. Made of five old-world fishing villages linked by walking paths.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="chianti wine tour tuscany vineyards tasting labels specialties Florence italy">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/2.png" class="h-44 w-full object-cover" alt="Image"
-            loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Chianti Wine Region</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Famous Tuscan countryside landscape lined with lush
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="chianti wine tour tuscany vineyards tasting labels specialties Florence italy">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Chianti Wine Region</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Famous Tuscan countryside landscape lined with lush
               vineyards and olive groves, offering tastings of world-renowned Chianti wine labels.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="como lake resort villas mountains garden botanical Bellagio Varenna italy">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/960x0.webp" class="h-44 w-full object-cover"
-            alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Lake Como</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">A stunning Alpine-rimmed lake, lined by small picturesque
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="como lake resort villas mountains garden botanical Bellagio Varenna italy">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Lake Como</h3>
+<p class="text-xs text-gray-300 leading-relaxed">A stunning Alpine-rimmed lake, lined by small picturesque
               resort towns, opulent historic villas, and elegant public botanical gardens.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="don bosco turin church basilica our lady help christians relics john bosco italy">
-          <img src="https://tripodope.com/wp-content/uploads/2023/07/7.jpg" class="h-44 w-full object-cover" alt="Image"
-            loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Don Bosco Church (Turin)</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">The Basilica of Our Lady Help of Christians, founded by
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="don bosco turin church basilica our lady help christians relics john bosco italy">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Don Bosco Church (Turin)</h3>
+<p class="text-xs text-gray-300 leading-relaxed">The Basilica of Our Lady Help of Christians, founded by
               Saint John Bosco, enshrining his remains and 6,000 sacred relics of other saints.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="mont blanc alps peak highest elevation chamonix courmayeur white mountain italy">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/960x0.webp" class="h-44 w-full object-cover"
-            alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Mont Blanc</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Rising to 4,808 meters above sea level, Mont Blanc ("White
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="mont blanc alps peak highest elevation chamonix courmayeur white mountain italy">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Mont Blanc</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Rising to 4,808 meters above sea level, Mont Blanc ("White
               Mountain") is the highest peak in the Alps and Western Europe, offering majestic glacier views.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- VATICAN CITY SECTION -->
-
-
-
-
-    <div class="destination-section-group mb-12" data-country="vatican">
-      <div class="border-l-4 border-primary pl-4 mb-6">
-        <h2 class="text-2xl font-bold text-white uppercase tracking-wider">Vatican City</h2>
-        <p class="text-sm text-gray-400 mt-1">A sovereign city-state enclaved within Rome, Italy, serving as the
+</div>
+</div>
+</div>
+</div>
+<!-- VATICAN CITY SECTION -->
+<div class="destination-section-group mb-12" data-country="vatican">
+<div class="border-l-4 border-primary pl-4 mb-6">
+<h2 class="text-2xl font-bold text-white uppercase tracking-wider">Vatican City</h2>
+<p class="text-sm text-gray-400 mt-1">A sovereign city-state enclaved within Rome, Italy, serving as the
           spiritual and administrative center of the Roman Catholic Church.</p>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="vatican city square basilica st. peter's chapel sistine rome pope museum">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/7.png" class="h-44 w-full object-cover" alt="Image"
-            loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Vatican City</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Home to the Pope and St. Peter's Basilica. Enshrines
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="vatican city square basilica st. peter's chapel sistine rome pope museum">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1499678329028-101435549a4e?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Vatican City</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Home to the Pope and St. Peter's Basilica. Enshrines
               priceless art, Michelangelo's Sistine Chapel ceiling, and the massive St. Peter's Square.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- SWITZERLAND SECTION -->
-    <div class="destination-section-group mb-12" data-country="switzerland">
-      <div class="border-l-4 border-primary pl-4 mb-6">
-        <h2 class="text-2xl font-bold text-white uppercase tracking-wider">Switzerland</h2>
-        <p class="text-sm text-gray-400 mt-1">Land of intense natural beauty, dominated by mountain peaks, rolling
+</div>
+</div>
+</div>
+</div>
+<!-- SWITZERLAND SECTION -->
+<div class="destination-section-group mb-12" data-country="switzerland">
+<div class="border-l-4 border-primary pl-4 mb-6">
+<h2 class="text-2xl font-bold text-white uppercase tracking-wider">Switzerland</h2>
+<p class="text-sm text-gray-400 mt-1">Land of intense natural beauty, dominated by mountain peaks, rolling
           meadows, impressive lakes, and premium shopping centers.</p>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="zurich old town lake financial capital shopping switzerland">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/bridge-and-city-skyline.jpg"
-            class="h-44 w-full object-cover" alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Zurich</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Switzerland's largest city, cultural hub, and financial
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="zurich old town lake financial capital shopping switzerland">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Zurich</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Switzerland's largest city, cultural hub, and financial
               capital. Features a well-preserved Old Town alongside the shores of Lake Zurich.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="lucerne lake chapel bridge pilatus mount reuss medieval switzerland">
-          <img src="https://tripodope.com/wp-content/uploads/2023/07/12.jpg" class="h-44 w-full object-cover"
-            alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Lucerne</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Lies at Lake Lucerne with a medieval core, historic
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="lucerne lake chapel bridge pilatus mount reuss medieval switzerland">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Lucerne</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Lies at Lake Lucerne with a medieval core, historic
               buildings, and the iconic wooden Chapel Bridge. Ideal base for trips up Mt. Pilatus.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="interlaken alpine mountains adventure paragliding jungfrau valley switzerland">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/960x0.webp" class="h-44 w-full object-cover"
-            alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Interlaken</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">A traditional resort town nestled between Lake Thun and
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="interlaken alpine mountains adventure paragliding jungfrau valley switzerland">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Interlaken</h3>
+<p class="text-xs text-gray-300 leading-relaxed">A traditional resort town nestled between Lake Thun and
               Lake Brienz, dominated by Bernese Alps. Renowned as Switzerland's adventure capital.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="zermatt matterhorn mountain alpine peaks pyramid electric car free switzerland">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/7.png" class="h-44 w-full object-cover" alt="Image"
-            loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Zermatt & The Matterhorn</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">A car-free resort village enclosed by steep mountains,
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="zermatt matterhorn mountain alpine peaks pyramid electric car free switzerland">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Zermatt &amp; The Matterhorn</h3>
+<p class="text-xs text-gray-300 leading-relaxed">A car-free resort village enclosed by steep mountains,
               dominated by the graceful pyramid-shaped peak of the legendary Matterhorn.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="geneva lake peaks alps united nations lake borders switzerland">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/1.png" class="h-44 w-full object-cover" alt="Image"
-            loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Geneva</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Set along the shores of Lake Geneva and surrounded by
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="geneva lake peaks alps united nations lake borders switzerland">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1499678329028-101435549a4e?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Geneva</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Set along the shores of Lake Geneva and surrounded by
               Alpine peaks. Host to international organizations, scenic lake cruises, and old town lanes.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="jungfraujoch top of europe train saddle glacier peaks monch switzerland">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/2.png" class="h-44 w-full object-cover" alt="Image"
-            loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Jungfraujoch</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">A notable saddle in the Bernese Alps, connecting Jungfrau
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="jungfraujoch top of europe train saddle glacier peaks monch switzerland">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Jungfraujoch</h3>
+<p class="text-xs text-gray-300 leading-relaxed">A notable saddle in the Bernese Alps, connecting Jungfrau
               and Mönch peaks at 3,466m. Reached by train, it is famously called the "Top of Europe".</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="mt. pilatus mount lucerne cogwheel railway cableway summit esel tomlishorn switzerland">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/960x0.webp" class="h-44 w-full object-cover"
-            alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Mt. Pilatus</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">A mountain overlooking Lucerne. Accessible by the world's
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="mt. pilatus mount lucerne cogwheel railway cableway summit esel tomlishorn switzerland">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Mt. Pilatus</h3>
+<p class="text-xs text-gray-300 leading-relaxed">A mountain overlooking Lucerne. Accessible by the world's
               steepest cogwheel railway, offering breathtaking Alpine panoramic views.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="mt. titlis mount alps revolving cable car rotair glacier cave suspension bridge switzerland">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/960x0.webp" class="h-44 w-full object-cover"
-            alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Mt. Titlis</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Famous Alpine summit in Central Switzerland, featuring the
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="mt. titlis mount alps revolving cable car rotair glacier cave suspension bridge switzerland">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Mt. Titlis</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Famous Alpine summit in Central Switzerland, featuring the
               world's first revolving cable car, glacier caves, and Europe's highest suspension bridge.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="lake lucerne vierwaldstattersee boat steamer William Tell Express Central Switzerland switzerland">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/960x0.webp" class="h-44 w-full object-cover"
-            alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Lake Lucerne</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">A scenic 38-kilometer-long lake, best explored by historic
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="lake lucerne vierwaldstattersee boat steamer William Tell Express Central Switzerland switzerland">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Lake Lucerne</h3>
+<p class="text-xs text-gray-300 leading-relaxed">A scenic 38-kilometer-long lake, best explored by historic
               paddle-wheel steamers linking Lucerne with Alpine trailheads.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="rhine falls waterfall schaffhausen high rhine natural wonder europe switzerland">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/bridge-and-city-skyline.jpg"
-            class="h-44 w-full object-cover" alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Rhine Falls</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">The largest and most powerful plain waterfall in Europe.
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="rhine falls waterfall schaffhausen high rhine natural wonder europe switzerland">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1499678329028-101435549a4e?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Rhine Falls</h3>
+<p class="text-xs text-gray-300 leading-relaxed">The largest and most powerful plain waterfall in Europe.
               Located on the High Rhine, offering spectacular views from boat platforms.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="st. moritz luxury resort engadin valley winter sports olympics lake springs switzerland">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/960x0.webp" class="h-44 w-full object-cover"
-            alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">St. Moritz</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">One of the world's most famous luxury winter sports
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="st. moritz luxury resort engadin valley winter sports olympics lake springs switzerland">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">St. Moritz</h3>
+<p class="text-xs text-gray-300 leading-relaxed">One of the world's most famous luxury winter sports
               resorts, set above a sunny lake with mineral-rich health springs.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="glacier express scenic rail train st. moritz zermatt bridges tunnels passes switzerland">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/960x0.webp" class="h-44 w-full object-cover"
-            alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Glacier Express</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Switzerland's iconic rail journey connecting St. Moritz to
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="glacier express scenic rail train st. moritz zermatt bridges tunnels passes switzerland">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Glacier Express</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Switzerland's iconic rail journey connecting St. Moritz to
               Zermatt, traversing majestic mountain passes, 291 bridges, and 91 tunnels.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="golden pass line train rail route alps montreux lucerne Interlaken switzerland">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/960x0.webp" class="h-44 w-full object-cover"
-            alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Golden Pass Line</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">A famous panoramic rail route connecting the historic heart
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="golden pass line train rail route alps montreux lucerne Interlaken switzerland">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Golden Pass Line</h3>
+<p class="text-xs text-gray-300 leading-relaxed">A famous panoramic rail route connecting the historic heart
               of Switzerland (Lucerne) with the French-speaking shores of Montreux.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="lugano lake resort ticino palm trees steamers mountains climate mediterranean switzerland">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/960x0.webp" class="h-44 w-full object-cover"
-            alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Lugano</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Located in the Italian-speaking Ticino canton, Lugano
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="lugano lake resort ticino palm trees steamers mountains climate mediterranean switzerland">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Lugano</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Located in the Italian-speaking Ticino canton, Lugano
               features a gorgeous lake with palm trees, Alpine backdrops, and Mediterranean flair.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="lausanne lake geneva terraces university olympic museum canton vaud switzerland">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/960x0.webp" class="h-44 w-full object-cover"
-            alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Lausanne</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Built on three hills rising above Lake Geneva. A historic
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="lausanne lake geneva terraces university olympic museum canton vaud switzerland">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1499678329028-101435549a4e?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Lausanne</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Built on three hills rising above Lake Geneva. A historic
               university town and world headquarters of the International Olympic Committee.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="bern capital sandstone ridge aare river medieval old town clock tower switzerland">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/960x0.webp" class="h-44 w-full object-cover"
-            alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Bern</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">The capital of Switzerland, built on a loop of the Aare
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="bern capital sandstone ridge aare river medieval old town clock tower switzerland">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Bern</h3>
+<p class="text-xs text-gray-300 leading-relaxed">The capital of Switzerland, built on a loop of the Aare
               River, showcasing sandstone buildings and a charming UNESCO medieval old town.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- FRANCE SECTION -->
-    <div class="destination-section-group mb-12" data-country="france">
-      <div class="border-l-4 border-primary pl-4 mb-6">
-        <h2 class="text-2xl font-bold text-white uppercase tracking-wider">France</h2>
-        <p class="text-sm text-gray-400 mt-1">One of the most visited destinations in the world. Graceful landmarks,
+</div>
+</div>
+</div>
+</div>
+<!-- FRANCE SECTION -->
+<div class="destination-section-group mb-12" data-country="france">
+<div class="border-l-4 border-primary pl-4 mb-6">
+<h2 class="text-2xl font-bold text-white uppercase tracking-wider">France</h2>
+<p class="text-sm text-gray-400 mt-1">One of the most visited destinations in the world. Graceful landmarks,
           Mediterranean coastlines, and rich culinary culture.</p>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="paris eiffel tower seine louvre cathedral champs elysees monument france">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/bridge-and-city-skyline.jpg"
-            class="h-44 w-full object-cover" alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Paris</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">The City of Light. Romances visitors with the Eiffel Tower,
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="paris eiffel tower seine louvre cathedral champs elysees monument france">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Paris</h3>
+<p class="text-xs text-gray-300 leading-relaxed">The City of Light. Romances visitors with the Eiffel Tower,
               Seine River, Notre-Dame, Champs-Elysées, cobblestone streets, and fine pastries.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="nice riviera french beach maritime art matisse chagall france">
-          <img src="https://tripodope.com/wp-content/uploads/2023/07/2.jpg" class="h-44 w-full object-cover" alt="Image"
-            loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Nice</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Capital of the French Riviera, sitting on the pebbly shores
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="nice riviera french beach maritime art matisse chagall france">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Nice</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Capital of the French Riviera, sitting on the pebbly shores
               of the Baie des Anges. Draws artists and vacationers to its Mediterranean sun.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="cannes film festival boulevard croisette luxury red carpet france">
-          <img src="https://tripodope.com/wp-content/uploads/2023/07/3.jpg" class="h-44 w-full object-cover" alt="Image"
-            loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Cannes</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Famed for the international film festival, sandy beaches,
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="cannes film festival boulevard croisette luxury red carpet france">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Cannes</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Famed for the international film festival, sandy beaches,
               luxury hotels, and the beautiful curving Boulevard de la Croisette coast.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="lourdes church pilgrimage spring virgin mary apparition pyrenees domain grotto france">
-          <img src="https://tripodope.com/wp-content/uploads/2023/07/6.jpg" class="h-44 w-full object-cover" alt="Image"
-            loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Lourdes</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">A world-famous Catholic pilgrimage site in the Pyrenees
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="lourdes church pilgrimage spring virgin mary apparition pyrenees domain grotto france">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Lourdes</h3>
+<p class="text-xs text-gray-300 leading-relaxed">A world-famous Catholic pilgrimage site in the Pyrenees
               foothills. Home to the Grotto of Massabielle where the Virgin Mary appeared in 1858.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="disneyland paris theme park entertainment disney castle ride euro disney france">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/bridge-and-city-skyline.jpg"
-            class="h-44 w-full object-cover" alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Disneyland Paris</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">The most visited theme park resort in Europe, located 32 km
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="disneyland paris theme park entertainment disney castle ride euro disney france">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Disneyland Paris</h3>
+<p class="text-xs text-gray-300 leading-relaxed">The most visited theme park resort in Europe, located 32 km
               east of Paris. A magical land featuring family rides and Disney castle dreams.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="lisieux pilgrimage saint therese normandy calvados pays d'auge church france">
-          <img src="https://tripodope.com/wp-content/uploads/2023/07/6.jpg" class="h-44 w-full object-cover" alt="Image"
-            loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Lisieux</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Capital of the beautiful Normandy Pays d'Auge area, famous
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="lisieux pilgrimage saint therese normandy calvados pays d'auge church france">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1499678329028-101435549a4e?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Lisieux</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Capital of the beautiful Normandy Pays d'Auge area, famous
               worldwide as a major pilgrimage site dedicated to Saint Thérèse of Lisieux.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="cognac brandy charente region wine production distillery cellars france">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/2.png" class="h-44 w-full object-cover" alt="Image"
-            loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Cognac Region</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">The historic town and wine region in western France,
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="cognac brandy charente region wine production distillery cellars france">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Cognac Region</h3>
+<p class="text-xs text-gray-300 leading-relaxed">The historic town and wine region in western France,
               world-famous for producing the prestigious double-distilled brandy named after it.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="bordeaux wine capital port city garonne gothic cathedral mansions museum france">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/2.png" class="h-44 w-full object-cover" alt="Image"
-            loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Bordeaux</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">A majestic port city on the Garonne River, renowned as the
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="bordeaux wine capital port city garonne gothic cathedral mansions museum france">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Bordeaux</h3>
+<p class="text-xs text-gray-300 leading-relaxed">A majestic port city on the Garonne River, renowned as the
               global wine capital, showcasing 18th-century mansions and Gothic cathedral art.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="lyons lyon culinary capital history traboules old town rhone saone river france">
-          <img src="https://tripodope.com/wp-content/uploads/2023/07/2.jpg" class="h-44 w-full object-cover" alt="Image"
-            loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Lyons</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">France's gastronomic capital. Features 2,000 years of Roman
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="lyons lyon culinary capital history traboules old town rhone saone river france">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Lyons</h3>
+<p class="text-xs text-gray-300 leading-relaxed">France's gastronomic capital. Features 2,000 years of Roman
               history, medieval streets, and "traboules" (secret covered shortcuts).</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="strasbourg alsace cathedral timber houses rhine parliament border german influence france">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/bridge-and-city-skyline.jpg"
-            class="h-44 w-full object-cover" alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Strasbourg</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Capital of Alsace near the German border, seat of the
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="strasbourg alsace cathedral timber houses rhine parliament border german influence france">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Strasbourg</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Capital of Alsace near the German border, seat of the
               European Parliament. Known for its astronomical clock and timber-framed houses.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="marseille port city mediterranean old port vieux port basilica immigration greek foundation france">
-          <img src="https://tripodope.com/wp-content/uploads/2023/07/2.jpg" class="h-44 w-full object-cover" alt="Image"
-            loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Marseille</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">A vibrant Mediterranean port city founded by Greeks.
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="marseille port city mediterranean old port vieux port basilica immigration greek foundation france">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1499678329028-101435549a4e?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Marseille</h3>
+<p class="text-xs text-gray-300 leading-relaxed">A vibrant Mediterranean port city founded by Greeks.
               Features the historic boat-lined Vieux-Port, fresh fish markets, and hilltop basilica views.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="saint tropez riviera port beach glamour elite luxury yachts france">
-          <img src="https://tripodope.com/wp-content/uploads/2023/07/2.jpg" class="h-44 w-full object-cover" alt="Image"
-            loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Saint Tropez</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">A legendary French Riviera town, once a simple fishing
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="saint tropez riviera port beach glamour elite luxury yachts france">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Saint Tropez</h3>
+<p class="text-xs text-gray-300 leading-relaxed">A legendary French Riviera town, once a simple fishing
               village and now a world-renowned glamorous seaside resort lined with mega-yachts.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- MONACO SECTION -->
-    <div class="destination-section-group mb-12" data-country="monaco">
-      <div class="border-l-4 border-primary pl-4 mb-6">
-        <h2 class="text-2xl font-bold text-white uppercase tracking-wider">Monaco</h2>
-        <p class="text-sm text-gray-400 mt-1">A glamorous sovereign city-state on the French Riviera, famous for its
+</div>
+</div>
+</div>
+</div>
+<!-- MONACO SECTION -->
+<div class="destination-section-group mb-12" data-country="monaco">
+<div class="border-l-4 border-primary pl-4 mb-6">
+<h2 class="text-2xl font-bold text-white uppercase tracking-wider">Monaco</h2>
+<p class="text-sm text-gray-400 mt-1">A glamorous sovereign city-state on the French Riviera, famous for its
           luxury yacht harbors, the Prince's Palace, and world-class casinos.</p>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="monte carlo monaco casino luxury cars opera house gardens glamor french riviera">
-          <img src="componets/monte_carlo.png" class="h-44 w-full object-cover" alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Monte Carlo</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Monaco's most famous district, renowned for its iconic
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="monte carlo monaco casino luxury cars opera house gardens glamor french riviera">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Monte Carlo</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Monaco's most famous district, renowned for its iconic
               Casino de Monte-Carlo, Belle Époque architecture, luxury sports cars, and Mediterranean views.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- GERMANY SECTION -->
-    <div class="destination-section-group mb-12" data-country="germany">
-      <div class="border-l-4 border-primary pl-4 mb-6">
-        <h2 class="text-2xl font-bold text-white uppercase tracking-wider">Germany</h2>
-        <p class="text-sm text-gray-400 mt-1">Historic landmarks, dense forests, fairy-tale castles, vibrant cultural
+</div>
+</div>
+</div>
+</div>
+<!-- GERMANY SECTION -->
+<div class="destination-section-group mb-12" data-country="germany">
+<div class="border-l-4 border-primary pl-4 mb-6">
+<h2 class="text-2xl font-bold text-white uppercase tracking-wider">Germany</h2>
+<p class="text-sm text-gray-400 mt-1">Historic landmarks, dense forests, fairy-tale castles, vibrant cultural
           hubs, and scenic river valleys.</p>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="berlin wall brandenburg gate modern history capital checkpoint germany">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/1.png" class="h-44 w-full object-cover" alt="Image"
-            loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Berlin</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Germany's capital. Home to the Brandenburg Gate, remains of
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="berlin wall brandenburg gate modern history capital checkpoint germany">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Berlin</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Germany's capital. Home to the Brandenburg Gate, remains of
               the Berlin Wall, and a thriving art and modern landmark scene.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="munich oktoberfest bavarian marienplatz hall beer hofbrauhaus glockenspiel germany">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/2.png" class="h-44 w-full object-cover" alt="Image"
-            loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Munich</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Bavaria's capital, famous for beer halls, annual
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="munich oktoberfest bavarian marienplatz hall beer hofbrauhaus glockenspiel germany">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Munich</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Bavaria's capital, famous for beer halls, annual
               Oktoberfest, and the Neo-Gothic town hall on Marienplatz square.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="black forest todtnau spa triberg falls railway hiking woodlands hills cuckoo clock germany">
-          <img src="https://tripodope.com/wp-content/uploads/2023/07/8.jpg" class="h-44 w-full object-cover" alt="Image"
-            loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Black Forest</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">A upland region in southwest Germany. Defined by dark,
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="black forest todtnau spa triberg falls railway hiking woodlands hills cuckoo clock germany">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1499678329028-101435549a4e?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Black Forest</h3>
+<p class="text-xs text-gray-300 leading-relaxed">A upland region in southwest Germany. Defined by dark,
               densely wooded hills, cuckoo clocks, thermal spas, and the Triberg waterfalls.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="cologne koln cathedral gothic architecture rhine river museum ludwig picasso roman antiquities germany">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/bridge-and-city-skyline.jpg"
-            class="h-44 w-full object-cover" alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Cologne</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">A 2,000-year-old city spanning the Rhine, famous for the
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="cologne koln cathedral gothic architecture rhine river museum ludwig picasso roman antiquities germany">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Cologne</h3>
+<p class="text-xs text-gray-300 leading-relaxed">A 2,000-year-old city spanning the Rhine, famous for the
               twin-spired High Gothic Cologne Cathedral, Picasso art, and Roman ruins.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- AUSTRIA SECTION -->
-    <div class="destination-section-group mb-12" data-country="austria">
-      <div class="border-l-4 border-primary pl-4 mb-6">
-        <h2 class="text-2xl font-bold text-white uppercase tracking-wider">Austria</h2>
-        <p class="text-sm text-gray-400 mt-1">Imperial heritage, baroque architecture, alpine valleys, classical music
+</div>
+</div>
+</div>
+</div>
+<!-- AUSTRIA SECTION -->
+<div class="destination-section-group mb-12" data-country="austria">
+<div class="border-l-4 border-primary pl-4 mb-6">
+<h2 class="text-2xl font-bold text-white uppercase tracking-wider">Austria</h2>
+<p class="text-sm text-gray-400 mt-1">Imperial heritage, baroque architecture, alpine valleys, classical music
           legacy, and spectacular lakes.</p>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="vienna palace danube music mozart freud imperial habsburg schoenbrunn">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/3.png" class="h-44 w-full object-cover" alt="Image"
-            loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Vienna</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Austria's elegant capital. Defined by its musical legacy
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="vienna palace danube music mozart freud imperial habsburg schoenbrunn">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Vienna</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Austria's elegant capital. Defined by its musical legacy
               (Mozart, Beethoven) and the grand imperial Schönbrunn Palace.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="salzburg mozart sound of music fortress alps salzach river altstadt austria">
-          <img src="https://tripodope.com/wp-content/uploads/2023/07/7.jpg" class="h-44 w-full object-cover" alt="Image"
-            loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Salzburg</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Divided by the Salzach River, the birthplace of Mozart.
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="salzburg mozart sound of music fortress alps salzach river altstadt austria">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Salzburg</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Divided by the Salzach River, the birthplace of Mozart.
               Features the Hohensalzburg Fortress and Mirabell Palace gardens.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="eagle's nest kehlsteinhaus berchtesgaden hitler third reich mountaintop restaurant retreat Obersalzberg austria">
-          <img src="componets/eagles_nest.png" class="h-44 w-full object-cover" alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Eagle's Nest (Kehlsteinhaus)</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">A historic Third Reich mountaintop retreat above
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="eagle's nest kehlsteinhaus berchtesgaden hitler third reich mountaintop restaurant retreat Obersalzberg austria">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Eagle's Nest (Kehlsteinhaus)</h3>
+<p class="text-xs text-gray-300 leading-relaxed">A historic Third Reich mountaintop retreat above
               Berchtesgaden, offering panoramic Alpine views, now open as a seasonal restaurant.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="innsbruck tyrol alps state capital funicular zaha hadid winter sports hiking">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/960x0.webp" class="h-44 w-full object-cover"
-            alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Innsbruck</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Capital of Austria's Tyrol state, nestled in the Alps. A
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="innsbruck tyrol alps state capital funicular zaha hadid winter sports hiking">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1499678329028-101435549a4e?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Innsbruck</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Capital of Austria's Tyrol state, nestled in the Alps. A
               winter sports hub known for imperial architecture and futuristic funiculars.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="graz styria capital clock tower uhrturm schlossberg kunsthaus futuristic architecture main square">
-          <img src="https://tripodope.com/wp-content/uploads/2023/07/2.jpg" class="h-44 w-full object-cover" alt="Image"
-            loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Graz</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">The capital of Austria's Styria province, blending
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="graz styria capital clock tower uhrturm schlossberg kunsthaus futuristic architecture main square">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Graz</h3>
+<p class="text-xs text-gray-300 leading-relaxed">The capital of Austria's Styria province, blending
               Renaissance and Baroque streets with a futuristic contemporary art museum (Kunsthaus).</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- BENELUX SECTION -->
-    <div class="destination-section-group mb-12" data-country="netherlands-belgium">
-      <div class="border-l-4 border-primary pl-4 mb-6">
-        <h2 class="text-2xl font-bold text-white uppercase tracking-wider">Netherlands & Belgium</h2>
-        <p class="text-sm text-gray-400 mt-1">Scenic canals, world-renowned spring flower parks, modern architectural
+</div>
+</div>
+</div>
+</div>
+<!-- BENELUX SECTION -->
+<div class="destination-section-group mb-12" data-country="netherlands-belgium">
+<div class="border-l-4 border-primary pl-4 mb-6">
+<h2 class="text-2xl font-bold text-white uppercase tracking-wider">Netherlands &amp; Belgium</h2>
+<p class="text-sm text-gray-400 mt-1">Scenic canals, world-renowned spring flower parks, modern architectural
           marvels, and historic guildhalls.</p>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="amsterdam canals tulips museum anne frank rijksmuseum water netherlands">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/bridge-and-city-skyline.jpg"
-            class="h-44 w-full object-cover" alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Amsterdam</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">A city of historic canals, narrow houses with gabled
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="amsterdam canals tulips museum anne frank rijksmuseum water netherlands">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Amsterdam</h3>
+<p class="text-xs text-gray-300 leading-relaxed">A city of historic canals, narrow houses with gabled
               facades, and museums like the Van Gogh, Rijksmuseum, and Anne Frank House.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="keukenhof tulip garden flowers holland lisse bulb belt park netherlands">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/960x0.webp" class="h-44 w-full object-cover"
-            alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Keukenhof: Garden of Europe</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">The largest public flower garden in Lisse, featuring over
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="keukenhof tulip garden flowers holland lisse bulb belt park netherlands">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Keukenhof: Garden of Europe</h3>
+<p class="text-xs text-gray-300 leading-relaxed">The largest public flower garden in Lisse, featuring over
               70 acres filled with millions of blooming tulips, hyacinths, and daffodils in spring.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="brussels capital belgium grand place union european guildhalls">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/7.png" class="h-44 w-full object-cover" alt="Image"
-            loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Brussels</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">The capital of Belgium and administrative center of the EU.
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="brussels capital belgium grand place union european guildhalls">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Brussels</h3>
+<p class="text-xs text-gray-300 leading-relaxed">The capital of Belgium and administrative center of the EU.
               Features medieval guildhalls on the Grand Place and Art Nouveau architecture.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="rotterdam port city holland modern bold architecture delfshaven maritime museum netherlands">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/bridge-and-city-skyline.jpg"
-            class="h-44 w-full object-cover" alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Rotterdam</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">A major Dutch port city, reconstructed after WWII and now
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="rotterdam port city holland modern bold architecture delfshaven maritime museum netherlands">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Rotterdam</h3>
+<p class="text-xs text-gray-300 leading-relaxed">A major Dutch port city, reconstructed after WWII and now
               famous for its bold, futuristic architecture and rich maritime heritage.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="madurodam miniature park scale replica models landmarks the hague scheveningen netherlands">
-          <img src="https://tripodope.com/wp-content/uploads/2023/07/12.jpg" class="h-44 w-full object-cover"
-            alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Madurodam</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">A miniature park in The Hague, containing detailed 1:25
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="madurodam miniature park scale replica models landmarks the hague scheveningen netherlands">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1499678329028-101435549a4e?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Madurodam</h3>
+<p class="text-xs text-gray-300 leading-relaxed">A miniature park in The Hague, containing detailed 1:25
               scale replica models of famous Dutch landmarks, historic cities, and infrastructure.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- SPAIN & PORTUGAL SECTION -->
-    <div class="destination-section-group mb-12" data-country="spain-portugal">
-      <div class="border-l-4 border-primary pl-4 mb-6">
-        <h2 class="text-2xl font-bold text-white uppercase tracking-wider">Spain & Portugal</h2>
-        <p class="text-sm text-gray-400 mt-1">Sun-drenched coasts, historical palaces, Moorish design elements, and
+</div>
+</div>
+</div>
+</div>
+<!-- SPAIN & PORTUGAL SECTION -->
+<div class="destination-section-group mb-12" data-country="spain-portugal">
+<div class="border-l-4 border-primary pl-4 mb-6">
+<h2 class="text-2xl font-bold text-white uppercase tracking-wider">Spain &amp; Portugal</h2>
+<p class="text-sm text-gray-400 mt-1">Sun-drenched coasts, historical palaces, Moorish design elements, and
           religious landmarks.</p>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="barcelona gaudi sagrada familia ramble beach catalonia picasso miro spain">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/3.png" class="h-44 w-full object-cover" alt="Image"
-            loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Barcelona</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Barcelona, the cosmopolitan capital of Spain’s Catalonia
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="barcelona gaudi sagrada familia ramble beach catalonia picasso miro spain">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Barcelona</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Barcelona, the cosmopolitan capital of Spain’s Catalonia
               region, is known for its art and architecture. The fantastical Sagrada Família church and other modernist
               landmarks designed by Antoni Gaudí dot the city. Museu Picasso and Fundació Joan Miró feature modern art
               by their namesakes. City history museum MUHBA, includes several Roman archaeological sites.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="madrid prado palace capital center plazas mayor retiro park spain">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/2.png" class="h-44 w-full object-cover" alt="Image"
-            loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Madrid</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Madrid, Spain’s central capital, is a city of elegant
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="madrid prado palace capital center plazas mayor retiro park spain">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Madrid</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Madrid, Spain’s central capital, is a city of elegant
               boulevards and expansive, manicured parks such as the Buen Retiro. It’s renowned for its rich repositories
               of European art, including the Prado Museum’s works by Goya, Velázquez and other Spanish masters. The
               heart of old Hapsburg Madrid is the portico-lined Plaza Mayor, and nearby is the baroque Royal Palace and
               Armory, displaying historic weaponry.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="lisbon tagus castle suspension bridge coast hills quarters tile portugal">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/960x0.webp" class="h-44 w-full object-cover"
-            alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Lisbon</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Lisbon is Portugal’s hilly, coastal capital city. From
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="lisbon tagus castle suspension bridge coast hills quarters tile portugal">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Lisbon</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Lisbon is Portugal’s hilly, coastal capital city. From
               imposing São Jorge Castle, the view encompasses the old city’s pastel-colored buildings, Tagus Estuary and
               Ponte 25 de Abril suspension bridge. Nearby, the National Azulejo Museum displays 5 centuries of
               decorative ceramic tiles. Just outside Lisbon is a string of Atlantic beaches, from Cascais to Estoril.
             </p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="fatima sanctuary pilgrimage site virgin mary apparition rosary church portugal">
-          <img src="https://tripodope.com/wp-content/uploads/2023/07/6.jpg" class="h-44 w-full object-cover" alt="Image"
-            loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Fatima</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Home to the Sanctuary of Fátima, a Catholic pilgrimage
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="fatima sanctuary pilgrimage site virgin mary apparition rosary church portugal">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Fatima</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Home to the Sanctuary of Fátima, a Catholic pilgrimage
               site. The Capelinha das Aparições marks the spot where the Virgin Mary allegedly appeared in 1917. Other
               sacred sites include the Basílica de Nossa Senhora do Rosário, with its golden angels, and the modern
               church of Igreja da Santíssima Trindade.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="seville andalusia spain flamenco alcazar castle cathedral columbus tomb giralda minaret">
-          <img src="https://tripodope.com/wp-content/uploads/2023/07/2.jpg" class="h-44 w-full object-cover" alt="Image"
-            loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Seville</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Seville is the capital of southern Spain’s Andalusia
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="seville andalusia spain flamenco alcazar castle cathedral columbus tomb giralda minaret">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Seville</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Seville is the capital of southern Spain’s Andalusia
               region. It’s famous for flamenco dancing, particularly in its Triana neighborhood. Major landmarks include
               the ornate Alcázar castle complex, built during the Moorish Almohad dynasty, and the 18th-century Plaza de
               Toros de la Maestranza bullring. The Gothic Seville Cathedral is the site of Christopher Columbus’s tomb
               and a minaret turned bell tower, the Giralda.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="valencia arts sciences futuristic coast mediterranean pailla architecture planetarium oceanarium spain">
-          <img src="https://tripodope.com/wp-content/uploads/2023/07/12.jpg" class="h-44 w-full object-cover"
-            alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Valencia</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">The port city of Valencia lies on Spain’s southeastern
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="valencia arts sciences futuristic coast mediterranean pailla architecture planetarium oceanarium spain">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Valencia</h3>
+<p class="text-xs text-gray-300 leading-relaxed">The port city of Valencia lies on Spain’s southeastern
               coast, where the Turia River meets the Mediterranean Sea. It’s known for its City of Arts and Sciences,
               with futuristic structures including a planetarium, an oceanarium and an interactive museum.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- CROATIA & OTHERS SECTION -->
-    <div class="destination-section-group mb-12" data-country="croatia-others">
-      <div class="border-l-4 border-primary pl-4 mb-6">
-        <h2 class="text-2xl font-bold text-white uppercase tracking-wider">Croatia & Others</h2>
-        <p class="text-sm text-gray-400 mt-1">Historic walled cities on the Adriatic, Central European capitals, and
+</div>
+</div>
+</div>
+</div>
+<!-- CROATIA & OTHERS SECTION -->
+<div class="destination-section-group mb-12" data-country="croatia-others">
+<div class="border-l-4 border-primary pl-4 mb-6">
+<h2 class="text-2xl font-bold text-white uppercase tracking-wider">Croatia &amp; Others</h2>
+<p class="text-sm text-gray-400 mt-1">Historic walled cities on the Adriatic, Central European capitals, and
           scenic karst caves.</p>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="dubrovnik old town wall croatia adriatic king's landing game of thrones">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/1.png" class="h-44 w-full object-cover" alt="Image"
-            loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Dubrovnik</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">The "Pearl of the Adriatic". Encircled with massive
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="dubrovnik old town wall croatia adriatic king's landing game of thrones">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Dubrovnik</h3>
+<p class="text-xs text-gray-300 leading-relaxed">The "Pearl of the Adriatic". Encircled with massive
               16th-century stone walls, it features a limestone-paved pedestrian core and historic palaces.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="split palace diocletian wall coast dalmatian emperor croatia">
-          <img src="https://tripodope.com/wp-content/uploads/2023/07/2.jpg" class="h-44 w-full object-cover" alt="Image"
-            loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Split</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">A coastal town in Croatia, built around the fortress-like
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="split palace diocletian wall coast dalmatian emperor croatia">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Split</h3>
+<p class="text-xs text-gray-300 leading-relaxed">A coastal town in Croatia, built around the fortress-like
               complex of the 4th-century Diocletian's Palace erected by the Roman emperor.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="prague charles bridge castle republic czech spires moldau gothic">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/bridge-and-city-skyline.jpg"
-            class="h-44 w-full object-cover" alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Prague</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Capital of the Czech Republic, nicknamed "City of a
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="prague charles bridge castle republic czech spires moldau gothic">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Prague</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Capital of the Czech Republic, nicknamed "City of a
               Thousand Spires" with preserved historic center, Gothic Charles Bridge, and Prague Castle.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="budapest hungary danube river parliament chain bridge castle pest buda">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/2.png" class="h-44 w-full object-cover" alt="Image"
-            loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Budapest</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Hungary's capital, bisected by the Danube River. Connects
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="budapest hungary danube river parliament chain bridge castle pest buda">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Budapest</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Hungary's capital, bisected by the Danube River. Connects
               flat Pest with hilly Buda containing Castle Hill and the Fisherman's Bastion.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="ljubljana slovenia river bridge castle tivoli green triple bridge">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/960x0.webp" class="h-44 w-full object-cover"
-            alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Ljubljana</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Slovenia's capital, known for university population, green
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="ljubljana slovenia river bridge castle tivoli green triple bridge">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1525596662741-e94ff9f26de1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Ljubljana</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Slovenia's capital, known for university population, green
               spaces, outdoor cafés along the river, and the unique Triple Bridge structure.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="krk island croatia adriatic bridge frankopan castle cathedral kosljun monastery">
-          <img src="https://tripodope.com/wp-content/uploads/2023/07/2.jpg" class="h-44 w-full object-cover" alt="Image"
-            loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Krk Island</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">A large Croatian island connected by a bridge. Known for
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="krk island croatia adriatic bridge frankopan castle cathedral kosljun monastery">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1499678329028-101435549a4e?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Krk Island</h3>
+<p class="text-xs text-gray-300 leading-relaxed">A large Croatian island connected by a bridge. Known for
               its 5th-century cathedral, Frankopan Castle, and the historic Kosljun monastery.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="bratislava slovakia capital danube river castle old town hiking trails carpathian">
-          <img src="https://tripodope.com/wp-content/uploads/2023/06/bridge-and-city-skyline.jpg"
-            class="h-44 w-full object-cover" alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Bratislava</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">The capital of Slovakia, set along the Danube. Features a
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="bratislava slovakia capital danube river castle old town hiking trails carpathian">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Bratislava</h3>
+<p class="text-xs text-gray-300 leading-relaxed">The capital of Slovakia, set along the Danube. Features a
               pedestrian-only 18th-century old town, lively cafés, and the hilltop Bratislava Castle.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="postojna cave slovenia karst cave system pivka river natural tourism wonder stalagmites">
-          <img src="https://tripodope.com/wp-content/uploads/2023/07/8.jpg" class="h-44 w-full object-cover" alt="Image"
-            loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Postojna Cave</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">A world-famous 24-kilometer karst cave system in Slovenia,
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="postojna cave slovenia karst cave system pivka river natural tourism wonder stalagmites">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Postojna Cave</h3>
+<p class="text-xs text-gray-300 leading-relaxed">A world-famous 24-kilometer karst cave system in Slovenia,
               sculpted by the Pivka River, containing spectacular stalagmite formations.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- INDIA SECTION -->
-    <div class="destination-section-group mb-12" data-country="india">
-      <div class="border-l-4 border-primary pl-4 mb-6">
-        <h2 class="text-2xl font-bold text-white uppercase tracking-wider">India</h2>
-        <p class="text-sm text-gray-400 mt-1">A land of vibrant cultures, breathtaking historical landmarks, tropical
+</div>
+</div>
+</div>
+</div>
+<!-- INDIA SECTION -->
+<div class="destination-section-group mb-12" data-country="india">
+<div class="border-l-4 border-primary pl-4 mb-6">
+<h2 class="text-2xl font-bold text-white uppercase tracking-wider">India</h2>
+<p class="text-sm text-gray-400 mt-1">A land of vibrant cultures, breathtaking historical landmarks, tropical
           beaches, and serene mountain valleys.</p>
-      </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="delhi india red fort qutub minar history monuments">
-          <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=800&q=80"
-            class="h-44 w-full object-cover" alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Delhi</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">India's capital, rich in history, featuring iconic
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="delhi india red fort qutub minar history monuments">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Delhi</h3>
+<p class="text-xs text-gray-300 leading-relaxed">India's capital, rich in history, featuring iconic
               monuments like the Red Fort and Qutub Minar.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="agra taj mahal monuments wonder history">
-          <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=800&q=80"
-            class="h-44 w-full object-cover" alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Agra</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Home of the iconic Taj Mahal, Agra Fort, and rich Mughal
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="agra taj mahal monuments wonder history">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Agra</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Home of the iconic Taj Mahal, Agra Fort, and rich Mughal
               history.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="jaipur pink city rajasthan palace fort history heritage">
-          <img src="https://images.unsplash.com/photo-1477584322814-30f227844d37?auto=format&fit=crop&w=800&q=80"
-            class="h-44 w-full object-cover" alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Jaipur</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">The Pink City, known for majestic palaces, historic forts,
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="jaipur pink city rajasthan palace fort history heritage">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1499678329028-101435549a4e?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Jaipur</h3>
+<p class="text-xs text-gray-300 leading-relaxed">The Pink City, known for majestic palaces, historic forts,
               and rich heritage.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="kerala backwaters houseboat canals nature kerala green">
-          <img src="https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=800&q=80"
-            class="h-44 w-full object-cover" alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Kerala Backwaters</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Peaceful palm-lined canals, serene green landscapes, and
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="kerala backwaters houseboat canals nature kerala green">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Kerala Backwaters</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Peaceful palm-lined canals, serene green landscapes, and
               relaxing houseboat cruises.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="goa beach ocean water sports churches holiday">
-          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
-            class="h-44 w-full object-cover" alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Goa</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Vibrant sandy beaches, historic Portuguese churches, and
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="goa beach ocean water sports churches holiday">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Goa</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Vibrant sandy beaches, historic Portuguese churches, and
               delicious local seafood.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- DUBAI SECTION -->
-    <div class="destination-section-group mb-12" data-country="dubai">
-      <div class="border-l-4 border-primary pl-4 mb-6">
-        <h2 class="text-2xl font-bold text-white uppercase tracking-wider">Dubai</h2>
-        <p class="text-sm text-gray-400 mt-1">A glittering oasis of futuristic skyscrapers, luxury shopping malls, and
+</div>
+</div>
+</div>
+</div>
+<!-- DUBAI SECTION -->
+<div class="destination-section-group mb-12" data-country="dubai">
+<div class="border-l-4 border-primary pl-4 mb-6">
+<h2 class="text-2xl font-bold text-white uppercase tracking-wider">Dubai</h2>
+<p class="text-sm text-gray-400 mt-1">A glittering oasis of futuristic skyscrapers, luxury shopping malls, and
           adventurous desert safaris.</p>
-      </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="downtown dubai burj khalifa fountains skyscraper mall">
-          <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80"
-            class="h-44 w-full object-cover" alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Downtown Dubai</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Home of the iconic Burj Khalifa, the massive Dubai Mall,
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="downtown dubai burj khalifa fountains skyscraper mall">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Downtown Dubai</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Home of the iconic Burj Khalifa, the massive Dubai Mall,
               and spectacular fountain shows.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="palm jumeirah atlantis luxury beach island resort">
-          <img src="https://images.unsplash.com/photo-1582672060674-bc2bd808a8b5?auto=format&fit=crop&w=800&q=80"
-            class="h-44 w-full object-cover" alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Palm Jumeirah</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Artificial luxury archipelago housing world-famous resorts,
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="palm jumeirah atlantis luxury beach island resort">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Palm Jumeirah</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Artificial luxury archipelago housing world-famous resorts,
               beaches, and Atlantis.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="desert safari dubai dunes safari camel sand">
-          <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80"
-            class="h-44 w-full object-cover" alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Desert Safari</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Thrilling dune bashing, camel riding, and traditional
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="desert safari dubai dunes safari camel sand">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Desert Safari</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Thrilling dune bashing, camel riding, and traditional
               Bedouin camp dining experiences.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- SRI LANKA SECTION -->
-    <div class="destination-section-group mb-12" data-country="srilanka">
-      <div class="border-l-4 border-primary pl-4 mb-6">
-        <h2 class="text-2xl font-bold text-white uppercase tracking-wider">Sri Lanka</h2>
-        <p class="text-sm text-gray-400 mt-1">An island nation of ancient ruins, scenic tea plantations, lush
+</div>
+</div>
+</div>
+</div>
+<!-- SRI LANKA SECTION -->
+<div class="destination-section-group mb-12" data-country="srilanka">
+<div class="border-l-4 border-primary pl-4 mb-6">
+<h2 class="text-2xl font-bold text-white uppercase tracking-wider">Sri Lanka</h2>
+<p class="text-sm text-gray-400 mt-1">An island nation of ancient ruins, scenic tea plantations, lush
           rainforests, and diverse wildlife.</p>
-      </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="sigiriya rock ancient fortress history ruins srilanka">
-          <img src="https://images.unsplash.com/photo-1578590497573-6785172f52b7?auto=format&fit=crop&w=800&q=80"
-            class="h-44 w-full object-cover" alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Sigiriya Rock</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Stunning ancient rock fortress and sky palace ruins
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="sigiriya rock ancient fortress history ruins srilanka">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Sigiriya Rock</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Stunning ancient rock fortress and sky palace ruins
               standing tall in the forest.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="kandy tea plantations train mountains nature hills">
-          <img src="https://images.unsplash.com/photo-1546708973-b339540b5162?auto=format&fit=crop&w=800&q=80"
-            class="h-44 w-full object-cover" alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Kandy & Tea Hills</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Scenic mountain cities featuring sacred temples, lush tea
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="kandy tea plantations train mountains nature hills">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1499678329028-101435549a4e?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Kandy &amp; Tea Hills</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Scenic mountain cities featuring sacred temples, lush tea
               gardens, and misty hills.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="galle Dutch fort lighthouse coast history ocean">
-          <img src="https://images.unsplash.com/photo-1588598126713-1cf0989fcd18?auto=format&fit=crop&w=800&q=80"
-            class="h-44 w-full object-cover" alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Galle Fort</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Historic Dutch colonial fort city, featuring cozy
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="galle Dutch fort lighthouse coast history ocean">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Galle Fort</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Historic Dutch colonial fort city, featuring cozy
               cobblestone streets and a scenic lighthouse.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- THAILAND SECTION -->
-    <div class="destination-section-group mb-12" data-country="thailand">
-      <div class="border-l-4 border-primary pl-4 mb-6">
-        <h2 class="text-2xl font-bold text-white uppercase tracking-wider">Thailand</h2>
-        <p class="text-sm text-gray-400 mt-1">The Land of Smiles, combining bustling city markets, historic temples, and
+</div>
+</div>
+</div>
+</div>
+<!-- THAILAND SECTION -->
+<div class="destination-section-group mb-12" data-country="thailand">
+<div class="border-l-4 border-primary pl-4 mb-6">
+<h2 class="text-2xl font-bold text-white uppercase tracking-wider">Thailand</h2>
+<p class="text-sm text-gray-400 mt-1">The Land of Smiles, combining bustling city markets, historic temples, and
           world-famous tropical beaches.</p>
-      </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="bangkok grand palace temples shopping floating markets">
-          <img src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=800&q=80"
-            class="h-44 w-full object-cover" alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Bangkok</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Vibrant capital city known for ornate shrines, lively
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="bangkok grand palace temples shopping floating markets">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Bangkok</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Vibrant capital city known for ornate shrines, lively
               street life, and shopping hubs.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="phuket phi phi islands beach marine ocean bay tours">
-          <img src="https://images.unsplash.com/photo-1528181304800-2f170241b221?auto=format&fit=crop&w=800&q=80"
-            class="h-44 w-full object-cover" alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Phuket & Islands</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Gateway to the breathtaking Phi Phi Islands, crystal clear
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="phuket phi phi islands beach marine ocean bay tours">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Phuket &amp; Islands</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Gateway to the breathtaking Phi Phi Islands, crystal clear
               waters, and beach resorts.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="chiang mai temples mountains north thailand nature">
-          <img src="https://images.unsplash.com/photo-1584967918940-a7d51b064268?auto=format&fit=crop&w=800&q=80"
-            class="h-44 w-full object-cover" alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Chiang Mai</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Charming mountainous city in northern Thailand, rich in
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="chiang mai temples mountains north thailand nature">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Chiang Mai</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Charming mountainous city in northern Thailand, rich in
               ancient temples and nature parks.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- MALAYSIA SECTION -->
-    <div class="destination-section-group mb-12" data-country="malaysia">
-      <div class="border-l-4 border-primary pl-4 mb-6">
-        <h2 class="text-2xl font-bold text-white uppercase tracking-wider">Malaysia</h2>
-        <p class="text-sm text-gray-400 mt-1">A multicultural hub offering a unique mix of futuristic cities, historic
+</div>
+</div>
+</div>
+</div>
+<!-- MALAYSIA SECTION -->
+<div class="destination-section-group mb-12" data-country="malaysia">
+<div class="border-l-4 border-primary pl-4 mb-6">
+<h2 class="text-2xl font-bold text-white uppercase tracking-wider">Malaysia</h2>
+<p class="text-sm text-gray-400 mt-1">A multicultural hub offering a unique mix of futuristic cities, historic
           colonial towns, and pristine islands.</p>
-      </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="kuala lumpur petronas twin towers shopping city">
-          <img src="https://images.unsplash.com/photo-1596422846543-75c6fc18a52b?auto=format&fit=crop&w=800&q=80"
-            class="h-44 w-full object-cover" alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Kuala Lumpur</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Home to the towering Petronas Twin Towers, bustling street
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="kuala lumpur petronas twin towers shopping city">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Kuala Lumpur</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Home to the towering Petronas Twin Towers, bustling street
               food stalls, and malls.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="langkawi cable car sky bridge beach duty free">
-          <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=800&q=80"
-            class="h-44 w-full object-cover" alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Langkawi Island</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">An archipelago of 99 tropical islands, famous for duty-free
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="langkawi cable car sky bridge beach duty free">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1499678329028-101435549a4e?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Langkawi Island</h3>
+<p class="text-xs text-gray-300 leading-relaxed">An archipelago of 99 tropical islands, famous for duty-free
               shopping, cable car, and beaches.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- SINGAPORE SECTION -->
-    <div class="destination-section-group mb-12" data-country="singapore">
-      <div class="border-l-4 border-primary pl-4 mb-6">
-        <h2 class="text-2xl font-bold text-white uppercase tracking-wider">Singapore</h2>
-        <p class="text-sm text-gray-400 mt-1">A highly clean, advanced city-state renowned for its garden architectures,
+</div>
+</div>
+</div>
+</div>
+<!-- SINGAPORE SECTION -->
+<div class="destination-section-group mb-12" data-country="singapore">
+<div class="border-l-4 border-primary pl-4 mb-6">
+<h2 class="text-2xl font-bold text-white uppercase tracking-wider">Singapore</h2>
+<p class="text-sm text-gray-400 mt-1">A highly clean, advanced city-state renowned for its garden architectures,
           theme parks, and rich shopping hubs.</p>
-      </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="marina bay sands gardens by the bay supertree merlion">
-          <img src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=800&q=80"
-            class="h-44 w-full object-cover" alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Marina Bay</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Features Gardens by the Bay, Supertree structures, Marina
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="marina bay sands gardens by the bay supertree merlion">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Marina Bay</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Features Gardens by the Bay, Supertree structures, Marina
               Bay Sands, and the iconic Merlion.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="sentosa island beaches universal studios resorts attractions">
-          <img src="https://images.unsplash.com/photo-1505881502353-a1986add3762?auto=format&fit=crop&w=800&q=80"
-            class="h-44 w-full object-cover" alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Sentosa Island</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">A fun resort island offering theme park entertainment,
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="sentosa island beaches universal studios resorts attractions">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Sentosa Island</h3>
+<p class="text-xs text-gray-300 leading-relaxed">A fun resort island offering theme park entertainment,
               sandy beaches, and golf courses.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- INDONESIA SECTION -->
-    <div class="destination-section-group mb-12" data-country="indonesia">
-      <div class="border-l-4 border-primary pl-4 mb-6">
-        <h2 class="text-2xl font-bold text-white uppercase tracking-wider">Indonesia</h2>
-        <p class="text-sm text-gray-400 mt-1">A volcanic archipelago home to diverse wildlife, ancient temples, beaches,
+</div>
+</div>
+</div>
+</div>
+<!-- INDONESIA SECTION -->
+<div class="destination-section-group mb-12" data-country="indonesia">
+<div class="border-l-4 border-primary pl-4 mb-6">
+<h2 class="text-2xl font-bold text-white uppercase tracking-wider">Indonesia</h2>
+<p class="text-sm text-gray-400 mt-1">A volcanic archipelago home to diverse wildlife, ancient temples, beaches,
           and tropical rainforests.</p>
-      </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="bali ubud temples rice fields forest culture">
-          <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80"
-            class="h-44 w-full object-cover" alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Bali (Ubud & Seminyak)</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">The Island of the Gods, famous for cultural Ubud, rice
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="bali ubud temples rice fields forest culture">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Bali (Ubud &amp; Seminyak)</h3>
+<p class="text-xs text-gray-300 leading-relaxed">The Island of the Gods, famous for cultural Ubud, rice
               fields, temples, and sandy sunsets.</p>
-          </div>
-        </div>
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="nusa penida kelingking beach cliffs ocean T-rex">
-          <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=800&q=80"
-            class="h-44 w-full object-cover" alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Nusa Penida</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Scenic island adjacent to Bali, famous for the iconic T-Rex
+</div>
+</div>
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="nusa penida kelingking beach cliffs ocean T-rex">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Nusa Penida</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Scenic island adjacent to Bali, famous for the iconic T-Rex
               shaped Kelingking Beach cliff.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- MALDIVES SECTION -->
-    <div class="destination-section-group mb-12" data-country="maldives">
-      <div class="border-l-4 border-primary pl-4 mb-6">
-        <h2 class="text-2xl font-bold text-white uppercase tracking-wider">Maldives</h2>
-        <p class="text-sm text-gray-400 mt-1">A dreamy escape of overwater luxury villas, sapphire waters, and teeming
+</div>
+</div>
+</div>
+</div>
+<!-- MALDIVES SECTION -->
+<div class="destination-section-group mb-12" data-country="maldives">
+<div class="border-l-4 border-primary pl-4 mb-6">
+<h2 class="text-2xl font-bold text-white uppercase tracking-wider">Maldives</h2>
+<p class="text-sm text-gray-400 mt-1">A dreamy escape of overwater luxury villas, sapphire waters, and teeming
           coral reefs.</p>
-      </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        <div
-          class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift"
-          data-search="luxury resorts water villas reef ari atoll corals ocean">
-          <img src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&fit=crop&w=800&q=80"
-            class="h-44 w-full object-cover" alt="Image" loading="lazy">
-          <div class="p-5 flex-grow">
-            <h3 class="font-bold text-white mb-1">Luxury Atolls</h3>
-            <p class="text-xs text-gray-300 leading-relaxed">Relaxing private overwater bungalows, white sandbanks, and
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+<div class="sub-dest-card bg-white rounded-2xl overflow-hidden border border-white/10 shadow-sm flex flex-col hover-lift" data-search="luxury resorts water villas reef ari atoll corals ocean">
+<img alt="Image" class="h-44 w-full object-cover" loading="lazy" src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="p-5 flex-grow">
+<h3 class="font-bold text-white mb-1">Luxury Atolls</h3>
+<p class="text-xs text-gray-300 leading-relaxed">Relaxing private overwater bungalows, white sandbanks, and
               beautiful house reef snorkelling.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- View More Button Wrapper -->
-    <div id="view-more-container" class="flex justify-center mt-6 mb-12">
-      <button id="btn-view-more"
-        class="bg-[#C19A58] text-[#11223A] px-8 py-3.5 rounded-full font-bold hover:bg-[#d4ac66] hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-[#C19A58]/20 cursor-pointer">
+</div>
+</div>
+</div>
+</div>
+<!-- View More Button Wrapper -->
+<div class="flex justify-center mt-6 mb-12" id="view-more-container">
+<button class="bg-[#C19A58] text-[#11223A] px-8 py-3.5 rounded-full font-bold hover:bg-[#d4ac66] hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-[#C19A58]/20 cursor-pointer" id="btn-view-more">
         View More Destinations
       </button>
-    </div>
-  </main>
-
-  <!-- Footer -->
-  <footer class="bg-[#C19A58] text-[#11223A] pt-16 pb-8 px-8 md:px-16 lg:px-24 xl:px-36">
-    <div class="w-full">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
-        <div class="space-y-4">
-          <img src="componets/tripodope-footer-logo.png" alt="Tripodope Logo"
-            class="h-20 md:h-24 w-auto mb-4 brightness-[0.1] contrast-125">
-          <p class="text-[#11223A]/80 text-sm leading-relaxed">Your trusted partner for Europe tours, International &
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#C19A58] text-[#11223A] pt-16 pb-8 px-8 md:px-16 lg:px-24 xl:px-36">
+<div class="w-full">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+<div class="space-y-4">
+<img alt="Tripodope Logo" class="h-20 md:h-24 w-auto mb-4 brightness-[0.1] contrast-125" src="componets/tripodope-footer-logo.png"/>
+<p class="text-[#11223A]/80 text-sm leading-relaxed">Your trusted partner for Europe tours, International &amp;
             Indian
-            packages, Domestic & International ticketing (flight, train, bus, ferry, cruise), and expert visa services.
+            packages, Domestic &amp; International ticketing (flight, train, bus, ferry, cruise), and expert visa services.
           </p>
-        </div>
-        <div>
-          <h4 class="text-[#11223A] font-bold text-sm uppercase tracking-wider mb-4">Quick Links</h4>
-          <ul class="space-y-2.5 text-sm text-[#11223A]/80">
-            <li><a href="index.html" class="hover:text-[#11223A] hover:underline transition">Home</a></li>
-            <li><a href="europe-packages.html" class="hover:text-[#11223A] hover:underline transition">Europe Packages</a></li>
-            <li><a href="worldwide-packages.html" class="hover:text-[#11223A] hover:underline transition">WorldWide Packages</a></li>
-            <li><a href="about.html" class="hover:text-[#11223A] hover:underline transition">About Us</a></li>
-            <li><a href="contact.html" class="hover:text-[#11223A] hover:underline transition">Contact Us</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="text-[#11223A] font-bold text-sm uppercase tracking-wider mb-4">Contact Info</h4>
-          <ul class="space-y-2.5 text-sm text-[#11223A]/80">
-            <li class="flex items-center">
-              <svg class="w-4 h-4 mr-2 fill-current inline-block align-middle" viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M12.004 0C5.372 0 0 5.372 0 12.004c0 2.112.553 4.167 1.603 5.986L.057 24l6.196-1.625c1.764.962 3.75 1.629 5.751 1.629 6.632 0 12.004-5.372 12.004-12.004C24.008 5.372 18.636 0 12.004 0zm0 22.008c-1.84 0-3.64-.492-5.22-1.425l-.375-.221-3.876.992.993-3.771-.242-.387a9.99 9.99 0 0 1-1.528-5.2c0-5.508 4.492-10 10-10s10 4.492 10 10-4.492 10-10 10zm4.567-6.273c-.25-.125-1.479-.73-1.708-.813-.23-.083-.396-.125-.562.125-.167.25-.646.813-.792.979-.146.167-.292.188-.542.062a7.307 7.307 0 0 1-2.01-1.242 8.04 8.04 0 0 1-1.39-1.729c-.146-.25-.016-.386.11-.51.113-.112.25-.292.375-.438.125-.146.167-.25.25-.417.083-.167.042-.313-.021-.438-.063-.125-.562-1.355-.771-1.854-.203-.491-.41-.424-.562-.432-.146-.008-.313-.008-.479-.008-.167 0-.438.062-.667.312-.23.25-.875.854-.875 2.083s.896 2.417.996 2.552c.1.135 1.765 2.698 4.276 3.784.6.259 1.067.414 1.431.53.603.192 1.152.165 1.587.1.484-.072 1.479-.604 1.687-1.187.208-.583.208-1.083.146-1.187-.062-.104-.229-.167-.479-.292z" />
-              </svg>
-              <span>+39 334 755 3788</span>
-            </li>
-            <li class="flex items-center">
-              <svg class="w-4 h-4 mr-2 stroke-current fill-none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-                <path d="M22 6l-10 7L2 6"></path>
-              </svg>
-              <span>info@tripodope.com</span>
-            </li>
-            <li class="flex items-start">
-              <svg class="w-4 h-4 mr-2 mt-0.5 stroke-current fill-none flex-shrink-0" viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
-                <circle cx="12" cy="10" r="3"></circle>
-              </svg>
-              <span>Needoor, Kottayam, Kerala</span>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="text-[#11223A] font-bold text-sm uppercase tracking-wider mb-4">Follow Us</h4>
-          <div class="flex gap-3 mt-2">
-            <a href="https://www.facebook.com/share/1ByA4eSvHh/" target="_blank"
-              class="w-10 h-10 rounded-full border border-[#11223A]/30 hover:border-[#11223A] transition flex items-center justify-center hover:bg-[#11223A]/10">
-              <img src="componets/facebook.png" alt="Facebook" class="w-5 h-5 object-contain">
-            </a>
-            <a href="https://www.instagram.com/tripodope?igsh=Ymp0MDJjd2FxZ2ly" target="_blank"
-              class="w-10 h-10 rounded-full border border-[#11223A]/30 hover:border-[#11223A] transition flex items-center justify-center hover:bg-[#11223A]/10">
-              <img src="componets/insta.png" alt="Instagram" class="w-5 h-5 object-contain">
-            </a>
-            <a href="https://wa.me/393444440325" target="_blank"
-              class="w-10 h-10 rounded-full border border-[#11223A]/30 hover:border-[#11223A] transition flex items-center justify-center hover:bg-[#11223A]/10">
-              <img src="componets/whatsapp.png" alt="WhatsApp" class="w-5 h-5 object-contain">
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="border-t border-[#11223A]/20 pt-8 flex items-center justify-center text-xs text-[#11223A]/60">
-        <p class="text-center">&copy; 2026 Tripodope. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- AOS Animation & Filter Logic -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
+</div>
+<div>
+<h4 class="text-[#11223A] font-bold text-sm uppercase tracking-wider mb-4">Quick Links</h4>
+<ul class="space-y-2.5 text-sm text-[#11223A]/80">
+<li><a class="hover:text-[#11223A] hover:underline transition" href="index.html">Home</a></li>
+<li><a class="hover:text-[#11223A] hover:underline transition" href="europe-packages.html">Europe Packages</a></li>
+<li><a class="hover:text-[#11223A] hover:underline transition" href="worldwide-packages.html">WorldWide Packages</a></li>
+<a class="text-gray-700 hover:text-[#C19A58] text-sm font-semibold transition-colors" href="services.html?service=flight-ticket">Flights</a>
+<a class="hover:text-[#11223A] hover:underline transition" href="about.html">About Us</a></li>
+<li><a class="hover:text-[#11223A] hover:underline transition" href="contact.html">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-[#11223A] font-bold text-sm uppercase tracking-wider mb-4">Contact Info</h4>
+<ul class="space-y-2.5 text-sm text-[#11223A]/80">
+<li class="flex items-center">
+<svg class="w-4 h-4 mr-2 fill-current inline-block align-middle" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.004 0C5.372 0 0 5.372 0 12.004c0 2.112.553 4.167 1.603 5.986L.057 24l6.196-1.625c1.764.962 3.75 1.629 5.751 1.629 6.632 0 12.004-5.372 12.004-12.004C24.008 5.372 18.636 0 12.004 0zm0 22.008c-1.84 0-3.64-.492-5.22-1.425l-.375-.221-3.876.992.993-3.771-.242-.387a9.99 9.99 0 0 1-1.528-5.2c0-5.508 4.492-10 10-10s10 4.492 10 10-4.492 10-10 10zm4.567-6.273c-.25-.125-1.479-.73-1.708-.813-.23-.083-.396-.125-.562.125-.167.25-.646.813-.792.979-.146.167-.292.188-.542.062a7.307 7.307 0 0 1-2.01-1.242 8.04 8.04 0 0 1-1.39-1.729c-.146-.25-.016-.386.11-.51.113-.112.25-.292.375-.438.125-.146.167-.25.25-.417.083-.167.042-.313-.021-.438-.063-.125-.562-1.355-.771-1.854-.203-.491-.41-.424-.562-.432-.146-.008-.313-.008-.479-.008-.167 0-.438.062-.667.312-.23.25-.875.854-.875 2.083s.896 2.417.996 2.552c.1.135 1.765 2.698 4.276 3.784.6.259 1.067.414 1.431.53.603.192 1.152.165 1.587.1.484-.072 1.479-.604 1.687-1.187.208-.583.208-1.083.146-1.187-.062-.104-.229-.167-.479-.292z"></path>
+</svg>
+<span>+39 334 755 3788</span>
+</li>
+<li class="flex items-center">
+<svg class="w-4 h-4 mr-2 stroke-current fill-none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<rect height="16" rx="2" width="20" x="2" y="4"></rect>
+<path d="M22 6l-10 7L2 6"></path>
+</svg>
+<span>info@tripodope.com</span>
+</li>
+<li class="flex items-start">
+<svg class="w-4 h-4 mr-2 mt-0.5 stroke-current fill-none flex-shrink-0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
+<circle cx="12" cy="10" r="3"></circle>
+</svg>
+<span>Needoor, Kottayam, Kerala</span>
+</li>
+</ul>
+</div>
+<div>
+<h4 class="text-[#11223A] font-bold text-sm uppercase tracking-wider mb-4">Follow Us</h4>
+<div class="flex gap-3 mt-2">
+<a class="w-10 h-10 rounded-full border border-[#11223A]/30 hover:border-[#11223A] transition flex items-center justify-center hover:bg-[#11223A]/10" href="https://www.facebook.com/share/1ByA4eSvHh/" target="_blank">
+<img alt="Facebook" class="w-5 h-5 object-contain" src="componets/facebook.png"/>
+</a>
+<a class="w-10 h-10 rounded-full border border-[#11223A]/30 hover:border-[#11223A] transition flex items-center justify-center hover:bg-[#11223A]/10" href="https://www.instagram.com/tripodope?igsh=Ymp0MDJjd2FxZ2ly" target="_blank">
+<img alt="Instagram" class="w-5 h-5 object-contain" src="componets/insta.png"/>
+</a>
+<a class="w-10 h-10 rounded-full border border-[#11223A]/30 hover:border-[#11223A] transition flex items-center justify-center hover:bg-[#11223A]/10" href="https://wa.me/393444440325" target="_blank">
+<img alt="WhatsApp" class="w-5 h-5 object-contain" src="componets/whatsapp.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-[#11223A]/20 pt-8 flex items-center justify-center text-xs text-[#11223A]/60">
+<p class="text-center">© 2026 Tripodope. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<!-- AOS Animation & Filter Logic -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
     // Map of unique high-resolution travel images for destinations to replace duplicate placeholders
     const destinationImages = {
       'Rome': 'https://upload.wikimedia.org/wikipedia/commons/7/7e/Trevi_Fountain%2C_Rome%2C_Italy_2_-_May_2007.jpg',
@@ -1910,20 +1523,14 @@
       }
     })();
   </script>
-  <!-- WhatsApp Floating Button -->
-  <a href="https://wa.me/393444440325?text=Hi%20Tripodope%2C%20I%20would%20like%20to%20inquire%20about%20your%20travel%20packages."
-    target="_blank"
-    class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:bg-[#20ba5a] hover:scale-110 transition-all duration-300 group"
-    aria-label="Contact us on WhatsApp">
-    <!-- Pulse Effect -->
-    <span class="absolute inset-0 rounded-full bg-[#25D366]/40 animate-ping group-hover:animate-none opacity-75"></span>
-    <!-- SVG Icon -->
-    <svg class="relative z-10 w-7 h-7 fill-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="M12.004 0C5.372 0 0 5.372 0 12.004c0 2.112.553 4.167 1.603 5.986L.057 24l6.196-1.625c1.764.962 3.75 1.629 5.751 1.629 6.632 0 12.004-5.372 12.004-12.004C24.008 5.372 18.636 0 12.004 0zm0 22.008c-1.84 0-3.64-.492-5.22-1.425l-.375-.221-3.876.992.993-3.771-.242-.387a9.99 9.99 0 0 1-1.528-5.2c0-5.508 4.492-10 10-10s10 4.492 10 10-4.492 10-10 10zm4.567-6.273c-.25-.125-1.479-.73-1.708-.813-.23-.083-.396-.125-.562.125-.167.25-.646.813-.792.979-.146.167-.292.188-.542.062a7.307 7.307 0 0 1-2.01-1.242 8.04 8.04 0 0 1-1.39-1.729c-.146-.25-.016-.386.11-.51.113-.112.25-.292.375-.438.125-.146.167-.25.25-.417.083-.167.042-.313-.021-.438-.063-.125-.562-1.355-.771-1.854-.203-.491-.41-.424-.562-.432-.146-.008-.313-.008-.479-.008-.167 0-.438.062-.667.312-.23.25-.875.854-.875 2.083s.896 2.417.996 2.552c.1.135 1.765 2.698 4.276 3.784.6.259 1.067.414 1.431.53.603.192 1.152.165 1.587.1.484-.072 1.479-.604 1.687-1.187.208-.583.208-1.083.146-1.187-.062-.104-.229-.167-.479-.292z" />
-    </svg>
-      </a>
-
+<!-- WhatsApp Floating Button -->
+<a aria-label="Contact us on WhatsApp" class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:bg-[#20ba5a] hover:scale-110 transition-all duration-300 group" href="https://wa.me/393444440325?text=Hi%20Tripodope%2C%20I%20would%20like%20to%20inquire%20about%20your%20travel%20packages." target="_blank">
+<!-- Pulse Effect -->
+<span class="absolute inset-0 rounded-full bg-[#25D366]/40 animate-ping group-hover:animate-none opacity-75"></span>
+<!-- SVG Icon -->
+<svg class="relative z-10 w-7 h-7 fill-white" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.004 0C5.372 0 0 5.372 0 12.004c0 2.112.553 4.167 1.603 5.986L.057 24l6.196-1.625c1.764.962 3.75 1.629 5.751 1.629 6.632 0 12.004-5.372 12.004-12.004C24.008 5.372 18.636 0 12.004 0zm0 22.008c-1.84 0-3.64-.492-5.22-1.425l-.375-.221-3.876.992.993-3.771-.242-.387a9.99 9.99 0 0 1-1.528-5.2c0-5.508 4.492-10 10-10s10 4.492 10 10-4.492 10-10 10zm4.567-6.273c-.25-.125-1.479-.73-1.708-.813-.23-.083-.396-.125-.562.125-.167.25-.646.813-.792.979-.146.167-.292.188-.542.062a7.307 7.307 0 0 1-2.01-1.242 8.04 8.04 0 0 1-1.39-1.729c-.146-.25-.016-.386.11-.51.113-.112.25-.292.375-.438.125-.146.167-.25.25-.417.083-.167.042-.313-.021-.438-.063-.125-.562-1.355-.771-1.854-.203-.491-.41-.424-.562-.432-.146-.008-.313-.008-.479-.008-.167 0-.438.062-.667.312-.23.25-.875.854-.875 2.083s.896 2.417.996 2.552c.1.135 1.765 2.698 4.276 3.784.6.259 1.067.414 1.431.53.603.192 1.152.165 1.587.1.484-.072 1.479-.604 1.687-1.187.208-.583.208-1.083.146-1.187-.062-.104-.229-.167-.479-.292z"></path>
+</svg>
+</a>
 </body>
-
 </html>

@@ -1,0 +1,71 @@
++<!-- Floating Booking Bar Widget -->
++<div class="relative z-30 py-8 sm:py-12 max-w-[1300px] mx-auto px-6 md:px-[35px]" data-aos="fade-up" data-aos-delay="200">
++<div class="bg-[#EFEAE2] rounded-3xl p-6 sm:py-5 sm:px-8 shadow-xl border border-black/5 flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-6 lg:gap-8">
++<!-- Field 1: Enquiring About (Custom Dropdown) -->
++<div class="flex-1 min-w-0 relative border-b border-black/10 pb-4 lg:border-b-0 lg:pb-0" id="custom-dropdown-wrapper">
++<label class="block text-[10px] uppercase font-bold tracking-wider text-[#11223A] mb-1.5 text-center md:text-left">I am enquiring about</label>
++<input id="booking-inquiry" type="hidden" value="Europe tours"/>
++<div class="relative">
++<button class="w-full bg-transparent text-[#11223A] font-medium text-base flex items-center justify-center lg:justify-between gap-2 lg:gap-0 py-1 focus:outline-none cursor-pointer group" id="dropdown-trigger" type="button">
++<span id="dropdown-selected-label">Europe tours</span>
++<span class="transition-transform duration-200" id="dropdown-arrow-icon">
++<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
++</span>
++</button>
++<!-- Dropdown menu panel -->
++<div class="absolute left-0 right-0 mt-3 bg-white rounded-2xl shadow-2xl border border-black/5 py-2 hidden z-50 transform origin-top transition-all scale-95 opacity-0 duration-200" id="dropdown-menu">
++<div class="dropdown-item px-5 py-2.5 hover:bg-[#FAF9F6] hover:text-[#C19A58] text-sm text-[#11223A] font-semibold cursor-pointer transition-colors bg-[#FAF9F6] text-[#C19A58] text-center md:text-left" data-value="Europe tours">Europe tours</div>
++<div class="dropdown-item px-5 py-2.5 hover:bg-[#FAF9F6] hover:text-[#C19A58] text-sm text-[#11223A] font-medium cursor-pointer transition-colors text-center md:text-left" data-value="World tours">World tours</div>
++<div class="dropdown-item px-5 py-2.5 hover:bg-[#FAF9F6] hover:text-[#C19A58] text-sm text-[#11223A] font-medium cursor-pointer transition-colors text-center md:text-left" data-value="Europe flight tickets">Europe flight tickets</div>
++<div class="dropdown-item px-5 py-2.5 hover:bg-[#FAF9F6] hover:text-[#C19A58] text-sm text-[#11223A] font-medium cursor-pointer transition-colors text-center md:text-left" data-value="India &amp; Asia holidays">India &amp; Asia holidays</div>
++<div class="dropdown-item px-5 py-2.5 hover:bg-[#FAF9F6] hover:text-[#C19A58] text-sm text-[#11223A] font-medium cursor-pointer transition-colors text-center md:text-left" data-value="Cruises">Cruises</div>
++<div class="dropdown-item px-5 py-2.5 hover:bg-[#FAF9F6] hover:text-[#C19A58] text-sm text-[#11223A] font-medium cursor-pointer transition-colors text-center md:text-left" data-value="Visa assistance">Visa assistance</div>
++</div>
++</div>
++</div>
++<div class="hidden lg:block w-[1px] h-10 bg-black/10 shrink-0"></div>
++<!-- Field 2: Travelling From -->
++<div class="flex-1 min-w-0 border-b border-black/10 pb-4 lg:border-b-0 lg:pb-0">
++<label class="block text-[10px] uppercase font-bold tracking-wider text-[#11223A] mb-1.5 text-center md:text-left">Travelling from</label>
++<input class="w-full bg-transparent text-[#11223A] placeholder-[#11223A]/50 font-medium text-base focus:outline-none py-1 text-center md:text-left" id="booking-from" placeholder="City or country" type="text"/>
++</div>
++<div class="hidden lg:block w-[1px] h-10 bg-black/10 shrink-0"></div>
++<!-- Field 3: When -->
++<div class="flex-1 min-w-0 pb-2 lg:pb-0 relative">
++<label class="block text-[10px] uppercase font-bold tracking-wider text-[#11223A] mb-1.5 text-center md:text-left">When are you thinking?</label>
++<div class="flex items-center justify-center md:justify-start gap-1.5 border-b border-black/5 lg:border-none pb-1 lg:pb-0">
++<input class="w-[145px] sm:w-[160px] bg-transparent text-[#11223A] placeholder-[#11223A]/50 font-medium text-base focus:outline-none py-1 text-center md:text-left shrink-0" id="booking-when" placeholder="Month or flexible" type="text"/>
++<button class="p-1 text-[#11223A]/70 hover:text-[#C19A58] hover:bg-black/5 rounded-lg transition-all focus:outline-none shrink-0 cursor-pointer flex items-center justify-center" id="booking-when-cal-btn" title="Pick a Month" type="button">
++<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
++<path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round"></path>
++</svg>
++</button>
++<input class="absolute pointer-events-none opacity-0 w-0 h-0 border-0 p-0" id="booking-when-picker" tabindex="-1" type="month"/>
++</div>
++</div>
++<!-- Submit Button -->
++<button class="bg-[#11223A] hover:bg-[#C19A58] text-white px-8 py-4 rounded-2xl font-bold flex items-center justify-center gap-3 transition-colors shadow-md shrink-0" id="booking-submit">
+         Get a quote
+-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+-          <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+-        </svg>
+-      </button>
+-      
+-    </div>
+-  </div>
+-
+-  <!-- About Section (Personalised Service) -->
+-  <section id="about" class="w-full mx-auto px-4 sm:px-6 md:px-[35px] py-16">
+-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+-
+-      <!-- Left Content -->
+-      <div data-aos="fade-right">
+-        <!-- Badge -->
+-        <span class="inline-block mb-6 px-5 py-2 border border-gray-300 rounded-full text-sm font-medium text-[#C19A58]">
++        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24">
++<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round"></path>
++</svg>
++</button>
++</div>
++</div>
++<!-- About Section

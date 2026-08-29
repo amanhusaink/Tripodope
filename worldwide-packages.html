@@ -100,15 +100,27 @@
 <div class="relative flex items-center justify-between">
 <!-- Logo -->
 <a class="flex items-center z-10" href="index.html">
-<img alt="Tripodope" class="h-16 md:h-20 w-auto" src="componets/tripodope-logo.png"/>
+<img alt="Tripodope" class="h-10 md:h-14 w-auto" src="componets/tripodope-logo.png"/>
 </a>
 <!-- Navigation Links -->
 <div class="hidden lg:flex items-center space-x-8 whitespace-nowrap absolute left-[58%] -translate-x-1/2">
 <a class="text-gray-700 hover:text-[#C19A58] text-sm font-semibold transition-colors" href="index.html">Home</a>
 <a class="text-gray-700 hover:text-[#C19A58] text-sm font-semibold transition-colors" href="europe-packages.html">Europe Packages</a>
 <a class="text-[#C19A58] text-sm font-semibold transition-colors border-b-2 border-[#C19A58] pb-0.5" href="worldwide-packages.html">WorldWide Packages</a>
+          <a class="text-gray-700 hover:text-[#C19A58] text-sm font-semibold transition-colors" href="services.html?service=flight-ticket">Flights</a>
 <a class="text-gray-700 hover:text-[#C19A58] text-sm font-semibold transition-colors" href="about.html">About Us</a>
 <a class="text-gray-700 hover:text-[#C19A58] text-sm font-semibold transition-colors" href="contact.html">Contact Us</a>
+  <!-- More Dropdown -->
+  <div class="relative group">
+    <button class="text-gray-700 hover:text-[#C19A58] text-sm font-semibold transition-colors inline-flex items-center">
+      More
+      <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+    </button>
+    <div class="absolute left-0 mt-2 w-48 bg-white rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 overflow-hidden border border-gray-100">
+      <a href="gallery.html" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#C19A58]">Gallery</a>
+      <a href="destinations.html" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#C19A58]">Destinations</a>
+    </div>
+  </div>
 </div>
 <!-- Mobile Controls (Hamburger Only) -->
 <div class="flex items-center space-x-2 lg:hidden">
@@ -125,6 +137,7 @@
 <a class="mobile-menu-link text-gray-700 hover:text-[#C19A58] text-base font-medium transition-colors px-2 py-2" href="index.html">Home</a>
 <a class="mobile-menu-link text-gray-700 hover:text-[#C19A58] text-base font-medium transition-colors px-2 py-2" href="europe-packages.html">Europe Packages</a>
 <a class="mobile-menu-link text-[#C19A58] text-base font-semibold transition-colors px-2 py-2" href="worldwide-packages.html">WorldWide Packages</a>
+            <a class="mobile-menu-link text-gray-700 hover:text-[#C19A58] text-base font-medium transition-colors px-2 py-2" href="services.html?service=flight-ticket">Flights</a>
 <a class="mobile-menu-link text-gray-700 hover:text-[#C19A58] text-base font-medium transition-colors px-2 py-2" href="about.html">About Us</a>
 <a class="bg-[#11223A] text-white px-4 py-2.5 rounded-full text-base font-semibold hover:bg-[#C19A58] transition-all duration-300 inline-block w-fit mt-2" href="contact.html">
             Contact
@@ -188,7 +201,7 @@
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="destinations-grid">
 <!-- 1. Vietnam -->
 <div class="bg-[#162a45] rounded-3xl overflow-hidden shadow-lg border border-white/5 w-full relative group destination-card hover-lift border-white/10" data-category="asia" data-name="vietnam"><div class="relative h-auto">
-<img alt="6 Days Vietnam Highlights" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<img alt="6 Days Vietnam Highlights" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1499678329028-101435549a4e?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
 <!-- Duration tag -->
 <div class="absolute top-4 left-4 bg-primary text-white text-xs font-semibold px-3 py-1.5 rounded-full z-20 shadow-md">
             vietnam
@@ -203,13 +216,12 @@
 <h3 class="text-white font-bold text-sm sm:text-base leading-snug mb-3">6 Days Vietnam Highlights</h3>
 <div class="flex gap-2">
 <a class="rounded-full border border-white px-3.5 py-1.5 text-[10px] sm:text-[11px] font-semibold text-white bg-transparent hover:bg-white/20 transition tracking-wider" href="vietnam-6-days.html">VIEW DETAILS</a>
-
 </div>
 </div>
 </div></div>
 <!-- 2. Thailand -->
 <div class="bg-[#162a45] rounded-3xl overflow-hidden shadow-lg border border-white/5 w-full relative group destination-card hover-lift border-white/10" data-category="asia" data-name="thailand"><div class="relative h-auto">
-<img alt="5 Days Best of Bangkok &amp; Pattaya Explorer" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<img alt="5 Days Best of Bangkok &amp; Pattaya Explorer" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
 <!-- Duration tag -->
 <div class="absolute top-4 left-4 bg-primary text-white text-xs font-semibold px-3 py-1.5 rounded-full z-20 shadow-md">
             thailand
@@ -224,13 +236,12 @@
 <h3 class="text-white font-bold text-sm sm:text-base leading-snug mb-3">5 Days Best of Bangkok &amp; Pattaya Explorer</h3>
 <div class="flex gap-2">
 <a class="rounded-full border border-white px-3.5 py-1.5 text-[10px] sm:text-[11px] font-semibold text-white bg-transparent hover:bg-white/20 transition tracking-wider" href="thailand-5-days.html">VIEW DETAILS</a>
-
 </div>
 </div>
 </div></div>
 <!-- 3. Mauritius -->
 <div class="bg-[#162a45] rounded-3xl overflow-hidden shadow-lg border border-white/5 w-full relative group destination-card hover-lift border-white/10" data-category="islands" data-name="mauritius maurituis"><div class="relative h-auto">
-<img alt="5 Days Best of Mauritius Island Holiday" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<img alt="5 Days Best of Mauritius Island Holiday" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
 <!-- Duration tag -->
 <div class="absolute top-4 left-4 bg-primary text-white text-xs font-semibold px-3 py-1.5 rounded-full z-20 shadow-md">
             maurituis
@@ -245,13 +256,12 @@
 <h3 class="text-white font-bold text-sm sm:text-base leading-snug mb-3">5 Days Best of Mauritius Island Holiday</h3>
 <div class="flex gap-2">
 <a class="rounded-full border border-white px-3.5 py-1.5 text-[10px] sm:text-[11px] font-semibold text-white bg-transparent hover:bg-white/20 transition tracking-wider" href="mauritius-5-days.html">VIEW DETAILS</a>
-
 </div>
 </div>
 </div></div>
 <!-- 4. Malaysia & Singapore -->
 <div class="bg-[#162a45] rounded-3xl overflow-hidden shadow-lg border border-white/5 w-full relative group destination-card hover-lift border-white/10" data-category="asia" data-name="malasia singapore malaysia singapore"><div class="relative h-auto">
-<img alt="Malaysia &amp; Singapore (4 Itineraries)" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<img alt="Malaysia &amp; Singapore (4 Itineraries)" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1513581166391-887a96ddeafd?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
 <!-- Duration tag -->
 <div class="absolute top-4 left-4 bg-primary text-white text-xs font-semibold px-3 py-1.5 rounded-full z-20 shadow-md">
             MALASIA &amp; SINGAPORE
@@ -266,13 +276,12 @@
 <h3 class="text-white font-bold text-sm sm:text-base leading-snug mb-3">Malaysia &amp; Singapore (4 Itineraries)</h3>
 <div class="flex gap-2">
 <a class="rounded-full border border-white px-3.5 py-1.5 text-[10px] sm:text-[11px] font-semibold text-white bg-transparent hover:bg-white/20 transition tracking-wider" href="malaysia-singapore-packages.html">VIEW DETAILS</a>
-
 </div>
 </div>
 </div></div>
 <!-- 5. Lakshadweep -->
 <div class="bg-[#162a45] rounded-3xl overflow-hidden shadow-lg border border-white/5 w-full relative group destination-card hover-lift border-white/10" data-category="islands" data-name="laksha dweep lakshadweep"><div class="relative h-auto">
-<img alt="Lakshadweep" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<img alt="Lakshadweep" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
 <!-- Duration tag -->
 <div class="absolute top-4 left-4 bg-primary text-white text-xs font-semibold px-3 py-1.5 rounded-full z-20 shadow-md">
             laksha dweep
@@ -286,13 +295,12 @@
 <h3 class="text-white font-bold text-sm sm:text-base leading-snug mb-3">Lakshadweep</h3>
 <div class="flex gap-2">
 <a class="rounded-full border border-white px-3.5 py-1.5 text-[10px] sm:text-[11px] font-semibold text-white bg-transparent hover:bg-white/20 transition tracking-wider" href="lakshadweep-getaway.html">VIEW DETAILS</a>
-
 </div>
 </div>
 </div></div>
 <!-- 6. Kyrgyzstan -->
 <div class="bg-[#162a45] rounded-3xl overflow-hidden shadow-lg border border-white/5 w-full relative group destination-card hover-lift border-white/10" data-category="europe-cis" data-name="kyrgystan kyrgyzstan"><div class="relative h-auto">
-<img alt="Kyrgyzstan (2 Itineraries)" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1569154941061-e231b4725ef1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<img alt="Kyrgyzstan (2 Itineraries)" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
 <!-- Duration tag -->
 <div class="absolute top-4 left-4 bg-primary text-white text-xs font-semibold px-3 py-1.5 rounded-full z-20 shadow-md">
             kyrgystan
@@ -307,13 +315,12 @@
 <h3 class="text-white font-bold text-sm sm:text-base leading-snug mb-3">Kyrgyzstan (2 Itineraries)</h3>
 <div class="flex gap-2">
 <a class="rounded-full border border-white px-3.5 py-1.5 text-[10px] sm:text-[11px] font-semibold text-white bg-transparent hover:bg-white/20 transition tracking-wider" href="kyrgyzstan-packages.html">VIEW DETAILS</a>
-
 </div>
 </div>
 </div></div>
 <!-- 7. Indonesia -->
 <div class="bg-[#162a45] rounded-3xl overflow-hidden shadow-lg border border-white/5 w-full relative group destination-card hover-lift border-white/10" data-category="asia" data-name="indonesia bali"><div class="relative h-auto">
-<img alt="Indonesia &amp; Bali (3 Itineraries)" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<img alt="Indonesia &amp; Bali (3 Itineraries)" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1546412414-e1885259563a?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
 <!-- Duration tag -->
 <div class="absolute top-4 left-4 bg-primary text-white text-xs font-semibold px-3 py-1.5 rounded-full z-20 shadow-md">
             indonesia
@@ -328,13 +335,12 @@
 <h3 class="text-white font-bold text-sm sm:text-base leading-snug mb-3">Indonesia &amp; Bali (3 Itineraries)</h3>
 <div class="flex gap-2">
 <a class="rounded-full border border-white px-3.5 py-1.5 text-[10px] sm:text-[11px] font-semibold text-white bg-transparent hover:bg-white/20 transition tracking-wider" href="indonesia-packages.html">VIEW DETAILS</a>
-
 </div>
 </div>
 </div></div>
 <!-- 8. India -->
 <div class="bg-[#162a45] rounded-3xl overflow-hidden shadow-lg border border-white/5 w-full relative group destination-card hover-lift border-white/10" data-category="asia" data-name="india taj mahal rajasthan kerala"><div class="relative h-auto">
-<img alt="India (9 Itineraries)" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<img alt="India (9 Itineraries)" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
 <!-- Duration tag -->
 <div class="absolute top-4 left-4 bg-primary text-white text-xs font-semibold px-3 py-1.5 rounded-full z-20 shadow-md">
             india
@@ -349,13 +355,12 @@
 <h3 class="text-white font-bold text-sm sm:text-base leading-snug mb-3">India (9 Itineraries)</h3>
 <div class="flex gap-2">
 <a class="rounded-full border border-white px-3.5 py-1.5 text-[10px] sm:text-[11px] font-semibold text-white bg-transparent hover:bg-white/20 transition tracking-wider" href="india-packages.html">VIEW DETAILS</a>
-
 </div>
 </div>
 </div></div>
 <!-- 8b. Andaman Islands -->
 <div class="bg-[#162a45] rounded-3xl overflow-hidden shadow-lg border border-white/5 w-full relative group destination-card hover-lift border-white/10" data-category="islands" data-name="andaman andamans port blair havelock radhanagar"><div class="relative h-auto">
-<img alt="4 Days Andaman Islands Escape" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<img alt="4 Days Andaman Islands Escape" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1499678329028-101435549a4e?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
 <!-- Duration tag -->
 <div class="absolute top-4 left-4 bg-primary text-white text-xs font-semibold px-3 py-1.5 rounded-full z-20 shadow-md">
             andaman
@@ -369,13 +374,12 @@
 <h3 class="text-white font-bold text-sm sm:text-base leading-snug mb-3">4 Days Andaman Islands Escape</h3>
 <div class="flex gap-2">
 <a class="rounded-full border border-white px-3.5 py-1.5 text-[10px] sm:text-[11px] font-semibold text-white bg-transparent hover:bg-white/20 transition tracking-wider" href="andaman-4-days.html">VIEW DETAILS</a>
-
 </div>
 </div>
 </div></div>
 <!-- 9. Georgia -->
 <div class="bg-[#162a45] rounded-3xl overflow-hidden shadow-lg border border-white/5 w-full relative group destination-card hover-lift border-white/10" data-category="europe-cis" data-name="georgia tbilisi"><div class="relative h-auto">
-<img alt="Georgia (3 Itineraries)" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<img alt="Georgia (3 Itineraries)" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
 <!-- Duration tag -->
 <div class="absolute top-4 left-4 bg-primary text-white text-xs font-semibold px-3 py-1.5 rounded-full z-20 shadow-md">
             georgia
@@ -390,13 +394,12 @@
 <h3 class="text-white font-bold text-sm sm:text-base leading-snug mb-3">Georgia (3 Itineraries)</h3>
 <div class="flex gap-2">
 <a class="rounded-full border border-white px-3.5 py-1.5 text-[10px] sm:text-[11px] font-semibold text-white bg-transparent hover:bg-white/20 transition tracking-wider" href="georgia-packages.html">VIEW DETAILS</a>
-
 </div>
 </div>
 </div></div>
 <!-- 10. Europe -->
 <div class="bg-[#162a45] rounded-3xl overflow-hidden shadow-lg border border-white/5 w-full relative group destination-card hover-lift border-white/10" data-category="europe-cis" data-name="europe swiss france italy spain"><div class="relative h-auto">
-<img alt="Europe" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="componets\destination1.jpg"/>
+<img alt="Europe" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
 <!-- Duration tag -->
 <div class="absolute top-4 left-4 bg-primary text-white text-xs font-semibold px-3 py-1.5 rounded-full z-20 shadow-md">
             europe
@@ -411,13 +414,12 @@
 <h3 class="text-white font-bold text-sm sm:text-base leading-snug mb-3">Europe</h3>
 <div class="flex gap-2">
 <a class="rounded-full border border-white px-3.5 py-1.5 text-[10px] sm:text-[11px] font-semibold text-white bg-transparent hover:bg-white/20 transition tracking-wider" href="europe-packages.html">VIEW DETAILS</a>
-
 </div>
 </div>
 </div></div>
 <!-- 11. Dubai -->
 <div class="bg-[#162a45] rounded-3xl overflow-hidden shadow-lg border border-white/5 w-full relative group destination-card hover-lift border-white/10" data-category="middle-east" data-name="dubai uae abu dhabi"><div class="relative h-auto">
-<img alt="Dubai &amp; UAE (3 Itineraries)" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="componets\destination3.jpg"/>
+<img alt="Dubai &amp; UAE (3 Itineraries)" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
 <!-- Duration tag -->
 <div class="absolute top-4 left-4 bg-primary text-white text-xs font-semibold px-3 py-1.5 rounded-full z-20 shadow-md">
             Dubai
@@ -432,13 +434,12 @@
 <h3 class="text-white font-bold text-sm sm:text-base leading-snug mb-3">Dubai &amp; UAE (3 Itineraries)</h3>
 <div class="flex gap-2">
 <a class="rounded-full border border-white px-3.5 py-1.5 text-[10px] sm:text-[11px] font-semibold text-white bg-transparent hover:bg-white/20 transition tracking-wider" href="dubai-packages.html">VIEW DETAILS</a>
-
 </div>
 </div>
 </div></div>
 <!-- 12. Azerbaijan -->
 <div class="bg-[#162a45] rounded-3xl overflow-hidden shadow-lg border border-white/5 w-full relative group destination-card hover-lift border-white/10" data-category="europe-cis" data-name="azerbaijan baku"><div class="relative h-auto">
-<img alt="Azerbaijan (3 Itineraries)" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<img alt="Azerbaijan (3 Itineraries)" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
 <!-- Duration tag -->
 <div class="absolute top-4 left-4 bg-primary text-white text-xs font-semibold px-3 py-1.5 rounded-full z-20 shadow-md">
             Azerbaijan
@@ -453,13 +454,12 @@
 <h3 class="text-white font-bold text-sm sm:text-base leading-snug mb-3">Azerbaijan (3 Itineraries)</h3>
 <div class="flex gap-2">
 <a class="rounded-full border border-white px-3.5 py-1.5 text-[10px] sm:text-[11px] font-semibold text-white bg-transparent hover:bg-white/20 transition tracking-wider" href="azerbaijan-packages.html">VIEW DETAILS</a>
-
 </div>
 </div>
 </div></div>
 <!-- 13. Armenia -->
 <div class="bg-[#162a45] rounded-3xl overflow-hidden shadow-lg border border-white/5 w-full relative group destination-card hover-lift border-white/10" data-category="europe-cis" data-name="armenia yerevan"><div class="relative h-auto">
-<img alt="Armenia" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<img alt="Armenia" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=800&q=80"/>
 <!-- Duration tag -->
 <div class="absolute top-4 left-4 bg-primary text-white text-xs font-semibold px-3 py-1.5 rounded-full z-20 shadow-md">
             armenia
@@ -474,13 +474,12 @@
 <h3 class="text-white font-bold text-sm sm:text-base leading-snug mb-3">Armenia</h3>
 <div class="flex gap-2">
 <a class="rounded-full border border-white px-3.5 py-1.5 text-[10px] sm:text-[11px] font-semibold text-white bg-transparent hover:bg-white/20 transition tracking-wider" href="armenia-getaway.html">VIEW DETAILS</a>
-
 </div>
 </div>
 </div></div>
 <!-- 14. Andaman -->
 <div class="bg-[#162a45] rounded-3xl overflow-hidden shadow-lg border border-white/5 w-full relative group destination-card hover-lift border-white/10" data-category="islands" data-name="andaman havelock radhanagar"><div class="relative h-auto">
-<img alt="Andaman &amp; Nicobar" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<img alt="Andaman &amp; Nicobar" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
 <!-- Duration tag -->
 <div class="absolute top-4 left-4 bg-primary text-white text-xs font-semibold px-3 py-1.5 rounded-full z-20 shadow-md">
             andaman
@@ -494,7 +493,6 @@
 <h3 class="text-white font-bold text-sm sm:text-base leading-snug mb-3">Andaman &amp; Nicobar</h3>
 <div class="flex gap-2">
 <a class="rounded-full border border-white px-3.5 py-1.5 text-[10px] sm:text-[11px] font-semibold text-white bg-transparent hover:bg-white/20 transition tracking-wider" href="andaman-4-days.html">VIEW DETAILS</a>
-
 </div>
 </div>
 </div></div>
@@ -549,8 +547,20 @@
 <li><a class="hover:text-[#C19A58] transition" href="europe-packages.html">Europe Packages</a></li>
 <li><a class="hover:text-[#C19A58] transition font-semibold text-[#C19A58]" href="worldwide-packages.html">WorldWide Packages</a></li>
 <li><a class="hover:text-[#C19A58] transition" href="destinations.html">Destinations Guide</a></li>
-<li><a class="hover:text-[#C19A58] transition" href="about.html">About Us</a></li>
-<li><a class="hover:text-[#C19A58] transition" href="contact.html">Contact Us</a></li>
+<a class="text-gray-700 hover:text-[#C19A58] text-sm font-semibold transition-colors" href="services.html?service=flight-ticket">Flights</a>
+<a class="hover:text-[#C19A58] transition" href="about.html">About Us</a></li>
+<li><a class="hover:text-[#C19A58] transition" href="contact.html">Contact Us</a>
+  <!-- More Dropdown -->
+  <div class="relative group">
+    <button class="text-gray-700 hover:text-[#C19A58] text-sm font-semibold transition-colors inline-flex items-center">
+      More
+      <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+    </button>
+    <div class="absolute left-0 mt-2 w-48 bg-white rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 overflow-hidden border border-gray-100">
+      <a href="gallery.html" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#C19A58]">Gallery</a>
+      <a href="destinations.html" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#C19A58]">Destinations</a>
+    </div>
+  </div></li>
 </ul>
 </div>
 <div>

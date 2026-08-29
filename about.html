@@ -1,20 +1,21 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - Tripodope</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="index.css?v=1.4">
-    <link rel="icon" type="image/png" href="componets/favicon_io/Trip%20o%20dope%20logo-09%201.png">
-  <meta property="og:image" content="componets/favicon_io/Trip%20o%20dope%20logo-09%201.png">
-  <meta name="twitter:image" content="componets/favicon_io/Trip%20o%20dope%20logo-09%201.png">
-  <!-- AOS Animation Library -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us - Tripodope</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="index.css?v=1.4" rel="stylesheet"/>
+<link href="componets/favicon_io/Trip%20o%20dope%20logo-09%201.png" rel="icon" type="image/png"/>
+<meta content="componets/favicon_io/Trip%20o%20dope%20logo-09%201.png" property="og:image"/>
+<meta content="componets/favicon_io/Trip%20o%20dope%20logo-09%201.png" name="twitter:image"/>
+<!-- AOS Animation Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
     tailwind.config = {
       theme: {
         extend: {
@@ -32,300 +33,282 @@
   </script>
 </head>
 <body class="bg-[#11223A] text-gray-100 overflow-x-hidden font-sans m-0">
-
-  <!-- Quick Contact & Social CTA Bar (Top Bar above Navbar) -->
-  <div class="bg-[#0b1728] border-b border-[#C19A58]/20 shadow-sm py-2.5 px-4 sm:px-8 md:px-16 lg:px-24 xl:px-36">
-    <div class="w-full flex items-center justify-end gap-2 sm:gap-3 text-xs sm:text-sm font-medium">
-      <!-- Call CTA -->
-      <a href="tel:+393347553788" aria-label="Call Us" class="flex items-center space-x-1.5 bg-[#11223A] hover:bg-[#C19A58] text-white px-3.5 py-1.5 rounded-full border border-[#C19A58]/30 hover:border-[#C19A58] transition-all duration-300 shadow-sm hover:scale-105 group">
-        <svg class="w-3.5 h-3.5 text-[#C19A58] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-        </svg>
-        <span class="font-semibold text-xs">+39 334 755 3788</span>
-      </a>
-
-      <!-- WhatsApp CTA -->
-      <a href="https://wa.me/393444440325" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp" class="flex items-center justify-center w-7 h-7 bg-[#11223A] hover:bg-[#C19A58] text-white rounded-full border border-[#C19A58]/30 hover:border-[#C19A58] transition-all duration-300 shadow-sm hover:scale-105 group">
-        <svg class="w-3.5 h-3.5 fill-current text-[#C19A58] group-hover:text-white transition-colors" viewBox="0 0 24 24">
-          <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.105 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.157 4.228 4.227-1.157zm11.294-7.227c-.244-.122-1.444-.712-1.668-.794-.224-.081-.388-.122-.551.122-.163.244-.632.794-.775.957-.143.163-.285.183-.529.061-.244-.122-1.033-.381-1.968-1.214-.726-.648-1.216-1.448-1.359-1.693-.143-.244-.015-.376.107-.497.11-.11.244-.285.367-.428.122-.143.163-.244.244-.407.081-.163.041-.306-.02-.428-.061-.122-.551-1.344-.754-1.833-.198-.476-.399-.412-.551-.42h-.469c-.163 0-.428.061-.652.306-.224.244-.856.836-.856 2.039 0 1.203.877 2.364.999 2.527.122.163 1.727 2.637 4.183 3.698.584.252 1.04.403 1.396.516.588.187 1.123.16 1.545.097.471-.07 1.444-.591 1.648-1.161.204-.57.204-1.059.143-1.161-.061-.102-.224-.163-.469-.285z"/>
-        </svg>
-      </a>
-
-      <!-- Email CTA -->
-      <a href="mailto:info@tripodope.com" aria-label="Email Us" title="Email Us" class="flex items-center justify-center w-7 h-7 bg-[#11223A] hover:bg-[#C19A58] text-white rounded-full border border-[#C19A58]/30 hover:border-[#C19A58] transition-all duration-300 shadow-sm hover:scale-105 group">
-        <svg class="w-3.5 h-3.5 text-[#C19A58] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-        </svg>
-      </a>
-
-      <!-- Instagram CTA -->
-      <a href="https://www.instagram.com/tripodope?igsh=Ymp0MDJjd2FxZ2ly" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram" class="flex items-center justify-center w-7 h-7 bg-[#11223A] hover:bg-[#C19A58] text-white rounded-full border border-[#C19A58]/30 hover:border-[#C19A58] transition-all duration-300 shadow-sm hover:scale-105 group">
-        <svg class="w-3.5 h-3.5 fill-current text-[#C19A58] group-hover:text-white transition-colors" viewBox="0 0 24 24">
-          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-        </svg>
-      </a>
-
-      <!-- Facebook CTA -->
-      <a href="https://www.facebook.com/share/1ByA4eSvHh/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook" class="flex items-center justify-center w-7 h-7 bg-[#11223A] hover:bg-[#C19A58] text-white rounded-full border border-[#C19A58]/30 hover:border-[#C19A58] transition-all duration-300 shadow-sm hover:scale-105 group">
-        <svg class="w-3.5 h-3.5 fill-current text-[#C19A58] group-hover:text-white transition-colors" viewBox="0 0 24 24">
-          <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-        </svg>
-      </a>
+<!-- Quick Contact & Social CTA Bar (Top Bar above Navbar) -->
+<div class="bg-[#0b1728] border-b border-[#C19A58]/20 shadow-sm py-2.5 px-4 sm:px-8 md:px-16 lg:px-24 xl:px-36">
+<div class="w-full flex items-center justify-end gap-2 sm:gap-3 text-xs sm:text-sm font-medium">
+<!-- Call CTA -->
+<a aria-label="Call Us" class="flex items-center space-x-1.5 bg-[#11223A] hover:bg-[#C19A58] text-white px-3.5 py-1.5 rounded-full border border-[#C19A58]/30 hover:border-[#C19A58] transition-all duration-300 shadow-sm hover:scale-105 group" href="tel:+393347553788">
+<svg class="w-3.5 h-3.5 text-[#C19A58] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span class="font-semibold text-xs">+39 334 755 3788</span>
+</a>
+<!-- WhatsApp CTA -->
+<a aria-label="WhatsApp" class="flex items-center justify-center w-7 h-7 bg-[#11223A] hover:bg-[#C19A58] text-white rounded-full border border-[#C19A58]/30 hover:border-[#C19A58] transition-all duration-300 shadow-sm hover:scale-105 group" href="https://wa.me/393444440325" rel="noopener noreferrer" target="_blank" title="WhatsApp">
+<svg class="w-3.5 h-3.5 fill-current text-[#C19A58] group-hover:text-white transition-colors" viewbox="0 0 24 24">
+<path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.105 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.157 4.228 4.227-1.157zm11.294-7.227c-.244-.122-1.444-.712-1.668-.794-.224-.081-.388-.122-.551.122-.163.244-.632.794-.775.957-.143.163-.285.183-.529.061-.244-.122-1.033-.381-1.968-1.214-.726-.648-1.216-1.448-1.359-1.693-.143-.244-.015-.376.107-.497.11-.11.244-.285.367-.428.122-.143.163-.244.244-.407.081-.163.041-.306-.02-.428-.061-.122-.551-1.344-.754-1.833-.198-.476-.399-.412-.551-.42h-.469c-.163 0-.428.061-.652.306-.224.244-.856.836-.856 2.039 0 1.203.877 2.364.999 2.527.122.163 1.727 2.637 4.183 3.698.584.252 1.04.403 1.396.516.588.187 1.123.16 1.545.097.471-.07 1.444-.591 1.648-1.161.204-.57.204-1.059.143-1.161-.061-.102-.224-.163-.469-.285z"></path>
+</svg>
+</a>
+<!-- Email CTA -->
+<a aria-label="Email Us" class="flex items-center justify-center w-7 h-7 bg-[#11223A] hover:bg-[#C19A58] text-white rounded-full border border-[#C19A58]/30 hover:border-[#C19A58] transition-all duration-300 shadow-sm hover:scale-105 group" href="mailto:info@tripodope.com" title="Email Us">
+<svg class="w-3.5 h-3.5 text-[#C19A58] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+<!-- Instagram CTA -->
+<a aria-label="Instagram" class="flex items-center justify-center w-7 h-7 bg-[#11223A] hover:bg-[#C19A58] text-white rounded-full border border-[#C19A58]/30 hover:border-[#C19A58] transition-all duration-300 shadow-sm hover:scale-105 group" href="https://www.instagram.com/tripodope?igsh=Ymp0MDJjd2FxZ2ly" rel="noopener noreferrer" target="_blank" title="Instagram">
+<svg class="w-3.5 h-3.5 fill-current text-[#C19A58] group-hover:text-white transition-colors" viewbox="0 0 24 24">
+<path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+</svg>
+</a>
+<!-- Facebook CTA -->
+<a aria-label="Facebook" class="flex items-center justify-center w-7 h-7 bg-[#11223A] hover:bg-[#C19A58] text-white rounded-full border border-[#C19A58]/30 hover:border-[#C19A58] transition-all duration-300 shadow-sm hover:scale-105 group" href="https://www.facebook.com/share/1ByA4eSvHh/" rel="noopener noreferrer" target="_blank" title="Facebook">
+<svg class="w-3.5 h-3.5 fill-current text-[#C19A58] group-hover:text-white transition-colors" viewbox="0 0 24 24">
+<path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path>
+</svg>
+</a>
+</div>
+</div>
+<!-- Navigation -->
+<nav class="bg-[#FAF9F6]/95 backdrop-blur-md sticky top-0 z-50 border-b border-black/5 shadow-sm">
+<div class="w-full px-4 sm:px-8 md:px-12 py-2.5">
+<div class="relative flex items-center justify-between">
+<!-- Logo -->
+<a class="flex items-center z-10" href="index.html">
+<img alt="Tripodope" class="h-10 md:h-14 w-auto" src="componets/tripodope-logo.png"/>
+</a>
+<!-- Navigation Links (Shifted Right) -->
+<div class="hidden lg:flex items-center space-x-8 whitespace-nowrap absolute left-[58%] -translate-x-1/2">
+<a class="text-gray-700 hover:text-[#C19A58] text-sm font-semibold transition-colors" href="index.html">Home</a>
+<a class="text-gray-700 hover:text-[#C19A58] text-sm font-semibold transition-colors" href="europe-packages.html">Europe Packages</a>
+<a class="text-gray-700 hover:text-[#C19A58] text-sm font-semibold transition-colors" href="worldwide-packages.html">WorldWide Packages</a>
+<a class="text-gray-700 hover:text-[#C19A58] text-sm font-semibold transition-colors" href="services.html?service=flight-ticket">Flights</a>
+<a class="text-[#C19A58] text-sm font-semibold transition-colors" href="about.html">About Us</a>
+<a class="text-gray-700 hover:text-[#C19A58] text-sm font-semibold transition-colors" href="contact.html">Contact Us</a>
+  <!-- More Dropdown -->
+  <div class="relative group">
+    <button class="text-gray-700 hover:text-[#C19A58] text-sm font-semibold transition-colors inline-flex items-center">
+      More
+      <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+    </button>
+    <div class="absolute left-0 mt-2 w-48 bg-white rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 overflow-hidden border border-gray-100">
+      <a href="gallery.html" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#C19A58]">Gallery</a>
+      <a href="destinations.html" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#C19A58]">Destinations</a>
     </div>
   </div>
-
-  <!-- Navigation -->
-  <nav class="bg-[#FAF9F6]/95 backdrop-blur-md sticky top-0 z-50 border-b border-black/5 shadow-sm">
-    <div class="w-full px-4 sm:px-8 md:px-12 py-2.5">
-      <div class="relative flex items-center justify-between">
-        <!-- Logo -->
-        <a href="index.html" class="flex items-center z-10">
-          <img src="componets/tripodope-logo.png" alt="Tripodope" class="h-16 md:h-20 w-auto">
-        </a>
-
-        <!-- Navigation Links (Shifted Right) -->
-        <div class="hidden lg:flex items-center space-x-8 whitespace-nowrap absolute left-[58%] -translate-x-1/2">
-          <a href="index.html" class="text-gray-700 hover:text-[#C19A58] text-sm font-semibold transition-colors">Home</a>
-          <a href="europe-packages.html" class="text-gray-700 hover:text-[#C19A58] text-sm font-semibold transition-colors">Europe Packages</a>
-          <a href="worldwide-packages.html" class="text-gray-700 hover:text-[#C19A58] text-sm font-semibold transition-colors">WorldWide Packages</a>
-          <a href="about.html" class="text-[#C19A58] text-sm font-semibold transition-colors">About Us</a>
-          <a href="contact.html" class="text-gray-700 hover:text-[#C19A58] text-sm font-semibold transition-colors">Contact Us</a>
-        </div>
-
-        <!-- Mobile Controls (Hamburger Only) -->
-        <div class="flex items-center space-x-2 lg:hidden">
-          <button id="mobile-menu-button" class="text-gray-700 hover:text-[#C19A58] focus:outline-none p-1">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
-        </div>
-      </div>
-      
-      <!-- Mobile Menu -->
-      <div id="mobile-menu" class="lg:hidden hidden pt-4 pb-2">
-        <div class="flex flex-col space-y-4">
-          <a href="index.html" class="mobile-menu-link text-gray-700 hover:text-[#C19A58] text-base font-medium transition-colors px-2 py-2">Home</a>
-          <a href="europe-packages.html" class="mobile-menu-link text-gray-700 hover:text-[#C19A58] text-base font-medium transition-colors px-2 py-2">Europe Packages</a>
-          <a href="worldwide-packages.html" class="mobile-menu-link text-gray-700 hover:text-[#C19A58] text-base font-medium transition-colors px-2 py-2">WorldWide Packages</a>
-          <a href="about.html" class="mobile-menu-link text-[#C19A58] hover:text-[#C19A58]/85 text-base font-semibold transition-colors px-2 py-2">About Us</a>
-          <a href="contact.html" class="bg-[#11223A] text-white px-4 py-2.5 rounded-full text-base font-semibold hover:bg-[#C19A58] transition-all duration-300 inline-block w-fit mt-2">
+</div>
+<!-- Mobile Controls (Hamburger Only) -->
+<div class="flex items-center space-x-2 lg:hidden">
+<button class="text-gray-700 hover:text-[#C19A58] focus:outline-none p-1" id="mobile-menu-button">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</div>
+</div>
+<!-- Mobile Menu -->
+<div class="lg:hidden hidden pt-4 pb-2" id="mobile-menu">
+<div class="flex flex-col space-y-4">
+<a class="mobile-menu-link text-gray-700 hover:text-[#C19A58] text-base font-medium transition-colors px-2 py-2" href="index.html">Home</a>
+<a class="mobile-menu-link text-gray-700 hover:text-[#C19A58] text-base font-medium transition-colors px-2 py-2" href="europe-packages.html">Europe Packages</a>
+<a class="mobile-menu-link text-gray-700 hover:text-[#C19A58] text-base font-medium transition-colors px-2 py-2" href="worldwide-packages.html">WorldWide Packages</a>
+            <a class="mobile-menu-link text-gray-700 hover:text-[#C19A58] text-base font-medium transition-colors px-2 py-2" href="services.html?service=flight-ticket">Flights</a>
+<a class="mobile-menu-link text-[#C19A58] hover:text-[#C19A58]/85 text-base font-semibold transition-colors px-2 py-2" href="about.html">About Us</a>
+<a class="bg-[#11223A] text-white px-4 py-2.5 rounded-full text-base font-semibold hover:bg-[#C19A58] transition-all duration-300 inline-block w-fit mt-2" href="contact.html">
             Contact
           </a>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Header -->
-  <section class="px-4 sm:px-6 md:px-[35px] py-8 md:py-10">
-    <div class="relative w-full md:max-w-l mx-auto rounded-3xl overflow-hidden h-[15rem] md:h-[20rem] bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=1920&q=80');">
-      <div class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30"></div>
-      <div class="relative z-10 h-full flex flex-col justify-center px-6 md:px-12 text-white">
-        <span class="text-xs uppercase tracking-wider font-semibold text-gray-300 mb-2">Our Story</span>
-        <h1 data-aos="fade-up" class="text-3xl md:text-5xl font-bold leading-tight">About Tripodope</h1>
-        <p data-aos="fade-up" data-aos-delay="100" class="text-gray-200 text-sm md:text-base mt-2 max-w-xl">
+</div>
+</div>
+</div>
+</nav>
+<!-- Hero Header -->
+<section class="px-4 sm:px-6 md:px-[35px] py-8 md:py-10">
+<div class="relative w-full md:max-w-l mx-auto rounded-3xl overflow-hidden h-[15rem] md:h-[20rem] bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&amp;fit=crop&amp;w=1920&amp;q=80');">
+<div class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30"></div>
+<div class="relative z-10 h-full flex flex-col justify-center px-6 md:px-12 text-white">
+<span class="text-xs uppercase tracking-wider font-semibold text-gray-300 mb-2">Our Story</span>
+<h1 class="text-3xl md:text-5xl font-bold leading-tight" data-aos="fade-up">About Tripodope</h1>
+<p class="text-gray-200 text-sm md:text-base mt-2 max-w-xl" data-aos="fade-up" data-aos-delay="100">
           Making your Europe travel dreams possible with complete holiday, travel, and custom solutions.
         </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section (The Tripodope Difference) -->
-  <section id="about" class="w-full bg-[#FAF9F6] py-20 px-6 md:px-[35px] border-b border-black/5">
-    <div class="max-w-[1300px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-      
-      <!-- Left Column: Title -->
-      <div class="lg:col-span-5" data-aos="fade-right">
-        <!-- Tagline -->
-        <span class="inline-block mb-6 text-xs font-semibold uppercase tracking-widest text-gold">
+</div>
+</div>
+</section>
+<!-- About Section (The Tripodope Difference) -->
+<section class="w-full bg-[#FAF9F6] py-20 px-6 md:px-[35px] border-b border-black/5" id="about">
+<div class="max-w-[1300px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Left Column: Title -->
+<div class="lg:col-span-5" data-aos="fade-right">
+<!-- Tagline -->
+<span class="inline-block mb-6 text-xs font-semibold uppercase tracking-widest text-gold">
           The Tripodope Difference
         </span>
-        <!-- Heading -->
-        <h2 class="font-serif text-[42px] sm:text-[50px] md:text-[56px] font-bold text-primary leading-[1.05]">
-          A little more<br>
-          <span class="italic font-serif text-primary">human.</span>
-        </h2>
-      </div>
-
-      <!-- Right Column: Text & Stats -->
-      <div class="lg:col-span-7" data-aos="fade-left">
-        <!-- Intro Paragraph -->
-        <p class="text-primary text-lg sm:text-xl md:text-2xl font-medium leading-normal mb-6">
+<!-- Heading -->
+<h2 class="font-serif text-[42px] sm:text-[50px] md:text-[56px] font-bold text-primary leading-[1.05]">
+          A little more<br/>
+<span class="italic font-serif text-primary">human.</span>
+</h2>
+</div>
+<!-- Right Column: Text & Stats -->
+<div class="lg:col-span-7" data-aos="fade-left">
+<!-- Intro Paragraph -->
+<p class="text-primary text-lg sm:text-xl md:text-2xl font-medium leading-normal mb-6">
           We are an Italy-based team founded by experienced Indian entrepreneurs from Kerala. We know the route, the rhythm, and the questions you might not think to ask.
         </p>
-        <!-- Sub Paragraph -->
-        <p class="text-primary/70 text-sm sm:text-base leading-relaxed mb-8">
+<!-- Sub Paragraph -->
+<p class="text-primary/70 text-sm sm:text-base leading-relaxed mb-8">
           From finding a familiar meal in a new city to arranging a private driver after a long flight, our job is to hold the details. You get to be present for the good part.
         </p>
-        
-        <!-- Divider -->
-        <div class="border-t border-primary/10 my-8"></div>
-        
-        <!-- Stats Grid -->
-        <div class="grid grid-cols-2 gap-8">
-          <div>
-            <div class="text-[36px] sm:text-[44px] font-bold text-primary leading-none mb-2">12+</div>
-            <div class="text-xs text-primary/60 font-semibold uppercase tracking-widest">years navigating Europe</div>
-          </div>
-          <div>
-            <div class="text-[36px] sm:text-[44px] font-bold text-primary leading-none mb-2">1:1</div>
-            <div class="text-xs text-primary/60 font-semibold uppercase tracking-widest">guidance from first call</div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Why Tripodope Feature Cards Grid -->
-  <section class="px-4 sm:px-6 md:px-[35px] py-16 bg-[#11223A] border-t border-white/5">
-    <div class="max-w-[1300px] mx-auto">
-      <div class="text-center mb-12">
-        <span class="inline-block px-4 py-1 text-sm font-medium border border-white/20 rounded-full text-[#C19A58] bg-[#162a45] mb-4">
+<!-- Divider -->
+<div class="border-t border-primary/10 my-8"></div>
+<!-- Stats Grid -->
+<div class="grid grid-cols-2 gap-8">
+<div>
+<div class="text-[36px] sm:text-[44px] font-bold text-primary leading-none mb-2">12+</div>
+<div class="text-xs text-primary/60 font-semibold uppercase tracking-widest">years navigating Europe</div>
+</div>
+<div>
+<div class="text-[36px] sm:text-[44px] font-bold text-primary leading-none mb-2">1:1</div>
+<div class="text-xs text-primary/60 font-semibold uppercase tracking-widest">guidance from first call</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Tripodope Feature Cards Grid -->
+<section class="px-4 sm:px-6 md:px-[35px] py-16 bg-[#11223A] border-t border-white/5">
+<div class="max-w-[1300px] mx-auto">
+<div class="text-center mb-12">
+<span class="inline-block px-4 py-1 text-sm font-medium border border-white/20 rounded-full text-[#C19A58] bg-[#162a45] mb-4">
           Core Pillars
         </span>
-        <h2 data-aos="fade-up" class="text-2xl sm:text-3xl md:text-4xl font-bold text-white">
+<h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white" data-aos="fade-up">
           Why Tripodope?
         </h2>
-      </div>
-
-      <!-- Feature Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        
-        <!-- Pillar 1 -->
-        <div data-aos="fade-up" data-aos-delay="100" class="bg-[#11223A] text-gray-100 rounded-3xl p-8 border border-white/10 shadow-sm flex flex-col hover-lift">
-          <div class="w-12 h-12 bg-gold/10 border border-gold/20 rounded-2xl flex items-center justify-center mb-6">
-            <img src="componets/user.png" alt="User" class="w-6 h-6 object-contain gold-icon">
-          </div>
-          <h3 class="text-lg font-bold text-white mb-3">Personalized Approach</h3>
-          <p class="text-gray-300 text-sm leading-relaxed">We understand that each traveler has different interests and needs. That’s why we take the time to understand your preferences, allowing us to create a personalized trip that matches your desires.</p>
-        </div>
-
-        <!-- Pillar 2 -->
-        <div data-aos="fade-up" data-aos-delay="200" class="bg-[#11223A] text-gray-100 rounded-3xl p-8 border border-white/10 shadow-sm flex flex-col hover-lift">
-          <div class="w-12 h-12 bg-gold/10 border border-gold/20 rounded-2xl flex items-center justify-center mb-6">
-            <img src="componets/service.png" alt="Service" class="w-6 h-6 object-contain gold-icon">
-          </div>
-          <h3 class="text-lg font-bold text-white mb-3">Expert Guidance</h3>
-          <p class="text-gray-300 text-sm leading-relaxed">With our in-depth knowledge of Europe’s hidden gems, local attractions, and insider tips, we provide you with expert guidance and recommendations to make the most of your journey.</p>
-        </div>
-
-        <!-- Pillar 3 -->
-        <div data-aos="fade-up" data-aos-delay="300" class="bg-[#11223A] text-gray-100 rounded-3xl p-8 border border-white/10 shadow-sm flex flex-col hover-lift">
-          <div class="w-12 h-12 bg-gold/10 border border-gold/20 rounded-2xl flex items-center justify-center mb-6">
-            <img src="componets/plane.png" alt="Plane" class="w-6 h-6 object-contain gold-icon">
-          </div>
-          <h3 class="text-lg font-bold text-white mb-3">Seamless Planning</h3>
-          <p class="text-gray-300 text-sm leading-relaxed">Leave the stress of planning behind. Our team handles all the intricate details, from accommodations and transportation to activities and dining, ensuring a seamless travel experience.</p>
-        </div>
-
-        <!-- Pillar 4 -->
-        <div data-aos="fade-up" data-aos-delay="100" class="bg-[#11223A] text-gray-100 rounded-3xl p-8 border border-white/10 shadow-sm flex flex-col hover-lift">
-          <div class="w-12 h-12 bg-gold/10 border border-gold/20 rounded-2xl flex items-center justify-center mb-6">
-            <img src="componets/globe.png" alt="Globe" class="w-6 h-6 object-contain gold-icon">
-          </div>
-          <h3 class="text-lg font-bold text-white mb-3">Unforgettable Experiences</h3>
-          <p class="text-gray-300 text-sm leading-relaxed">We go beyond the typical tourist spots and strive to create unique experiences that immerse you in the local culture, like sipping wine in the Tuscan countryside or exploring local lanes.</p>
-        </div>
-
-        <!-- Pillar 5 -->
-        <div data-aos="fade-up" data-aos-delay="200" class="bg-[#11223A] text-gray-100 rounded-3xl p-8 border border-white/10 shadow-sm flex flex-col hover-lift">
-          <div class="w-12 h-12 bg-gold/10 border border-gold/20 rounded-2xl flex items-center justify-center mb-6">
-            <img src="componets/user.png" alt="User" class="w-6 h-6 object-contain gold-icon">
-          </div>
-          <h3 class="text-lg font-bold text-white mb-3">Customer Satisfaction</h3>
-          <p class="text-gray-300 text-sm leading-relaxed">Your satisfaction is our top priority. We are dedicated to providing exceptional customer service and ensuring that every aspect of your trip exceeds your expectations.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Custom Planning Banner Section -->
-  <section class="relative bg-[#11223A] py-16 border-t border-white/10">
-    <div class="w-full mx-auto px-4 sm:px-6 md:px-[35px]">
-      <div class="bg-[#1C2D45] border border-[#C19A58]/35 rounded-3xl p-8 md:p-12 text-white flex flex-col md:flex-row justify-between items-center gap-8 shadow-2xl">
-        <div class="max-w-xl">
-          <span class="text-xs uppercase tracking-wider font-semibold text-[#C19A58]">Start Planning Your Custom Getaway</span>
-          <h2 class="text-2xl sm:text-3xl font-bold mt-2 mb-4">Plan Your Custom Dream Europe Trip</h2>
-          <p class="text-sm text-gray-200 leading-relaxed">
+</div>
+<!-- Feature Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Pillar 1 -->
+<div class="bg-[#11223A] text-gray-100 rounded-3xl p-8 border border-white/10 shadow-sm flex flex-col hover-lift" data-aos="fade-up" data-aos-delay="100">
+<div class="w-12 h-12 bg-gold/10 border border-gold/20 rounded-2xl flex items-center justify-center mb-6">
+<img alt="User" class="w-6 h-6 object-contain gold-icon" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+</div>
+<h3 class="text-lg font-bold text-white mb-3">Personalized Approach</h3>
+<p class="text-gray-300 text-sm leading-relaxed">We understand that each traveler has different interests and needs. That’s why we take the time to understand your preferences, allowing us to create a personalized trip that matches your desires.</p>
+</div>
+<!-- Pillar 2 -->
+<div class="bg-[#11223A] text-gray-100 rounded-3xl p-8 border border-white/10 shadow-sm flex flex-col hover-lift" data-aos="fade-up" data-aos-delay="200">
+<div class="w-12 h-12 bg-gold/10 border border-gold/20 rounded-2xl flex items-center justify-center mb-6">
+<img alt="Service" class="w-6 h-6 object-contain gold-icon" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+</div>
+<h3 class="text-lg font-bold text-white mb-3">Expert Guidance</h3>
+<p class="text-gray-300 text-sm leading-relaxed">With our in-depth knowledge of Europe’s hidden gems, local attractions, and insider tips, we provide you with expert guidance and recommendations to make the most of your journey.</p>
+</div>
+<!-- Pillar 3 -->
+<div class="bg-[#11223A] text-gray-100 rounded-3xl p-8 border border-white/10 shadow-sm flex flex-col hover-lift" data-aos="fade-up" data-aos-delay="300">
+<div class="w-12 h-12 bg-gold/10 border border-gold/20 rounded-2xl flex items-center justify-center mb-6">
+<img alt="Plane" class="w-6 h-6 object-contain gold-icon" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+</div>
+<h3 class="text-lg font-bold text-white mb-3">Seamless Planning</h3>
+<p class="text-gray-300 text-sm leading-relaxed">Leave the stress of planning behind. Our team handles all the intricate details, from accommodations and transportation to activities and dining, ensuring a seamless travel experience.</p>
+</div>
+<!-- Pillar 4 -->
+<div class="bg-[#11223A] text-gray-100 rounded-3xl p-8 border border-white/10 shadow-sm flex flex-col hover-lift" data-aos="fade-up" data-aos-delay="100">
+<div class="w-12 h-12 bg-gold/10 border border-gold/20 rounded-2xl flex items-center justify-center mb-6">
+<img alt="Globe" class="w-6 h-6 object-contain gold-icon" src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+</div>
+<h3 class="text-lg font-bold text-white mb-3">Unforgettable Experiences</h3>
+<p class="text-gray-300 text-sm leading-relaxed">We go beyond the typical tourist spots and strive to create unique experiences that immerse you in the local culture, like sipping wine in the Tuscan countryside or exploring local lanes.</p>
+</div>
+<!-- Pillar 5 -->
+<div class="bg-[#11223A] text-gray-100 rounded-3xl p-8 border border-white/10 shadow-sm flex flex-col hover-lift" data-aos="fade-up" data-aos-delay="200">
+<div class="w-12 h-12 bg-gold/10 border border-gold/20 rounded-2xl flex items-center justify-center mb-6">
+<img alt="User" class="w-6 h-6 object-contain gold-icon" src="https://images.unsplash.com/photo-1499678329028-101435549a4e?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+</div>
+<h3 class="text-lg font-bold text-white mb-3">Customer Satisfaction</h3>
+<p class="text-gray-300 text-sm leading-relaxed">Your satisfaction is our top priority. We are dedicated to providing exceptional customer service and ensuring that every aspect of your trip exceeds your expectations.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Custom Planning Banner Section -->
+<section class="relative bg-[#11223A] py-16 border-t border-white/10">
+<div class="w-full mx-auto px-4 sm:px-6 md:px-[35px]">
+<div class="bg-[#1C2D45] border border-[#C19A58]/35 rounded-3xl p-8 md:p-12 text-white flex flex-col md:flex-row justify-between items-center gap-8 shadow-2xl">
+<div class="max-w-xl">
+<span class="text-xs uppercase tracking-wider font-semibold text-[#C19A58]">Start Planning Your Custom Getaway</span>
+<h2 class="text-2xl sm:text-3xl font-bold mt-2 mb-4">Plan Your Custom Dream Europe Trip</h2>
+<p class="text-sm text-gray-200 leading-relaxed">
             Get a tailored travel program crafted specifically for your group, interests, and timeframe. Choose your own cities, pace, and landmarks, and let our planners handle the rest.
           </p>
-        </div>
-        <a href="contact.html" class="bg-[#C19A58] text-white px-8 py-3.5 rounded-full font-bold hover:bg-[#C19A58]/90 transition shadow-lg shrink-0">
+</div>
+<a class="bg-[#C19A58] text-white px-8 py-3.5 rounded-full font-bold hover:bg-[#C19A58]/90 transition shadow-lg shrink-0" href="contact.html">
           Inquire Now
         </a>
-      </div>
-    </div>
-  </section>
-
-    <!-- Footer -->
-  <footer class="bg-[#C19A58] text-[#11223A] pt-16 pb-8 px-8 md:px-16 lg:px-24 xl:px-36">
-    <div class="w-full">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
-        <div class="space-y-4">
-          <img src="componets/tripodope-footer-logo.png" alt="Tripodope Logo" class="h-20 md:h-24 w-auto mb-4 brightness-[0.1] contrast-125">
-          <p class="text-[#11223A]/80 text-sm leading-relaxed">Your trusted partner for Europe tours, International & Indian
-            packages, Domestic & International ticketing (flight, train, bus, ferry, cruise), and expert visa services.
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#C19A58] text-[#11223A] pt-16 pb-8 px-8 md:px-16 lg:px-24 xl:px-36">
+<div class="w-full">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+<div class="space-y-4">
+<img alt="Tripodope Logo" class="h-20 md:h-24 w-auto mb-4 brightness-[0.1] contrast-125" src="componets/tripodope-footer-logo.png"/>
+<p class="text-[#11223A]/80 text-sm leading-relaxed">Your trusted partner for Europe tours, International &amp; Indian
+            packages, Domestic &amp; International ticketing (flight, train, bus, ferry, cruise), and expert visa services.
           </p>
-        </div>
-        <div>
-          <h4 class="text-[#11223A] font-bold text-sm uppercase tracking-wider mb-4">Quick Links</h4>
-          <ul class="space-y-2.5 text-sm text-[#11223A]/80">
-            <li><a href="index.html" class="hover:text-[#11223A] hover:underline transition">Home</a></li>
-            <li><a href="europe-packages.html" class="hover:text-[#11223A] hover:underline transition">Europe Packages</a></li>
-            <li><a href="worldwide-packages.html" class="hover:text-[#11223A] hover:underline transition">WorldWide Packages</a></li>
-            <li><a href="about.html" class="hover:text-[#11223A] hover:underline transition">About Us</a></li>
-            <li><a href="contact.html" class="hover:text-[#11223A] hover:underline transition">Contact Us</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="text-[#11223A] font-bold text-sm uppercase tracking-wider mb-4">Contact Info</h4>
-          <ul class="space-y-2.5 text-sm text-[#11223A]/80">
-            <li class="flex items-center">
-              <svg class="w-4 h-4 mr-2 fill-current inline-block align-middle" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.004 0C5.372 0 0 5.372 0 12.004c0 2.112.553 4.167 1.603 5.986L.057 24l6.196-1.625c1.764.962 3.75 1.629 5.751 1.629 6.632 0 12.004-5.372 12.004-12.004C24.008 5.372 18.636 0 12.004 0zm0 22.008c-1.84 0-3.64-.492-5.22-1.425l-.375-.221-3.876.992.993-3.771-.242-.387a9.99 9.99 0 0 1-1.528-5.2c0-5.508 4.492-10 10-10s10 4.492 10 10-4.492 10-10 10zm4.567-6.273c-.25-.125-1.479-.73-1.708-.813-.23-.083-.396-.125-.562.125-.167.25-.646.813-.792.979-.146.167-.292.188-.542.062a7.307 7.307 0 0 1-2.01-1.242 8.04 8.04 0 0 1-1.39-1.729c-.146-.25-.016-.386.11-.51.113-.112.25-.292.375-.438.125-.146.167-.25.25-.417.083-.167.042-.313-.021-.438-.063-.125-.562-1.355-.771-1.854-.203-.491-.41-.424-.562-.432-.146-.008-.313-.008-.479-.008-.167 0-.438.062-.667.312-.23.25-.875.854-.875 2.083s.896 2.417.996 2.552c.1.135 1.765 2.698 4.276 3.784.6.259 1.067.414 1.431.53.603.192 1.152.165 1.587.1.484-.072 1.479-.604 1.687-1.187.208-.583.208-1.083.146-1.187-.062-.104-.229-.167-.479-.292z"/></svg>
-              <span>+39 334 755 3788</span>
-            </li>
-            <li class="flex items-center">
-              <svg class="w-4 h-4 mr-2 stroke-current fill-none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="M22 6l-10 7L2 6"></path></svg>
-              <span>info@tripodope.com</span>
-            </li>
-            <li class="flex items-start">
-              <svg class="w-4 h-4 mr-2 mt-0.5 stroke-current fill-none flex-shrink-0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-              <span>Needoor, Kottayam, Kerala</span>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="text-[#11223A] font-bold text-sm uppercase tracking-wider mb-4">Follow Us</h4>
-                    <div class="flex gap-3 mt-2">
-            <a href="https://www.facebook.com/share/1ByA4eSvHh/" target="_blank"
-              class="w-10 h-10 rounded-full border border-[#11223A]/30 hover:border-[#11223A] transition flex items-center justify-center hover:bg-[#11223A]/10">
-              <img src="componets/facebook.png" alt="Facebook" class="w-5 h-5 object-contain">
-            </a>
-            <a href="https://www.instagram.com/tripodope?igsh=Ymp0MDJjd2FxZ2ly" target="_blank"
-              class="w-10 h-10 rounded-full border border-[#11223A]/30 hover:border-[#11223A] transition flex items-center justify-center hover:bg-[#11223A]/10">
-              <img src="componets/insta.png" alt="Instagram" class="w-5 h-5 object-contain">
-            </a>
-            <a href="https://wa.me/393444440325" target="_blank"
-              class="w-10 h-10 rounded-full border border-[#11223A]/30 hover:border-[#11223A] transition flex items-center justify-center hover:bg-[#11223A]/10">
-              <img src="componets/whatsapp.png" alt="WhatsApp" class="w-5 h-5 object-contain">
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="border-t border-[#11223A]/20 pt-8 flex items-center justify-center text-xs text-[#11223A]/60">
-        <p class="text-center">&copy; 2026 Tripodope. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- AOS Animation & Script -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
+</div>
+<div>
+<h4 class="text-[#11223A] font-bold text-sm uppercase tracking-wider mb-4">Quick Links</h4>
+<ul class="space-y-2.5 text-sm text-[#11223A]/80">
+<li><a class="hover:text-[#11223A] hover:underline transition" href="index.html">Home</a></li>
+<li><a class="hover:text-[#11223A] hover:underline transition" href="europe-packages.html">Europe Packages</a></li>
+<li><a class="hover:text-[#11223A] hover:underline transition" href="worldwide-packages.html">WorldWide Packages</a></li>
+<a class="text-gray-700 hover:text-[#C19A58] text-sm font-semibold transition-colors" href="services.html?service=flight-ticket">Flights</a>
+<a class="hover:text-[#11223A] hover:underline transition" href="about.html">About Us</a></li>
+<li><a class="hover:text-[#11223A] hover:underline transition" href="contact.html">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-[#11223A] font-bold text-sm uppercase tracking-wider mb-4">Contact Info</h4>
+<ul class="space-y-2.5 text-sm text-[#11223A]/80">
+<li class="flex items-center">
+<svg class="w-4 h-4 mr-2 fill-current inline-block align-middle" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.004 0C5.372 0 0 5.372 0 12.004c0 2.112.553 4.167 1.603 5.986L.057 24l6.196-1.625c1.764.962 3.75 1.629 5.751 1.629 6.632 0 12.004-5.372 12.004-12.004C24.008 5.372 18.636 0 12.004 0zm0 22.008c-1.84 0-3.64-.492-5.22-1.425l-.375-.221-3.876.992.993-3.771-.242-.387a9.99 9.99 0 0 1-1.528-5.2c0-5.508 4.492-10 10-10s10 4.492 10 10-4.492 10-10 10zm4.567-6.273c-.25-.125-1.479-.73-1.708-.813-.23-.083-.396-.125-.562.125-.167.25-.646.813-.792.979-.146.167-.292.188-.542.062a7.307 7.307 0 0 1-2.01-1.242 8.04 8.04 0 0 1-1.39-1.729c-.146-.25-.016-.386.11-.51.113-.112.25-.292.375-.438.125-.146.167-.25.25-.417.083-.167.042-.313-.021-.438-.063-.125-.562-1.355-.771-1.854-.203-.491-.41-.424-.562-.432-.146-.008-.313-.008-.479-.008-.167 0-.438.062-.667.312-.23.25-.875.854-.875 2.083s.896 2.417.996 2.552c.1.135 1.765 2.698 4.276 3.784.6.259 1.067.414 1.431.53.603.192 1.152.165 1.587.1.484-.072 1.479-.604 1.687-1.187.208-.583.208-1.083.146-1.187-.062-.104-.229-.167-.479-.292z"></path></svg>
+<span>+39 334 755 3788</span>
+</li>
+<li class="flex items-center">
+<svg class="w-4 h-4 mr-2 stroke-current fill-none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect height="16" rx="2" width="20" x="2" y="4"></rect><path d="M22 6l-10 7L2 6"></path></svg>
+<span>info@tripodope.com</span>
+</li>
+<li class="flex items-start">
+<svg class="w-4 h-4 mr-2 mt-0.5 stroke-current fill-none flex-shrink-0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+<span>Needoor, Kottayam, Kerala</span>
+</li>
+</ul>
+</div>
+<div>
+<h4 class="text-[#11223A] font-bold text-sm uppercase tracking-wider mb-4">Follow Us</h4>
+<div class="flex gap-3 mt-2">
+<a class="w-10 h-10 rounded-full border border-[#11223A]/30 hover:border-[#11223A] transition flex items-center justify-center hover:bg-[#11223A]/10" href="https://www.facebook.com/share/1ByA4eSvHh/" target="_blank">
+<img alt="Facebook" class="w-5 h-5 object-contain" src="componets/facebook.png"/>
+</a>
+<a class="w-10 h-10 rounded-full border border-[#11223A]/30 hover:border-[#11223A] transition flex items-center justify-center hover:bg-[#11223A]/10" href="https://www.instagram.com/tripodope?igsh=Ymp0MDJjd2FxZ2ly" target="_blank">
+<img alt="Instagram" class="w-5 h-5 object-contain" src="componets/insta.png"/>
+</a>
+<a class="w-10 h-10 rounded-full border border-[#11223A]/30 hover:border-[#11223A] transition flex items-center justify-center hover:bg-[#11223A]/10" href="https://wa.me/393444440325" target="_blank">
+<img alt="WhatsApp" class="w-5 h-5 object-contain" src="componets/whatsapp.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-[#11223A]/20 pt-8 flex items-center justify-center text-xs text-[#11223A]/60">
+<p class="text-center">© 2026 Tripodope. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<!-- AOS Animation & Script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
     // Initialize Animations
     AOS.init({
       duration: 800,
@@ -339,18 +322,14 @@
       mobileMenu.classList.toggle('hidden');
     });
   </script>
-  <!-- WhatsApp Floating Button -->
-  <a href="https://wa.me/393444440325?text=Hi%20Tripodope%2C%20I%20would%20like%20to%20inquire%20about%20your%20travel%20packages."
-    target="_blank"
-    class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:bg-[#20ba5a] hover:scale-110 transition-all duration-300 group"
-    aria-label="Contact us on WhatsApp">
-    <!-- Pulse Effect -->
-    <span class="absolute inset-0 rounded-full bg-[#25D366]/40 animate-ping group-hover:animate-none opacity-75"></span>
-    <!-- SVG Icon -->
-    <svg class="relative z-10 w-7 h-7 fill-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M12.004 0C5.372 0 0 5.372 0 12.004c0 2.112.553 4.167 1.603 5.986L.057 24l6.196-1.625c1.764.962 3.75 1.629 5.751 1.629 6.632 0 12.004-5.372 12.004-12.004C24.008 5.372 18.636 0 12.004 0zm0 22.008c-1.84 0-3.64-.492-5.22-1.425l-.375-.221-3.876.992.993-3.771-.242-.387a9.99 9.99 0 0 1-1.528-5.2c0-5.508 4.492-10 10-10s10 4.492 10 10-4.492 10-10 10zm4.567-6.273c-.25-.125-1.479-.73-1.708-.813-.23-.083-.396-.125-.562.125-.167.25-.646.813-.792.979-.146.167-.292.188-.542.062a7.307 7.307 0 0 1-2.01-1.242 8.04 8.04 0 0 1-1.39-1.729c-.146-.25-.016-.386.11-.51.113-.112.25-.292.375-.438.125-.146.167-.25.25-.417.083-.167.042-.313-.021-.438-.063-.125-.562-1.355-.771-1.854-.203-.491-.41-.424-.562-.432-.146-.008-.313-.008-.479-.008-.167 0-.438.062-.667.312-.23.25-.875.854-.875 2.083s.896 2.417.996 2.552c.1.135 1.765 2.698 4.276 3.784.6.259 1.067.414 1.431.53.603.192 1.152.165 1.587.1.484-.072 1.479-.604 1.687-1.187.208-.583.208-1.083.146-1.187-.062-.104-.229-.167-.479-.292z"/>
-    </svg>
-      </a>
-
+<!-- WhatsApp Floating Button -->
+<a aria-label="Contact us on WhatsApp" class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:bg-[#20ba5a] hover:scale-110 transition-all duration-300 group" href="https://wa.me/393444440325?text=Hi%20Tripodope%2C%20I%20would%20like%20to%20inquire%20about%20your%20travel%20packages." target="_blank">
+<!-- Pulse Effect -->
+<span class="absolute inset-0 rounded-full bg-[#25D366]/40 animate-ping group-hover:animate-none opacity-75"></span>
+<!-- SVG Icon -->
+<svg class="relative z-10 w-7 h-7 fill-white" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.004 0C5.372 0 0 5.372 0 12.004c0 2.112.553 4.167 1.603 5.986L.057 24l6.196-1.625c1.764.962 3.75 1.629 5.751 1.629 6.632 0 12.004-5.372 12.004-12.004C24.008 5.372 18.636 0 12.004 0zm0 22.008c-1.84 0-3.64-.492-5.22-1.425l-.375-.221-3.876.992.993-3.771-.242-.387a9.99 9.99 0 0 1-1.528-5.2c0-5.508 4.492-10 10-10s10 4.492 10 10-4.492 10-10 10zm4.567-6.273c-.25-.125-1.479-.73-1.708-.813-.23-.083-.396-.125-.562.125-.167.25-.646.813-.792.979-.146.167-.292.188-.542.062a7.307 7.307 0 0 1-2.01-1.242 8.04 8.04 0 0 1-1.39-1.729c-.146-.25-.016-.386.11-.51.113-.112.25-.292.375-.438.125-.146.167-.25.25-.417.083-.167.042-.313-.021-.438-.063-.125-.562-1.355-.771-1.854-.203-.491-.41-.424-.562-.432-.146-.008-.313-.008-.479-.008-.167 0-.438.062-.667.312-.23.25-.875.854-.875 2.083s.896 2.417.996 2.552c.1.135 1.765 2.698 4.276 3.784.6.259 1.067.414 1.431.53.603.192 1.152.165 1.587.1.484-.072 1.479-.604 1.687-1.187.208-.583.208-1.083.146-1.187-.062-.104-.229-.167-.479-.292z"></path>
+</svg>
+</a>
 </body>
 </html>

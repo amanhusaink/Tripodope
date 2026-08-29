@@ -483,27 +483,16 @@
         View All Europe Packages
       </a>
 </div>
-<!-- Heading & Controls -->
-<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-10 gap-4" data-aos="fade-up">
-  <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white">
-    Featured Europe Packages
-  </h2>
-  <!-- Slider Controls -->
-  <div class="flex gap-3">
-    <button onclick="document.getElementById('europe-slider').scrollBy({left: -350, behavior: 'smooth'})" class="w-10 h-10 rounded-full bg-white/10 hover:bg-[#C19A58] border border-white/20 hover:border-[#C19A58] flex items-center justify-center text-white transition-all duration-300">
-      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-    </button>
-    <button onclick="document.getElementById('europe-slider').scrollBy({left: 350, behavior: 'smooth'})" class="w-10 h-10 rounded-full bg-white/10 hover:bg-[#C19A58] border border-white/20 hover:border-[#C19A58] flex items-center justify-center text-white transition-all duration-300">
-      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-    </button>
-  </div>
-</div>
+<!-- Heading -->
+<h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-10" data-aos="fade-up">
+      Featured Europe Packages
+    </h2>
 <!-- Packages Grid -->
-<div id="europe-slider" class="flex overflow-x-auto scroll-smooth snap-x snap-mandatory gap-6 pb-6 hide-scroll-bar" style="scrollbar-width: none; -ms-overflow-style: none;">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
 <!-- Package 1: Grand Italian Discovery & Coastal Odyssey -->
-<div class="bg-[#162a45] rounded-3xl overflow-hidden shadow-lg border border-white/5 relative group shrink-0 w-[85vw] sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] snap-start" data-aos="fade-up" data-aos-delay="100">
+<div class="bg-[#162a45] rounded-3xl overflow-hidden shadow-lg border border-white/5 w-full relative group" data-aos="fade-up" data-aos-delay="100">
 <div class="relative h-auto">
-<img alt="Grand Italian Discovery & Coastal Odyssey" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1499678329028-101435549a4e?auto=format&fit=crop&w=800&q=80"/>
+<img alt="Grand Italian Discovery &amp; Coastal Odyssey" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1499678329028-101435549a4e?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
 <!-- Duration tag -->
 <div class="absolute top-4 left-4 bg-primary text-white text-xs font-semibold px-3 py-1.5 rounded-full z-20 shadow-md">
             11 Days Itinerary
@@ -527,9 +516,9 @@
 </div>
 </div>
 <!-- Package 2: Grand Swiss & Milan Alpine Express -->
-<div class="bg-[#162a45] rounded-3xl overflow-hidden shadow-lg border border-white/5 relative group shrink-0 w-[85vw] sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] snap-start" data-aos="fade-up" data-aos-delay="150">
+<div class="bg-[#162a45] rounded-3xl overflow-hidden shadow-lg border border-white/5 w-full relative group" data-aos="fade-up" data-aos-delay="150">
 <div class="relative h-auto">
-<img alt="Grand Swiss &amp; Milan Alpine Express" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<img alt="Grand Swiss &amp; Milan Alpine Express" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1527668752968-14dc70a27c95?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
 <!-- Duration tag -->
 <div class="absolute top-4 left-4 bg-primary text-white text-xs font-semibold px-3 py-1.5 rounded-full z-20 shadow-md">
             5 Days Itinerary
@@ -553,9 +542,9 @@
 </div>
 </div>
 <!-- Package 3: Italian Grand Express -->
-<div class="bg-[#162a45] rounded-3xl overflow-hidden shadow-lg border border-white/5 relative group shrink-0 w-[85vw] sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] snap-start" data-aos="fade-up" data-aos-delay="200">
+<div class="bg-[#162a45] rounded-3xl overflow-hidden shadow-lg border border-white/5 w-full relative group" data-aos="fade-up" data-aos-delay="200">
 <div class="relative h-auto">
-<img alt="Italian Grand Express" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=800&q=80"/>
+<img alt="Italian Grand Express" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
 <!-- Duration tag -->
 <div class="absolute top-4 left-4 bg-primary text-white text-xs font-semibold px-3 py-1.5 rounded-full z-20 shadow-md">
             5 Days Itinerary
@@ -579,9 +568,9 @@
 </div>
 </div>
 <!-- Package 4: European Grand Voyage -->
-<div class="bg-[#162a45] rounded-3xl overflow-hidden shadow-lg border border-white/5 relative group shrink-0 w-[85vw] sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] snap-start" data-aos="fade-up" data-aos-delay="250">
+<div class="bg-[#162a45] rounded-3xl overflow-hidden shadow-lg border border-white/5 w-full relative group" data-aos="fade-up" data-aos-delay="250">
 <div class="relative h-auto">
-<img alt="European Grand Voyage" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1522093007474-d86e9bf7ba6f?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<img alt="European Grand Voyage" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
 <!-- Duration tag -->
 <div class="absolute top-4 left-4 bg-primary text-white text-xs font-semibold px-3 py-1.5 rounded-full z-20 shadow-md">
             12 Days Itinerary
@@ -608,9 +597,9 @@
 </div>
 </div>
 <!-- Package 5: Sacred Europe -->
-<div class="bg-[#162a45] rounded-3xl overflow-hidden shadow-lg border border-white/5 relative group shrink-0 w-[85vw] sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] snap-start" data-aos="fade-up" data-aos-delay="300">
+<div class="bg-[#162a45] rounded-3xl overflow-hidden shadow-lg border border-white/5 w-full relative group" data-aos="fade-up" data-aos-delay="300">
 <div class="relative h-auto">
-<img alt="Sacred Europe" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<img alt="Sacred Europe" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
 <!-- Duration tag -->
 <div class="absolute top-4 left-4 bg-primary text-white text-xs font-semibold px-3 py-1.5 rounded-full z-20 shadow-md">
             16 Days Itinerary
@@ -636,9 +625,9 @@
 </div>
 </div>
 <!-- Package 6: Europe in Bernina Express -->
-<div class="bg-[#162a45] rounded-3xl overflow-hidden shadow-lg border border-white/5 relative group shrink-0 w-[85vw] sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] snap-start" data-aos="fade-up" data-aos-delay="350">
+<div class="bg-[#162a45] rounded-3xl overflow-hidden shadow-lg border border-white/5 w-full relative group" data-aos="fade-up" data-aos-delay="350">
 <div class="relative h-auto">
-<img alt="Europe in Bernina Express" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1499678329028-101435549a4e?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<img alt="Europe in Bernina Express" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
 <!-- Duration tag -->
 <div class="absolute top-4 left-4 bg-primary text-white text-xs font-semibold px-3 py-1.5 rounded-full z-20 shadow-md">
             8 Days Itinerary
@@ -665,9 +654,9 @@
 </div>
 </div>
 <!-- Package 7: Spain and Portugal -->
-<div class="bg-[#162a45] rounded-3xl overflow-hidden shadow-lg border border-white/5 relative group shrink-0 w-[85vw] sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] snap-start" data-aos="fade-up" data-aos-delay="400">
+<div class="bg-[#162a45] rounded-3xl overflow-hidden shadow-lg border border-white/5 w-full relative group" data-aos="fade-up" data-aos-delay="400">
 <div class="relative h-auto">
-<img alt="Spain and Portugal" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<img alt="Spain and Portugal" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1499678329028-101435549a4e?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
 <!-- Duration tag -->
 <div class="absolute top-4 left-4 bg-primary text-white text-xs font-semibold px-3 py-1.5 rounded-full z-20 shadow-md">
             10 Days Itinerary
@@ -691,9 +680,9 @@
 </div>
 </div>
 <!-- Package 8: Essential Europe -->
-<div class="bg-[#162a45] rounded-3xl overflow-hidden shadow-lg border border-white/5 relative group shrink-0 w-[85vw] sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] snap-start" data-aos="fade-up" data-aos-delay="450">
+<div class="bg-[#162a45] rounded-3xl overflow-hidden shadow-lg border border-white/5 w-full relative group" data-aos="fade-up" data-aos-delay="450">
 <div class="relative h-auto">
-<img alt="Essential Europe" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<img alt="Essential Europe" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
 <!-- Duration tag -->
 <div class="absolute top-4 left-4 bg-primary text-white text-xs font-semibold px-3 py-1.5 rounded-full z-20 shadow-md">
             8 Days Itinerary
@@ -721,9 +710,9 @@
 </div>
 </div>
 <!-- Package 9: Enchanting Alps, Iconic Landmarks, and the Parisian Dream! -->
-<div class="bg-[#162a45] rounded-3xl overflow-hidden shadow-lg border border-white/5 relative group shrink-0 w-[85vw] sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] snap-start" data-aos="fade-up" data-aos-delay="500">
+<div class="bg-[#162a45] rounded-3xl overflow-hidden shadow-lg border border-white/5 w-full relative group" data-aos="fade-up" data-aos-delay="500">
 <div class="relative h-auto">
-<img alt="Enchanting Alps, Iconic Landmarks, and the Parisian Dream!" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1522093007474-d86e9bf7ba6f?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<img alt="Enchanting Alps, Iconic Landmarks, and the Parisian Dream!" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
 <!-- Duration tag -->
 <div class="absolute top-4 left-4 bg-primary text-white text-xs font-semibold px-3 py-1.5 rounded-full z-20 shadow-md">
             8 Days Itinerary
@@ -747,9 +736,9 @@
 </div>
 </div>
 <!-- Package 10: Slovenia Croatia Montenegro Bosnia Herzegovina -->
-<div class="bg-[#162a45] rounded-3xl overflow-hidden shadow-lg border border-white/5 relative group shrink-0 w-[85vw] sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] xl:w-[calc(25%-18px)] snap-start" data-aos="fade-up" data-aos-delay="550">
+<div class="bg-[#162a45] rounded-3xl overflow-hidden shadow-lg border border-white/5 w-full relative group" data-aos="fade-up" data-aos-delay="550">
 <div class="relative h-auto">
-<img alt="Slovenia Croatia Montenegro Bosnia Herzegovina (Eastern Europe)" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1525596662741-e94ff9f26de1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<img alt="Slovenia Croatia Montenegro Bosnia Herzegovina (Eastern Europe)" class="w-full object-cover group-hover:scale-105 transition duration-500 responsive-card-img" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
 <!-- Duration tag -->
 <div class="absolute top-4 left-4 bg-primary text-white text-xs font-semibold px-3 py-1.5 rounded-full z-20 shadow-md">
             9 Days Itinerary
