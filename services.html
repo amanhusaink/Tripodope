@@ -157,6 +157,7 @@
                 <option value="train-ticket">4. Train Ticket Booking</option>
                 <option value="bus-ticket">5. Bus Ticket Booking</option>
                 <option value="visa-services">6. Visa & Passport Services</option>
+                <option value="private-transfer">7. Private Transfer</option>
             </select>
             <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-6 text-[#C19A58]">
                 <svg class="fill-current h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
@@ -525,6 +526,45 @@
         </div>
       </div>
     </form>
+
+    <!-- 7. Private Transfer Form -->
+    <form id="form-private-transfer" class="service-form space-y-8 hidden" onsubmit="handlePrivateTransferSubmit(event)">
+      <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200/80 space-y-6">
+        <div class="border-b border-gray-100 pb-4"><h2 class="text-lg md:text-xl font-bold text-[#11223A]">SECTION 1: TRANSFER DETAILS</h2></div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div class="space-y-2"><label class="block text-xs sm:text-sm font-bold text-gray-800">Pick-up Location:</label><input type="text" name="pt_pickup" required class="w-full bg-white border border-gray-200 rounded-xl px-4 py-2.5 text-xs sm:text-sm focus:outline-none focus:border-[#C19A58]" /></div>
+          <div class="space-y-2"><label class="block text-xs sm:text-sm font-bold text-gray-800">Drop-off Location:</label><input type="text" name="pt_dropoff" required class="w-full bg-white border border-gray-200 rounded-xl px-4 py-2.5 text-xs sm:text-sm focus:outline-none focus:border-[#C19A58]" /></div>
+          <div class="space-y-2"><label class="block text-xs sm:text-sm font-bold text-gray-800">Transfer Date:</label><input type="date" name="pt_date" required class="w-full bg-white border border-gray-200 rounded-xl px-4 py-2.5 text-xs sm:text-sm focus:outline-none focus:border-[#C19A58]" /></div>
+          <div class="space-y-2"><label class="block text-xs sm:text-sm font-bold text-gray-800">Pick-up Time:</label><input type="time" name="pt_time" required class="w-full bg-white border border-gray-200 rounded-xl px-4 py-2.5 text-xs sm:text-sm focus:outline-none focus:border-[#C19A58]" /></div>
+        </div>
+        <div class="space-y-3 pt-2">
+          <label class="block text-xs sm:text-sm font-bold text-gray-800">Number of Passengers:</label>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-gray-50/80 p-3 rounded-xl border border-gray-200 flex flex-col items-center">
+              <span class="block text-xs font-bold text-gray-800 mb-2">Adults</span>
+              <input type="number" name="pt_adults" value="1" min="1" class="w-full text-center border border-gray-200 rounded-lg text-sm font-bold py-1 text-[#11223A] focus:outline-none focus:border-[#C19A58]">
+            </div>
+            <div class="bg-gray-50/80 p-3 rounded-xl border border-gray-200 flex flex-col items-center">
+              <span class="block text-xs font-bold text-gray-800 mb-2">Children</span>
+              <input type="number" name="pt_children" value="0" min="0" class="w-full text-center border border-gray-200 rounded-lg text-sm font-bold py-1 text-[#11223A] focus:outline-none focus:border-[#C19A58]">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-200/80 space-y-6">
+        <div class="border-b border-gray-100 pb-4"><h2 class="text-lg md:text-xl font-bold text-[#11223A]">SECTION 2: YOUR CONTACT DETAILS</h2></div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div class="space-y-2"><label class="block text-xs sm:text-sm font-bold text-gray-800">Full Name *</label><input type="text" name="pt_name" required class="w-full bg-white border border-gray-200 rounded-xl px-4 py-2.5 text-xs sm:text-sm focus:outline-none focus:border-[#C19A58]" /></div>
+          <div class="space-y-2"><label class="block text-xs sm:text-sm font-bold text-gray-800">Phone Number (WhatsApp) *</label><input type="tel" name="pt_phone" required class="w-full bg-white border border-gray-200 rounded-xl px-4 py-2.5 text-xs sm:text-sm focus:outline-none focus:border-[#C19A58]" /></div>
+        </div>
+        <div class="pt-4 text-center">
+          <button type="submit" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-[#25D366] hover:bg-[#20bd5a] text-white px-8 py-4 rounded-full font-bold text-sm sm:text-base tracking-wider transition-all shadow-lg hover:-translate-y-0.5">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.105 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.157 4.228 4.227-1.157zm11.294-7.227c-.244-.122-1.444-.712-1.668-.794-.224-.081-.388-.122-.551.122-.163.244-.632.794-.775.957-.143.163-.285.183-.529.061-.244-.122-1.033-.381-1.968-1.214-.726-.648-1.216-1.448-1.359-1.693-.143-.244-.015-.376.107-.497.11-.11.244-.285.367-.428.122-.143.163-.244.244-.407.081-.163.041-.306-.02-.428-.061-.122-.551-1.344-.754-1.833-.198-.476-.399-.412-.551-.42h-.469c-.163 0-.428.061-.652.306-.224.244-.856.836-.856 2.039 0 1.203.877 2.364.999 2.527.122.163 1.727 2.637 4.183 3.698.584.252 1.04.403 1.396.516.588.187 1.123.16 1.545.097.471-.07 1.444-.591 1.648-1.161.204-.57.204-1.059.143-1.161-.061-.102-.224-.163-.469-.285z"/></svg>
+            SEND REQUEST VIA WHATSAPP
+          </button>
+        </div>
+      </div>
+    </form>
   </main>
 
 
@@ -560,7 +600,8 @@
       'flight-ticket': { icon: '✈️', badge: 'Flight Ticket Inquiry', title: 'Get the Best Flight Rates', subtitle: 'Exclusive B2B fares for international long-haul flights' },
       'train-ticket': { icon: '🚆', badge: 'Train Ticket Booking', title: 'Book European & Italian Train Tickets', subtitle: 'Fast-track booking for Frecciarossa, Italo, Rail Europe & more' },
       'bus-ticket': { icon: '🚌', badge: 'Bus Ticket Booking', title: 'Easy European Bus Travel', subtitle: 'Affordable bus ticketing for FlixBus, Itabus, and intercity coaches' },
-      'visa-services': { icon: '🛂', badge: 'Visa & Passport Services', title: 'Hassle-Free Visa & Passport Assistance', subtitle: 'Expert guidance for Visas and Passport Processing' }
+      'visa-services': { icon: '🛂', badge: 'Visa & Passport Services', title: 'Hassle-Free Visa & Passport Assistance', subtitle: 'Expert guidance for Visas and Passport Processing' },
+      'private-transfer': { icon: '🚗', badge: 'Private Transfer Booking', title: 'Seamless Airport & City Transfers', subtitle: 'Book reliable private cars, vans, and limousines' }
     };
 
     function switchService(serviceId) {
@@ -735,6 +776,26 @@
       msg += `👤 Name: ${form.vs_name.value}
 📧 Email: ${form.vs_email.value}
 📱 Phone: ${form.vs_phone.value}`;
+      openWhatsApp(msg);
+    }
+
+    function handlePrivateTransferSubmit(e) {
+      e.preventDefault();
+      const form = e.target;
+      let msg = `🚗 *PRIVATE TRANSFER BOOKING*
+`;
+      msg += `📍 Pick-up: ${form.pt_pickup.value}
+📍 Drop-off: ${form.pt_dropoff.value}
+`;
+      msg += `📅 Date: ${form.pt_date.value}
+⏰ Time: ${form.pt_time.value}
+`;
+      msg += `👥 Passengers: ${form.pt_adults.value} Adults, ${form.pt_children.value} Children
+`;
+      msg += `----------------------------------------
+`;
+      msg += `👤 Name: ${form.pt_name.value}
+📱 Phone: ${form.pt_phone.value}`;
       openWhatsApp(msg);
     }
 
